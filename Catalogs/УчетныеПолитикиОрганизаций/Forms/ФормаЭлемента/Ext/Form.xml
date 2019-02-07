@@ -1,0 +1,1070 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="28">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="29"/>
+			</Button>
+			<Button name="ФормаЗаписать" id="30">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Write</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="31"/>
+			</Button>
+			<Button name="ФормаОтмена" id="32">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="33"/>
+			</Button>
+			<Button name="ФормаСправка" id="142">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="143"/>
+			</Button>
+			<Button name="ФормаОбщаяКомандаДополнительныеСведенияКоманднаяПанель" id="111">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.ДополнительныеСведенияКоманднаяПанель</CommandName>
+				<DataPath>Объект.Ref</DataPath>
+				<ExtendedTooltip name="ФормаОбщаяКомандаДополнительныеСведенияКоманднаяПанельРасширеннаяПодсказка" id="112"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<RadioButtonField name="СистемаНалогообложения" id="244">
+			<DataPath>Объект.СистемаНалогообложения</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Налог на прибыль и НДС</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Податок на прибуток і ПДВ</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.СистемыНалогообложения.EnumValue.НалогНаПрибыльИНДС</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Единый налог</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Єдиний податок</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.СистемыНалогообложения.EnumValue.ЕдиныйНалог</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Налог на прибыль</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Податок на прибуток</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.СистемыНалогообложения.EnumValue.НалогНаПрибыль</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Единый налог и НДС</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Єдиний податок і ПДВ</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.СистемыНалогообложения.EnumValue.ЕдиныйНалогИНДС</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Неплательщик</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Неплатник</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.СистемыНалогообложения.EnumValue.Неплательщик</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="СистемаНалогообложенияКонтекстноеМеню" id="245"/>
+			<ExtendedTooltip name="СистемаНалогообложенияРасширеннаяПодсказка" id="246"/>
+			<Events>
+				<Event name="OnChange">СистемаНалогообложенияПриИзменении</Event>
+			</Events>
+		</RadioButtonField>
+		<Pages name="ГруппаСтраницы" id="247">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група сторінки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група сторінки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="248"/>
+			<ChildItems>
+				<Page name="ГруппаНалоговыйУчет" id="102">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налоговый учет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Податковий облік</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа налоговый учет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група податковий облік</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНалоговыйУчетРасширеннаяПодсказка" id="103"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЕдиныйНалог" id="324">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа единый налог</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група єдиний податок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа единый налог</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група єдиний податок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЕдиныйНалогРасширеннаяПодсказка" id="325"/>
+							<ChildItems>
+								<InputField name="ГруппаПлательщикаЕдиногоНалога" id="321">
+									<DataPath>Объект.ГруппаПлательщикаЕдиногоНалога</DataPath>
+									<Width>1</Width>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ГруппыПлательщиковЕдиногоНалога.EnumValue.ПерваяГруппа</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ГруппыПлательщиковЕдиногоНалога.EnumValue.ВтораяГруппа</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ГруппыПлательщиковЕдиногоНалога.EnumValue.ТретьяГруппа</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ГруппаПлательщикаЕдиногоНалогаКонтекстноеМеню" id="322"/>
+									<ExtendedTooltip name="ГруппаПлательщикаЕдиногоНалогаРасширеннаяПодсказка" id="323"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНалогНаПрибыль" id="326">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа налог на прибыль</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група податок на прибуток</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа налог на прибыль</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група податок на прибуток</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНалогНаПрибыльРасширеннаяПодсказка" id="327"/>
+							<ChildItems>
+								<CheckBoxField name="НалогНаПрибыльБезКорректировокФинансовогоРезультата" id="328">
+									<DataPath>Объект.НалогНаПрибыльБезКорректировокФинансовогоРезультата</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НалогНаПрибыльБезКорректировокФинансовогоРезультатаКонтекстноеМеню" id="329"/>
+									<ExtendedTooltip name="НалогНаПрибыльБезКорректировокФинансовогоРезультатаРасширеннаяПодсказка" id="330"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ИнформацияОСтатусеПлательщикаНалогов" id="318">
+							<DataPath>Объект.ИнформацияОСтатусеПлательщикаНалогов</DataPath>
+							<ContextMenu name="ИнформацияОСтатусеПлательщикаНалоговКонтекстноеМеню" id="319"/>
+							<ExtendedTooltip name="ИнформацияОСтатусеПлательщикаНалоговРасширеннаяПодсказка" id="320"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНДС" id="249">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ПДВ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа НДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група ПДВ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНДСРасширеннаяПодсказка" id="250"/>
+				</Page>
+				<Page name="ГруппаЗапасы" id="282">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запасы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Запаси</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запасы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група запаси</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЗапасыРасширеннаяПодсказка" id="283"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаМетодОценкиСтоимостиТоваров" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Метод оценки стоимости товаров:</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Метод оцінки вартості товарів:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаМетодОценкиСтоимостиТоваровExtendedTooltip" id="35"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаМетод" id="39">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа метод</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група метод</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа метод</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група метод</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаМетодExtendedTooltip" id="40"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаМетодОценкиСтоимостиТоваровЗначениеПериод" id="41">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа метод оценки стоимости товаров значение период</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Група метод оцінки вартості товарів період значення</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа метод оценки стоимости товаров значение период</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Група метод оцінки вартості товарів період значення</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаМетодОценкиСтоимостиТоваровЗначениеПериодExtendedTooltip" id="42"/>
+											<ChildItems>
+												<RadioButtonField name="МетодОценкиСтоимостиТоваров" id="43">
+													<DataPath>Объект.МетодОценкиСтоимостиТоваров</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Метод оценки стоимости товаров</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Метод оцінки вартості товарів</v8:content>
+														</v8:item>
+													</Title>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ColumnsCount>1</ColumnsCount>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Средняя за месяц</v8:content>
+																	</v8:item>
+																	<v8:item>
+																		<v8:lang>uk</v8:lang>
+																		<v8:content>Середня за місяць</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.МетодыОценкиСтоимостиТоваров.EnumValue.СредняяЗаМесяц</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>ФИФО (взвешенная оценка)</v8:content>
+																	</v8:item>
+																	<v8:item>
+																		<v8:lang>uk</v8:lang>
+																		<v8:content>ФІФО (зважена оцінка)</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.МетодыОценкиСтоимостиТоваров.EnumValue.ФИФОВзвешеннаяОценка</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>ФИФО (скользящая оценка)</v8:content>
+																	</v8:item>
+																	<v8:item>
+																		<v8:lang>uk</v8:lang>
+																		<v8:content>ФІФО (змінна оцінка)</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.МетодыОценкиСтоимостиТоваров.EnumValue.ФИФОСкользящаяОценка</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="МетодОценкиСтоимостиТоваровКонтекстноеМеню" id="44"/>
+													<ExtendedTooltip name="МетодОценкиСтоимостиТоваровРасширеннаяПодсказка" id="45"/>
+													<Events>
+														<Event name="OnChange">МетодОценкиСтоимостиТоваровПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПредупреждениеМетодОценки" id="302">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа предупреждение метод оценки</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Група попередження метод оцінки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа предупреждение метод оценки</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Група попередження метод оцінки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПредупреждениеМетодОценкиРасширеннаяПодсказка" id="303"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияКартинкаПредупреждениеМетодОценки" id="304">
+													<Width>2</Width>
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация картинка предупреждение метод оценки</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Декорація картинка попередження метод оцінки</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияКартинкаПредупреждениеМетодОценкиКонтекстноеМеню" id="305"/>
+													<ExtendedTooltip name="ДекорацияКартинкаПредупреждениеМетодОценкиРасширеннаяПодсказка" id="306"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияТекстПредупреждениеМетодОценки" id="307">
+													<Width>60</Width>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>При применении упрощенной системы налогообложения с объектом налогообложения
+"Доходы минус расходы", рекомендуется использовать метод оценки стоимости МПЗ при выбытии "ФИФО".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>При застосуванні спрощеної системи оподаткування з об'єктом оподаткування
+"Доходи мінус витрати", рекомендується використовувати метод оцінки вартості МВЗ при вибутті "ФІФО".</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияТекстПредупреждениеМетодОценкиКонтекстноеМеню" id="308"/>
+													<ExtendedTooltip name="ДекорацияТекстПредупреждениеМетодОценкиРасширеннаяПодсказка" id="309"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаБухгалтерскийУчет" id="284">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бухгалтерский учет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Бухоблік</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа бухгалтерский учет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група бухгалтерський облік</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаБухгалтерскийУчетРасширеннаяПодсказка" id="285"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКлассыСчетовРасходов" id="316">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа классы счетов расходов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група класи рахунків витрат</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа классы счетов расходов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група класи рахунків витрат</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКлассыСчетовРасходовРасширеннаяПодсказка" id="317"/>
+							<ChildItems>
+								<InputField name="ИспользуемыеКлассыСчетовРасходов" id="313">
+									<DataPath>Объект.ИспользуемыеКлассыСчетовРасходов</DataPath>
+									<ContextMenu name="ИспользуемыеКлассыСчетовРасходовКонтекстноеМеню" id="314"/>
+									<ExtendedTooltip name="ИспользуемыеКлассыСчетовРасходовРасширеннаяПодсказка" id="315"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ВключатьСуммуДооценокОСВСоставНераспределеннойПрибыли" id="331">
+							<DataPath>Объект.ВключатьСуммуДооценокОСВСоставНераспределеннойПрибыли</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключатьСуммуДооценокОСВСоставНераспределеннойПрибылиКонтекстноеМеню" id="332"/>
+							<ExtendedTooltip name="ВключатьСуммуДооценокОСВСоставНераспределеннойПрибылиРасширеннаяПодсказка" id="333"/>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаОтражениеРасходовНаОплатуТруда" id="157">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отражение расходов на оплату труда</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відображення витрат на оплату праці</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отражение расходов на оплату труда</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група відображення витрат на оплату праці</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтражениеРасходовНаОплатуТрудаРасширеннаяПодсказка" id="158"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПроводкиПоРаботникам" id="162">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа проводки по работникам</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група проводки по працівникам</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа проводки по работникам</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група проводки по працівникам</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПроводкиПоРаботникамРасширеннаяПодсказка" id="163"/>
+									<ChildItems>
+										<CheckBoxField name="ПроводкиПоРаботникам" id="164">
+											<DataPath>Объект.ПроводкиПоРаботникам</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расходы на оплату труда с детализацией по работникам организации</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Витрати на оплату праці з деталізацією по працівниках організації</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПроводкиПоРаботникамКонтекстноеМеню" id="165"/>
+											<ExtendedTooltip name="ПроводкиПоРаботникамРасширеннаяПодсказка" id="166">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Вести учет расходов на оплату труда по счету 66 "Оплата труда" с детализацией по работникам организации</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Вести облік витрат на оплату праці за рахунком 66 "Оплата праці" з деталізацією по працівникам організації</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</CheckBoxField>
+										<LabelDecoration name="ПояснениеПроводкиПоРаботникам" id="289">
+											<Visible>false</Visible>
+											<Width>70</Width>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Вести учет расходов на оплату труда по счету 66 "Оплата труда" с детализацией по работникам организации</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Вести облік витрат на оплату праці за рахунком 66 "Оплата праці" з деталізацією по працівникам організації</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеПроводкиПоРаботникамКонтекстноеМеню" id="290"/>
+											<ExtendedTooltip name="ПояснениеПроводкиПоРаботникамРасширеннаяПодсказка" id="291"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРезервы" id="119">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Резервы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Резерви</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа резервы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група резерви</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРезервыРасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОценочныеОбязательстваИРезервыОтпусков" id="194">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формировать оценочные обязательства (резервы) отпусков:</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Формувати оцінні зобов'язання (резерви) відпусток:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleTextColor>style:FieldTextColor</TitleTextColor>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа оценочные обязательства и резервы отпусков</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група оціночні зобов'язання та резерви відпусток</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаОценочныеОбязательстваИРезервыОтпусковРасширеннаяПодсказка" id="195"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОценочныеОбязательстваИРезервыОтпусковБУ" id="196">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа оценочные обязательства и резервы отпусков БУ</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група оціночні зобов'язання та резерви відпусток БУ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа оценочные обязательства и резервы отпусков БУ</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група оціночні зобов'язання та резерви відпусток БУ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОценочныеОбязательстваИРезервыОтпусковБУРасширеннаяПодсказка" id="197"/>
+									<ChildItems>
+										<LabelDecoration name="ФормироватьРезервОтпусковБУОтступ" id="198">
+											<Width>1</Width>
+											<Height>1</Height>
+											<ContextMenu name="ФормироватьРезервОтпусковБУОтступКонтекстноеМеню" id="199"/>
+											<ExtendedTooltip name="ФормироватьРезервОтпусковБУОтступРасширеннаяПодсказка" id="200"/>
+										</LabelDecoration>
+										<CheckBoxField name="ФормироватьРезервОтпусковБУ" id="201">
+											<DataPath>Объект.ФормироватьРезервОтпусковБУ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>в бухгалтерском учете, метод начисления:</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>у бухгалтерському обліку, метод нарахування:</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ФормироватьРезервОтпусковБУКонтекстноеМеню" id="202"/>
+											<ExtendedTooltip name="ФормироватьРезервОтпусковБУРасширеннаяПодсказка" id="203"/>
+											<Events>
+												<Event name="OnChange">ФормироватьРезервОтпусковБУПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="МетодНачисленияРезерваОтпусков" id="204">
+											<DataPath>Объект.МетодНачисленияРезерваОтпусков</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>При нормативном методе сумма резерва рассчитывается исходя из фактического фонда оплаты труда расчетного месяца и норматива. При методе обязательств в резерв начисляется сумма среднего заработка, умноженная на количество накопленных за период дней отпуска</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>При нормативному методі сума резерву розраховується виходячи з фактичного фонду оплати праці розрахункового місяця і нормативу. При методі зобов'язань в резерв нараховується сума середнього заробітку, помножена на кількість накопичених за період днів відпустки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="МетодНачисленияРезерваОтпусковКонтекстноеМеню" id="205"/>
+											<ExtendedTooltip name="МетодНачисленияРезерваОтпусковРасширеннаяПодсказка" id="206"/>
+											<Events>
+												<Event name="OnChange">МетодНачисленияРезерваОтпусковПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПараметрыНормативногоМетода" id="215">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры нормативного метода</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Параметри нормативного методу</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры нормативного метода</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група параметри нормативного методу</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПараметрыНормативногоМетодаРасширеннаяПодсказка" id="216"/>
+									<ChildItems>
+										<LabelDecoration name="ПараметрыНормативногоМетодаОтступ" id="217">
+											<Width>1</Width>
+											<Height>1</Height>
+											<ContextMenu name="ПараметрыНормативногоМетодаОтступКонтекстноеМеню" id="218"/>
+											<ExtendedTooltip name="ПараметрыНормативногоМетодаОтступРасширеннаяПодсказка" id="219"/>
+										</LabelDecoration>
+										<LabelDecoration name="ПараметрыНормативногоМетодаЗаголовок" id="220">
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Параметры нормативного метода:</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Параметри нормативного методу:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПараметрыНормативногоМетодаЗаголовокКонтекстноеМеню" id="221"/>
+											<ExtendedTooltip name="ПараметрыНормативногоМетодаЗаголовокРасширеннаяПодсказка" id="222"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЕжемесячныйПроцент" id="223">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ежемесячный процент</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група щомісячний відсоток</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ежемесячный процент</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група щомісячний відсоток</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЕжемесячныйПроцентРасширеннаяПодсказка" id="224"/>
+									<ChildItems>
+										<LabelDecoration name="НормативОтчисленийВРезервОтпусковОтступ" id="225">
+											<Width>3</Width>
+											<Height>1</Height>
+											<ContextMenu name="НормативОтчисленийВРезервОтпусковОтступКонтекстноеМеню" id="226"/>
+											<ExtendedTooltip name="НормативОтчисленийВРезервОтпусковОтступРасширеннаяПодсказка" id="227"/>
+										</LabelDecoration>
+										<InputField name="НормативОтчисленийВРезервОтпусков" id="228">
+											<DataPath>Объект.НормативОтчисленийВРезервОтпусков</DataPath>
+											<ContextMenu name="НормативОтчисленийВРезервОтпусковКонтекстноеМеню" id="229"/>
+											<ExtendedTooltip name="НормативОтчисленийВРезервОтпусковРасширеннаяПодсказка" id="230"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПредельнаяВеличина" id="231">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа предельная величина</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група гранична величина</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа предельная величина</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група гранична величина</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПредельнаяВеличинаРасширеннаяПодсказка" id="232"/>
+									<ChildItems>
+										<LabelDecoration name="ПредельнаяВеличинаОтчисленийВРезервОтпусковОтступ" id="233">
+											<Width>3</Width>
+											<Height>1</Height>
+											<ContextMenu name="ПредельнаяВеличинаОтчисленийВРезервОтпусковОтступКонтекстноеМеню" id="234"/>
+											<ExtendedTooltip name="ПредельнаяВеличинаОтчисленийВРезервОтпусковОтступРасширеннаяПодсказка" id="235"/>
+										</LabelDecoration>
+										<LabelDecoration name="ПредельнаяВеличинаОтчисленийВРезервОтпусковЗаголовок" id="236">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предельная сумма отчислений в год:      </v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Гранична сума відрахувань у рік: </v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПредельнаяВеличинаОтчисленийВРезервОтпусковЗаголовокКонтекстноеМеню" id="237"/>
+											<ExtendedTooltip name="ПредельнаяВеличинаОтчисленийВРезервОтпусковЗаголовокРасширеннаяПодсказка" id="238"/>
+										</LabelDecoration>
+										<InputField name="ПредельнаяВеличинаОтчисленийВРезервОтпусков" id="239">
+											<DataPath>Объект.ПредельнаяВеличинаОтчисленийВРезервОтпусков</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="ПредельнаяВеличинаОтчисленийВРезервОтпусковКонтекстноеМеню" id="240"/>
+											<ExtendedTooltip name="ПредельнаяВеличинаОтчисленийВРезервОтпусковРасширеннаяПодсказка" id="241"/>
+										</InputField>
+										<LabelField name="ВалютаРегл" id="310">
+											<DataPath>ВалютаРегл</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="ВалютаРеглКонтекстноеМеню" id="311"/>
+											<ExtendedTooltip name="ВалютаРеглРасширеннаяПодсказка" id="312"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДополнительныеРеквизиты" id="109">
+					<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="110"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.УчетныеПолитикиОрганизаций</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НормативныйМетодНачисленияРезерваОтпусков" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нормативный метод начисления резерва отпусков</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Нормативний метод нарахування резерву відпусток</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВалютаРегл" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта регл</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Валюта регл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>Catalog.УчетныеПолитикиОрганизаций.Command.Организации</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+		<CommandBar>
+			<Item>
+				<Command>CommonCommand.ДополнительныеСведенияКоманднаяПанель</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

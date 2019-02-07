@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияОтступ" id="1">
+			<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДекорацияОтступExtendedTooltip" id="3"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаРегламентированныйУчет" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентированный учет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Регламентований облік</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки регламентированного учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройки регламентованого обліку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаРегламентированныйУчетРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаГоризонтальныйБлок1" id="42">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГоризонтальныйБлок1РасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<Button name="ОткрытьПланСчетовБухгалтерскогоУчета" id="24">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьПланСчетовБухгалтерскогоУчета</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьПланСчетовБухгалтерскогоУчетаРасширеннаяПодсказка" id="25">
+								<Width>43</Width>
+								<Height>2</Height>
+								<TextColor>style:ПоясняющийТекст</TextColor>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьСтавкиНалогаНаПрибыль" id="26">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьСтавкиНалогаНаПрибыль</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьСтавкиНалогаНаПрибыльРасширеннаяПодсказка" id="27">
+								<Width>43</Width>
+								<TextColor>style:ПоясняющийТекст</TextColor>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаГоризонтальныйБлок2" id="44">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГоризонтальныйБлок2РасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<Button name="ОткрытьУчетныеПолитикиОрганизаций" id="28">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьУчетныеПолитикиОрганизаций</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьУчетныеПолитикиОрганизацийРасширеннаяПодсказка" id="29">
+								<Width>43</Width>
+								<TextColor>style:ПоясняющийТекст</TextColor>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьНалоговыеНазначения" id="84">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьНалоговыеНазначения</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьНалоговыеНазначенияРасширеннаяПодсказка" id="85"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВнеоборотныеАктивы" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Необоротные активы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Необоротні активи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники и настройки учета необоротных активов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Довідники та настройки обліку необоротних активів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаВнеоборотныеАктивыРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаГоризонтальныйБлок5" id="50">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГоризонтальныйБлок5РасширеннаяПодсказка" id="51"/>
+					<ChildItems>
+						<Button name="ОткрытьГодовыеГрафикиАмортизацииОС" id="58">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьГодовыеГрафикиАмортизацииОС</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьГодовыеГрафикиАмортизацииОСРасширеннаяПодсказка" id="59">
+								<Width>43</Width>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьПоказателиНаработки" id="60">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьПоказателиНаработки</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьПоказателиНаработкиРасширеннаяПодсказка" id="61"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаГоризонтальныйБлок7" id="54">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГоризонтальныйБлок7РасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<Button name="ОткрытьСобытияОС" id="66">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьСобытияОС</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьСобытияОСРасширеннаяПодсказка" id="67">
+								<Width>43</Width>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьНалоговыеГруппыОС" id="68">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьНалоговыеГруппыОС</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьНалоговыеГруппыОСРасширеннаяПодсказка" id="69"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНДСУкр" id="70">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет НДС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Облік ПДВ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники и настройки учета НДС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Довідники та настройки обліку ПДВ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ГруппаНДСУкрРасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаГоризонтальныйБлок8" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа горизонтальный блок8</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група горизонтальний блок8</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа горизонтальный блок 8</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група горизонтальний блок 8</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ГруппаГоризонтальныйБлок8РасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<Button name="ОткрытьКлассификаторКодовДляНН" id="74">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьКлассификаторКодовДляНН</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьКлассификаторКодовДляННРасширеннаяПодсказка" id="75">
+								<Width>43</Width>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьВидыДоговоровПоГК" id="76">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьВидыДоговоровПоГК</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьВидыДоговоровПоГКРасширеннаяПодсказка" id="77"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаГоризонтальныйБлок9" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа горизонтальный блок9</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група горизонтальний блок9</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа горизонтальный блок9</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група горизонтальний блок9</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГоризонтальныйБлок9РасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<Button name="ОткрытьНастройкаНумерацииНалоговыхДокументов" id="80">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьНастройкаНумерацииНалоговыхДокументов</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьНастройкаНумерацииНалоговыхДокументовРасширеннаяПодсказка" id="81">
+								<Width>43</Width>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьНастройкаПечатиНалоговыхДокументов" id="82">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьНастройкаПечатиНалоговыхДокументов</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьНастройкаПечатиНалоговыхДокументовРасширеннаяПодсказка" id="83"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАкцизУкр" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учет акцизного налога</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Облік акцизного податку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа акциз укр</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група акциз укр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаАкцизУкрРасширеннаяПодсказка" id="87"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаГоризонтальныйБлок10" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа горизонтальный блок10</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група горизонтальний блок10</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа горизонтальный блок10</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група горизонтальний блок10</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГоризонтальныйБлок10РасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<Button name="ОткрытьКлассификаторКОАТУУ" id="90">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьКлассификаторКОАТУУ</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьКлассификаторКОАТУУРасширеннаяПодсказка" id="91">
+								<Width>43</Width>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ОткрытьПланСчетовБухгалтерскогоУчета" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План счетов бухгалтерского учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>План рахунків бухгалтерського обліку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка плана счетов бухгалтерского учета финансово-хозяйственной деятельности организаций.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройка плану рахунків бухгалтерського обліку фінансово-господарської діяльності організацій.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПланСчетовБухгалтерскогоУчета</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСтавкиНалогаНаПрибыль" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставки налога на прибыль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ставки податку на прибуток</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнение ставок налога на прибыль для всех организаций.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнення ставок податку на прибуток для всіх організацій.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСтавкиНалогаНаПрибыль</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьУчетныеПолитикиОрганизаций" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетные политики</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Облікові політики</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список учетных политик, используемых на предприятии.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Список облікових політик, що використовуються на підприємстві.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьУчетныеПолитикиОрганизаций</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьГодовыеГрафикиАмортизацииОС" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Графики амортизации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Графіки амортизації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Годовые графики амортизации основных средств для учета в организациях с сезонным характером производства.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Річні графіки амортизації основних засобів для обліку в організаціях з сезонним характером виробництва.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьГодовыеГрафикиАмортизацииОС</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПоказателиНаработки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатели наработки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Показники напрацювання</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатели, в которых фиксируются наработки объектов эксплуатации.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Показники, в яких фіксуються напрацювання об'єктів експлуатації.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПоказателиНаработки</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСобытияОС" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События ОС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Події ОЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень событий основных средств.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перелік подій основних засобів.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСобытияОС</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьНалоговыеГруппыОС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налоговые группы ОС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Податкові групи ОЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечень налоговых групп ОС и НМА.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перелік податкових груп ОЗ і НМА.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНалоговыеГруппыОС</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьВидыДоговоровПоГК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды договоров по ГК</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види договорів за ЦК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды договоров по гражданскому кодексу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види договорів за цивільним кодексом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВидыДоговоровПоГК</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьКлассификаторКодовДляНН" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификатор кодов для НН</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Класифікатор кодів для ПН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификатор кодов для налоговых накладных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Класифікатор кодів для податкових накладних</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьКлассификаторКодовДляНН</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьНастройкаНумерацииНалоговыхДокументов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка нумерации налоговых документов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройка нумерації податкових документів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить настройку нумерации налоговых документов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виконати настройку нумерації податкових документів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНастройкаНумерацииНалоговыхДокументов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьНастройкаПечатиНалоговыхДокументов" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка печати налоговых документов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройка друку податкових документів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить настройку печати налоговых документов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виконати настройку друку податкових документів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНастройкаПечатиНалоговыхДокументов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьНалоговыеНазначения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налоговые назначения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Податкові призначення</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть налоговые назначения активов и затрат</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити податкові призначення активів і витрат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНалоговыеНазначения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьКлассификаторКОАТУУ" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификатор КОАТУУ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Класифікатор КОАТУУ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификатор КОАТУУ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Класифікатор КОАТУУ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьКлассификаторКОАТУУ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

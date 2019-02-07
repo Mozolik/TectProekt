@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Items Description="Начальное заполнение справочника Виды прочих доходов физлиц" Columns="PredefinedName,Name#,NDFL,NDFLZP,Natural" ColumnNames="ИмяПредопределенного,Наименование,КодДоходаНДФЛ,УдержатьНДФЛИзЗарплаты,ДоходВНатуральнойФорме">
+	<Item PredefinedName="ДоходыЧП" Name="Доход, выплaченный самозанятому лицу" NameUkr="Дохід, що виплачено самозайнятій особі" NDFL="Код157"/>
+	<Item PredefinedName="Алименты" Name="Алименты" NameUkr="Аліменти" NDFL="Код140"/>
+	<Item PredefinedName="КомандировкаПодотчет" Name="Командировка/подотчет" NameUkr="Відрядження/підзвіт" NDFL="Код118" NDFLZP="Истина" Natural="Истина"/>
+</Items>

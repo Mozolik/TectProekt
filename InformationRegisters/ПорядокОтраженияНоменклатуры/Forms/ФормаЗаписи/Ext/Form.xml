@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Организация" id="1">
+			<DataPath>Запись.Организация</DataPath>
+			<Width>34</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="31"/>
+		</InputField>
+		<InputField name="Склад" id="3">
+			<DataPath>Запись.Склад</DataPath>
+			<Width>34</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="СкладКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="СкладExtendedTooltip" id="32"/>
+		</InputField>
+		<InputField name="ГруппаФинансовогоУчета" id="5">
+			<DataPath>Запись.ГруппаФинансовогоУчета</DataPath>
+			<Width>34</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ГруппаФинансовогоУчетаКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ГруппаФинансовогоУчетаExtendedTooltip" id="33"/>
+		</InputField>
+		<UsualGroup name="ГруппаГоризонтальная" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонтальная</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група горизонтальна</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонтальная</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група горизонтальна</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСчетаУчетаСтоимости" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счета учета стоимости</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Рахунки обліку вартості</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа счета учета стоимости</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група рахунки обліку вартості</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="ГруппаСчетаУчетаСтоимостиРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<InputField name="СчетУчетаНаСкладе" id="7">
+							<DataPath>Запись.СчетУчетаНаСкладе</DataPath>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаНаСкладеКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СчетУчетаНаСкладеExtendedTooltip" id="36"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПродажа" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счета учета продаж</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Рахунки обліку продажів</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа продажа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група продаж</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="ГруппаПродажаРасширеннаяПодсказка" id="68"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСчетаУчетаПродаж" id="55">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счета учета продаж</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Рахунки обліку продажів</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСчетаУчетаПродажРасширеннаяПодсказка" id="56"/>
+							<ChildItems>
+								<InputField name="СчетУчетаВыручкиОтПродаж" id="13">
+									<DataPath>Запись.СчетУчетаВыручкиОтПродаж</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выручка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Виторг</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаВыручкиОтПродажКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="СчетУчетаВыручкиОтПродажExtendedTooltip" id="39"/>
+								</InputField>
+								<InputField name="СчетУчетаВычетовИзДоходов" id="62">
+									<DataPath>Запись.СчетУчетаВычетовИзДоходов</DataPath>
+									<ContextMenu name="СчетУчетаВычетовИзДоходовКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="СчетУчетаВычетовИзДоходовРасширеннаяПодсказка" id="64"/>
+								</InputField>
+								<InputField name="СчетУчетаСебестоимостиПродаж" id="15">
+									<DataPath>Запись.СчетУчетаСебестоимостиПродаж</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Себестоимость</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Собівартість</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СчетУчетаСебестоимостиПродажКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="СчетУчетаСебестоимостиПродажExtendedTooltip" id="40"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСубконто" id="65">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа субконто</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група субконто</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа субконто</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група субконто</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСубконтоExtendedTooltip" id="66"/>
+							<ChildItems>
+								<InputField name="СтатьяДоходовРегл" id="27">
+									<DataPath>Запись.СтатьяДоходовРегл</DataPath>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СтатьяДоходовРеглКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="СтатьяДоходовРеглExtendedTooltip" id="43"/>
+								</InputField>
+								<LabelDecoration name="Декорация1" id="69">
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="71"/>
+								</LabelDecoration>
+								<InputField name="СтатьяЗатратРегл" id="59">
+									<DataPath>Запись.СтатьяЗатратРегл</DataPath>
+									<ContextMenu name="СтатьяЗатратРеглКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="СтатьяЗатратРеглРасширеннаяПодсказка" id="61"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ПорядокОтраженияНоменклатуры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

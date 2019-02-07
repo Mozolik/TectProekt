@@ -1,0 +1,1236 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияОтступ" id="17">
+			<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="ДекорацияОтступExtendedTooltip" id="110"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаБюджетирование" id="191">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бюджетирование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бюджетування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бюджетирование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бюджетування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаБюджетированиеРасширеннаяПодсказка" id="192"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЭлементыБюджетов" id="153">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бюджетирование</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Бюджетування</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа элементы бюджетов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група елементи бюджетів</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>86</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЭлементыБюджетовРасширеннаяПодсказка" id="154"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНСИВложенный2" id="83">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНСИВложенный2ExtendedTooltip" id="124"/>
+							<ChildItems>
+								<Button name="ОткрытьМоделиБюджетирования" id="215">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьМоделиБюджетирования</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОткрытьМоделиБюджетированияРасширеннаяПодсказка" id="216">
+										<Width>43</Width>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Используемые модели бюджетирования.</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Використовувані моделі бюджетування.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+								<Button name="ОткрытьСценарии" id="99">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьСценарииБюджетирования</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОткрытьСценарииExtendedTooltip" id="126">
+										<Width>43</Width>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Аналитический разрез для одновременного хранения нескольких версий плановых данных за один и тот же период.</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Аналітичний розріз для одночасного зберігання декількох версій планових даних за той самий період.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНСИВложенный3" id="155">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНСИВложенный3РасширеннаяПодсказка" id="156"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСтатьиБюджетов" id="28">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статьи бюджетов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Статті бюджетів</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статьи бюджетов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Статті бюджетів</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСтатьиБюджетовExtendedTooltip" id="118"/>
+									<ChildItems>
+										<Button name="ОткрытьСтатьиБюджетов" id="79">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьСтатьиБюджетов</CommandName>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ExtendedTooltip name="ОткрытьСтатьиБюджетовExtendedTooltip" id="119">
+												<Width>43</Width>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Оборотные составляющие структуры видов бюджетов.</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Оборотні складові структури видів бюджетів.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаАналитикиСтатейБюджетов" id="72">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аналитики статей бюджетов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Аналітики статей бюджетів</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аналитики статей бюджетов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Аналітики статей бюджетів</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаАналитикиСтатейБюджетовExtendedTooltip" id="121"/>
+									<ChildItems>
+										<Button name="ОткрытьАналитикиСтатейБюджетов" id="81">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьАналитикиСтатейБюджетов</CommandName>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ExtendedTooltip name="ОткрытьАналитикиСтатейБюджетовExtendedTooltip" id="122">
+												<Width>43</Width>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Аналитики, применяемые для детализации статей бюджетов.</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Аналітики, що застосовуються для деталізації статей бюджетів.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНСИВложенный4" id="135">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНСИВложенный4РасширеннаяПодсказка" id="136"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПоказателиБюджетов" id="128">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Показатели бюджетов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Показники бюджетів</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Показатели бюджетов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Показники бюджетів</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПоказателиБюджетовРасширеннаяПодсказка" id="129"/>
+									<ChildItems>
+										<Button name="ОткрытьПоказателиБюджетов" id="130">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьПоказателиБюджетов</CommandName>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ExtendedTooltip name="ОткрытьПоказателиБюджетовРасширеннаяПодсказка" id="131">
+												<Width>43</Width>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Остаточные составляющие структуры видов бюджетов.</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Залишкові складові структури видів бюджетів.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСвязиПоказателейБюджетов" id="137">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Связи показателей бюджетов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Зв'язки показників бюджетів</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Связи показателей бюджетов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Зв'язки показників бюджетів</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСвязиПоказателейБюджетовРасширеннаяПодсказка" id="138"/>
+									<ChildItems>
+										<Button name="ОткрытьСвязиПоказателейБюджетов" id="144">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьСвязиПоказателейБюджетов</CommandName>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ExtendedTooltip name="ОткрытьСвязиПоказателейБюджетовРасширеннаяПодсказка" id="145">
+												<Width>43</Width>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Настройка связей показателей со статьями бюджетов.</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Настройка зв'язків показників зі статтями бюджетів.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНСИВложенный5" id="164">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНСИВложенный5РасширеннаяПодсказка" id="165"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаНефинансовыеПоказатели" id="146">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Нефинансовые показатели</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Нефінансові показники</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Нефинансовые показатели</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Нефінансові показники</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНефинансовыеПоказателиРасширеннаяПодсказка" id="147"/>
+									<ChildItems>
+										<Button name="ОткрытьНефинансовыеПоказатели" id="148">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьНефинансовыеПоказатели</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Нефинансовые показатели</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Нефінансові показники</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ExtendedTooltip name="ОткрытьНефинансовыеПоказателиРасширеннаяПодсказка" id="149">
+												<Width>43</Width>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Вспомогательные значения, которые могут использовать в расчетах и справочно отображаться в бюджетах.</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Допоміжні значення, які можуть використовувати в розрахунках і довідково відображатися в бюджетах.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаШаблоныВвода" id="166">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаблоны ввода</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Шаблони введення</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шаблоны ввода</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Шаблони введення</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаШаблоныВводаРасширеннаяПодсказка" id="167"/>
+									<ChildItems>
+										<Button name="ОткрытьШаблоныВводаНефинансовыхПоказателей" id="168">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьШаблоныВводаНефинансовыхПоказателей</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаблоны ввода нефинансовых показателей</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Шаблони введення нефінансових показників</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<ExtendedTooltip name="ОткрытьШаблоныВводаНефинансовыхПоказателейРасширеннаяПодсказка" id="169">
+												<Width>43</Width>
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Настройка пользовательских форм для ввода одного или нескольких нефинансовых показателей.</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Настройка форм для введення одного або декількох нефінансових показників.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<Button name="ОткрытьПравилаПолученияФакта" id="186">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ОткрытьПравилаПолученияФакта</CommandName>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<ExtendedTooltip name="ОткрытьПравилаПолученияФактаРасширеннаяПодсказка" id="187">
+						<Width>43</Width>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Настройка правил для выполнения план-факт анализа.</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Настройка правил для виконання план-факт аналізу.</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</Button>
+				<UsualGroup name="ГруппаБюджетныеОтчеты" id="104">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бюджетные отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Бюджетні звіти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа бюджетные отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група бюджетні звіти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаБюджетныеОтчетыРасширеннаяПодсказка" id="112"/>
+					<ChildItems>
+						<Button name="ОткрытьВидыБюджетов" id="109">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьВидыБюджетов</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьВидыБюджетовExtendedTooltip" id="114">
+								<Width>43</Width>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Виды бюджетных отчетов.</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Види бюджетних звітів.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+						<UsualGroup name="ГруппаБюджетныйПроцесс" id="173">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Бюджетный процесс</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Бюджетний процес</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа виды бюджетов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група види бюджетів</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаБюджетныйПроцессРасширеннаяПодсказка" id="174"/>
+							<ChildItems>
+								<Button name="ОткрытьЭтапыПодготовкиБюджетов" id="182">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьПланПодготовкиБюджетов</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОткрытьЭтапыПодготовкиБюджетовРасширеннаяПодсказка" id="183">
+										<Width>43</Width>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Настройка этапов бюджетного процесса.</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Настройка етапів бюджетного процесу.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВыгрузкаЗагрузкаМоделиУчета" id="226">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка загрузка модели учета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вивантаження завантаження моделі обліку</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыгрузкаЗагрузкаМоделиУчетаРасширеннаяПодсказка" id="227"/>
+					<ChildItems>
+						<Button name="ЗагрузитьМодельБюджетирования" id="228">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ЗагрузитьМодельБюджетирования</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ЗагрузитьМодельБюджетированияРасширеннаяПодсказка" id="229">
+								<Width>43</Width>
+								<MaxWidth>43</MaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Загрузка из файла модели бюджетирования.</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Завантаження з файлу моделі бюджетування.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ВыгрузитьМодельБюджетированияВФайл" id="230">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ВыгрузитьМодельБюджетирования</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ВыгрузитьМодельБюджетированияВФайлРасширеннаяПодсказка" id="231">
+								<Width>43</Width>
+								<MaxWidth>43</MaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выгрузка в файл модели бюджетирования</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Вивантаження у файл моделі бюджетування</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПланированиеЗапасов" id="211">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планирование запасов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Планування запасів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планирование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Планування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаПланированиеЗапасовРасширеннаяПодсказка" id="212"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНСИВложенный6" id="220">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНСИВложенный6РасширеннаяПодсказка" id="221"/>
+					<ChildItems>
+						<Button name="ОткрытьСценарииПланирования" id="197">
+							<Type>Hyperlink</Type>
+							<Width>43</Width>
+							<CommandName>Form.Command.ОткрытьСценарииПланирования</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьСценарииПланированияExtendedTooltip" id="198">
+								<Width>43</Width>
+								<TextColor>style:ПоясняющийТекст</TextColor>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНСИВложенный7" id="222">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНСИВложенный7РасширеннаяПодсказка" id="223"/>
+					<ChildItems>
+						<Button name="ОткрытьВидыПланов" id="199">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьВидыПланов</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьВидыПлановExtendedTooltip" id="200">
+								<Width>43</Width>
+								<Height>2</Height>
+								<TextColor>style:ПоясняющийТекст</TextColor>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьИсточникиДанныхПланирования" id="203">
+							<Type>Hyperlink</Type>
+							<Width>43</Width>
+							<CommandName>Form.Command.ОткрытьИсточникиДанныхПланирования</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьИсточникиДанныхПланированияExtendedTooltip" id="204">
+								<Width>43</Width>
+								<TextColor>style:ПоясняющийТекст</TextColor>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНСИВложенный8" id="224">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНСИВложенный8РасширеннаяПодсказка" id="225"/>
+					<ChildItems>
+						<Button name="ОткрытьСезонныеКоэффициенты" id="205">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьСезонныеКоэффициенты</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьСезонныеКоэффициентыРасширеннаяПодсказка" id="206">
+								<Width>43</Width>
+								<TextColor>style:ПоясняющийТекст</TextColor>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройки и расчет сезонных коэффициентов для сезонных групп.</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Настройки та розрахунок сезонних коефіцієнтів для сезонних груп.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьНормативыРаспределения" id="209">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьНормативыРаспределения</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьНормативыРаспределенияРасширеннаяПодсказка" id="210">
+								<Width>43</Width>
+								<TextColor>style:ПоясняющийТекст</TextColor>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Нормативы распределения указываются для товарных категорий и позволяют распределить план продаж по товарным категориям до номенклатуры в пропорциях, указанных по дополнительным реквизитам номенклатуры и/или характеристики.</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Нормативи розподілу зазначаються для товарних категорій і дозволяють розподілити план продажів по товарних категоріях до номенклатури в пропорціях, зазначених у додаткових реквізитах номенклатури та/або характеристики.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ОткрытьСтатьиБюджетов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статьи бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Статті бюджетів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть статьи бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити статті бюджетів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСтатьиБюджетов</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьАналитикиСтатейБюджетов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитики статей бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Аналітики статей бюджетів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть аналитики статей бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити аналітики статей бюджетів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьАналитикиСтатейБюджетов</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСценарииБюджетирования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сценарии бюджетирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сценарії бюджетування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть сценарии бюджетирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити сценарії бюджетування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСценарии</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьВидыБюджетов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види бюджетів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть Виды бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити Види бюджетів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВидыБюджетов</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПоказателиБюджетов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатели бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Показники бюджетів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть статьи бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити статті бюджетів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПоказателиБюджетов</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСвязиПоказателейБюджетов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связи показателей бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зв'язки показників бюджетів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть связи показателей бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити зв'язку показників бюджетів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСвязиПоказателейБюджетов</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьНефинансовыеПоказатели" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть нефинансовые показатели</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити нефінансові показники</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть статьи бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити статті бюджетів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНефинансовыеПоказатели</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьШаблоныВводаНефинансовыхПоказателей" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть шаблоны ввода нефинансовых показателей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити шаблони введення нефінансових показників</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть шаблоны ввода нефинансовых показателей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити шаблони введення нефінансових показників</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьШаблоныВводаНефинансовыхПоказателей</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПланПодготовкиБюджетов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План подготовки бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>План підготовки бюджетів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть план подготовки бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити план підготовки бюджетів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьЭтапыБюджетногоПроцесса</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПравилаПолученияФакта" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила получения фактических данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Правила отримання фактичних даних</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть Виды бюджетов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити Види бюджетів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПравилаПолученияФактическихДанных</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСценарииПланирования" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сценарии планирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сценарії планування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предназначен для хранения разрезов планирования и дополнительных параметров.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Призначений для зберігання розрізів планування та додаткових параметрів.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСценарииПланирования</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПланированиеЗакупок</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеПродаж</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеПроизводства</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеСборкиРазборки</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеПродажПоКатегориям</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьВидыПланов" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды планов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види планів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предназначен для хранения настроек заполнения документов планов по сценариям.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Призначений для зберігання настройок заповнення документів планів сценаріїв.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВидыПланов</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПланированиеЗакупок</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеПродаж</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеСборкиРазборки</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеПроизводства</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеПродажПоКатегориям</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьИсточникиДанныхПланирования" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источники данных планирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Джерела даних планування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предназначен для хранения списка источников данных, которые будут использоваться при составлении планов закупок, продаж.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Призначений для зберігання списку джерел даних, які будуть використовуватися при складанні планів купівель, продажів.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьИсточникиДанныхПланирования</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПланированиеЗакупок</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеПродаж</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеПроизводства</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеСборкиРазборки</Item>
+				<Item>FunctionalOption.ИспользоватьПланированиеПродажПоКатегориям</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьСезонныеКоэффициенты" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сезонные коэффициенты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сезонні коефіцієнти</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки и расчет сезонных коэффициентов для сезонных  групп.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройки та розрахунок сезонних коефіцієнтів для сезонних груп.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСезонныеКоэффициенты</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьСезонныеКоэффициенты</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьНормативыРаспределения" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нормативы распределения планов продаж по категориям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Нормативи розподілу планів продажів за категоріями</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нормативы распределния указываются для товарных категорий и позволяют распределить план продаж по товарным категориям до номенклатуры в пропорциях, указанным по дополнительным реквизитам номенклатуры и/или характеристики.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Нормативи розподілу зазначаються для товарних категорій і дозволяють розподілити план продажів по товарних категоріях до номенклатури в пропорціях, зазначених за додатковими реквізитами номенклатури та/або характеристики.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНормативыРаспределения</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПланированиеПродажПоКатегориям</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьМоделиБюджетирования" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модели бюджетирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Моделі бюджетування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть модели бюджетирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити моделі бюджетування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьМоделиБюджетирования</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыгрузитьМодельБюджетирования" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить модель бюджетирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вивантажити модель бюджетування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить модель бюджетирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вивантажити модель бюджетування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьМодельБюджетирования</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьМодельБюджетирования" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить модель бюджетирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити модель бюджетування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить модель бюджетирования</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити модель бюджетування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьМодельБюджетирования</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.КомплекснаяАвтоматизация</Item>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

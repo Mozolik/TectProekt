@@ -1,0 +1,992 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Width>88</Width>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="35">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="42"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="27">
+					<Width>78</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки интеграции с Документооборотом, такие как адрес веб-сервера, опциии спользования функционала, наименование корневой папки для хранения файлов, максимальный размер передаваемых файлов.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Настройки інтеграції з Документообігом, такі як адреса веб-сервера, опції використання функціоналу, найменування кореневої папки для зберігання файлів, максимальний розмір файлів, які передаються.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ОписаниеРазделаExtendedTooltip" id="43"/>
+				</LabelDecoration>
+				<LabelDecoration name="Декорация1" id="38">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="Декорация1ExtendedTooltip" id="44"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="40">
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="45"/>
+					<ChildItems>
+						<Button name="Справка" id="41">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="46"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НастройкиИнтеграции" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки интеграции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройки інтеграції</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки интеграции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройки інтеграції</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НастройкиИнтеграцииExtendedTooltip" id="47"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьИнтеграциюС1СДокументооборот" id="5">
+					<DataPath>НаборКонстант.ИспользоватьИнтеграциюС1СДокументооборот</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интеграция с Документооборотом</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інтеграція з Документообігом</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьИнтеграциюС1СДокументооборотКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ИспользоватьИнтеграциюС1СДокументооборотExtendedTooltip" id="48"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьИнтеграциюС1СДокументооборотПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="ПояснениеИспользоватьИнтеграциюС1СДокументооборот" id="9">
+					<Width>43</Width>
+					<Height>3</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работа с входящими, внутренними и исходящими документами, запуск и работа с бизнес-процессами и задачами. Создание, хранение и работа с файлами. Работа с электронными письмами.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Робота з вхідними, внутрішніми та вихідними документами, запуск та робота з бізнес-процесами і задачами. Створення, зберігання та робота з файлами. Робота з електронними листами.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеИспользоватьИнтеграциюС1СДокументооборотКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ПояснениеИспользоватьИнтеграциюС1СДокументооборотExtendedTooltip" id="49"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаURL" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа URL</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група URL</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа URL</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група URL</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>NormalSeparation</Representation>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаURLExtendedTooltip" id="50"/>
+					<ChildItems>
+						<InputField name="АдресВебСервиса1СДокументооборот" id="1">
+							<DataPath>НаборКонстант.АдресВебСервиса1СДокументооборот</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>URL</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>URL</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="АдресВебСервиса1СДокументооборотКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="АдресВебСервиса1СДокументооборотExtendedTooltip" id="51"/>
+							<Events>
+								<Event name="OnChange">АдресВебСервиса1СДокументооборотПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelDecoration name="ПояснениеАдресВебСервиса1СДокументооборот" id="11">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес для соединения с информационной базой Документооборота.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Адреса для з'єднання з інформаційною базою Документообігу.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ПояснениеАдресВебСервиса1СДокументооборотКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ПояснениеАдресВебСервиса1СДокументооборотExtendedTooltip" id="52"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаФайлы" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа файлы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група файли</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа файлы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група файли</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаФайлыРасширеннаяПодсказка" id="88"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаФайловоеХранилище" id="89">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа файловое хранилище</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група файлове сховище</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа файловое хранилище</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група файлове сховище</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФайловоеХранилищеРасширеннаяПодсказка" id="90"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьФайловоеХранилище1СДокументооборота" id="91">
+									<DataPath>НаборКонстант.ИспользоватьФайловоеХранилище1СДокументооборота</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Файловое хранилище</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Файлове сховище</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьФайловоеХранилище1СДокументооборотаКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ИспользоватьФайловоеХранилище1СДокументооборотаРасширеннаяПодсказка" id="93"/>
+									<Events>
+										<Event name="OnChange">ИспользоватьФайловоеХранилище1СДокументооборотаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="ПояснениеИспользоватьФайловоеХранилище1СДокументооборота" id="94">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Использование Документооборота в качестве внешнего файлового хранилища.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Використання Документообігу в якості зовнішнього файлового сховища.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеИспользоватьФайловоеХранилище1СДокументооборотаКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ПояснениеИспользоватьФайловоеХранилище1СДокументооборотаРасширеннаяПодсказка" id="96"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКорневаяПапка" id="97">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа корневая папка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група коренева папка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа корневая папка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група коренева папка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКорневаяПапкаРасширеннаяПодсказка" id="98"/>
+							<ChildItems>
+								<InputField name="НаименованиеКорневойПапкиФайлов1СДокументооборот" id="99">
+									<DataPath>НаборКонстант.НаименованиеКорневойПапкиФайлов1СДокументооборот</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Корневая папка для хранения файлов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Коренева папка для зберігання файлів</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="НаименованиеКорневойПапкиФайлов1СДокументооборотКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="НаименованиеКорневойПапкиФайлов1СДокументооборотРасширеннаяПодсказка" id="101"/>
+									<Events>
+										<Event name="StartChoice">НаименованиеКорневойПапкиФайлов1СДокументооборотНачалоВыбора</Event>
+										<Event name="Clearing">НаименованиеКорневойПапкиФайлов1СДокументооборотОчистка</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ПояснениеКорневаяПапкаФайлов1СДокументооборот" id="102">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Папка Документооборота, в которой хранятся файлы, добавленные с диска.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Папка Документообігу, в якій зберігаються файли, завантажені з диска.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеКорневаяПапкаФайлов1СДокументооборотКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ПояснениеКорневаяПапкаФайлов1СДокументооборотРасширеннаяПодсказка" id="104"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОпции" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа опции</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група опції</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа опции</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група опції</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОпцииРасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОпцииЛевая" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа опции левая</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група опції ліва</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа опции левая</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група опції ліва</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОпцииЛеваяРасширеннаяПодсказка" id="68"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПроцессыИЗадачи" id="105">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа процессы и задачи</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група процеси та задачі</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа процессы и задачи</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група процеси та задачі</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПроцессыИЗадачиРасширеннаяПодсказка" id="106"/>
+									<ChildItems>
+										<CheckBoxField name="ИспользоватьПроцессыИЗадачи1СДокументооборота" id="107">
+											<DataPath>НаборКонстант.ИспользоватьПроцессыИЗадачи1СДокументооборота</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Процессы и задачи</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Процеси й задачі</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьПроцессыИЗадачи1СДокументооборотаКонтекстноеМеню" id="108"/>
+											<ExtendedTooltip name="ИспользоватьПроцессыИЗадачи1СДокументооборотаРасширеннаяПодсказка" id="109"/>
+											<Events>
+												<Event name="OnChange">ИспользоватьПроцессыИЗадачи1СДокументооборотаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<LabelDecoration name="ПояснениеИспользоватьПроцессыИЗадачи1СДокументооборота" id="110">
+											<Height>2</Height>
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Создание процессов и выполнение задач Документооборота. Просмотр истории выполнения задач и процессов.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Створення процесів і виконання задач Документообігу. Перегляд історії виконання задач і процесів.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="ПояснениеИспользоватьПроцессыИЗадачи1СДокументооборотаКонтекстноеМеню" id="111"/>
+											<ExtendedTooltip name="ПояснениеИспользоватьПроцессыИЗадачи1СДокументооборотаРасширеннаяПодсказка" id="112"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСвязанныеДокументы" id="113">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа связанные документы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група пов'язані документи</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа связанные документы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група пов'язані документи</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСвязанныеДокументыРасширеннаяПодсказка" id="114"/>
+									<ChildItems>
+										<CheckBoxField name="ИспользоватьСвязанныеДокументы1СДокументооборота" id="115">
+											<DataPath>НаборКонстант.ИспользоватьСвязанныеДокументы1СДокументооборота</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Связанные документы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Зв'язані документи</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьСвязанныеДокументы1СДокументооборотаКонтекстноеМеню" id="116"/>
+											<ExtendedTooltip name="ИспользоватьСвязанныеДокументы1СДокументооборотаРасширеннаяПодсказка" id="117"/>
+											<Events>
+												<Event name="OnChange">ИспользоватьСвязанныеДокументы1СДокументооборотаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<LabelDecoration name="ПояснениеИспользоватьСвязанныеДокументы1СДокументооборота" id="118">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Просмотр и добавление связей между документами Документооборота.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Перегляд і додавання зв'язків між документами Документообігу.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="ПояснениеИспользоватьСвязанныеДокументы1СДокументооборотаКонтекстноеМеню" id="119"/>
+											<ExtendedTooltip name="ПояснениеИспользоватьСвязанныеДокументы1СДокументооборотаРасширеннаяПодсказка" id="120"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИспользоватьЕжедневныеОтчеты" id="69">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать ежедневные отчеты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група використовувати щоденні звіти</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать ежедневные отчеты</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група використовувати щоденні звіти</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИспользоватьЕжедневныеОтчетыРасширеннаяПодсказка" id="70"/>
+									<ChildItems>
+										<CheckBoxField name="ИспользоватьЕжедневныеОтчеты1СДокументооборота" id="71">
+											<DataPath>НаборКонстант.ИспользоватьЕжедневныеОтчеты1СДокументооборота</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ежедневные отчеты</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Щоденні звіти</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьЕжедневныеОтчеты1СДокументооборотаКонтекстноеМеню" id="72"/>
+											<ExtendedTooltip name="ИспользоватьЕжедневныеОтчеты1СДокументооборотаРасширеннаяПодсказка" id="73"/>
+											<Events>
+												<Event name="OnChange">ИспользоватьЕжедневныеОтчеты1СДокументооборотаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<LabelDecoration name="ПояснениеИспользоватьЕжедневныеОтчеты1СДокументооборота" id="74">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Работа с ежедневными отчетами по учету рабочего времени. Добавление фактических трудозатрат в ежедневные отчеты из объектов системы.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Робота з щоденними звітами з обліку робочого часу. Додавання фактичних трудовитрат в щоденні звіти з об'єктів системи.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="ПояснениеИспользоватьЕжедневныеОтчеты1СДокументооборотаКонтекстноеМеню" id="75"/>
+											<ExtendedTooltip name="ПояснениеИспользоватьЕжедневныеОтчеты1СДокументооборотаРасширеннаяПодсказка" id="76"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЭлектроннаяПочта" id="77">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа электронная почта</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група електронна пошта</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа электронная почта</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група електронна пошта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЭлектроннаяПочтаРасширеннаяПодсказка" id="78"/>
+									<ChildItems>
+										<CheckBoxField name="ИспользоватьЭлектроннуюПочту1СДокументооборота" id="79">
+											<DataPath>НаборКонстант.ИспользоватьЭлектроннуюПочту1СДокументооборота</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Электронная почта</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Електронна пошта</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьЭлектроннуюПочту1СДокументооборотаКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="ИспользоватьЭлектроннуюПочту1СДокументооборотаРасширеннаяПодсказка" id="81"/>
+											<Events>
+												<Event name="OnChange">ИспользоватьЭлектроннуюПочту1СДокументооборотаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<LabelDecoration name="ПояснениеИспользоватьЭлектроннуюПочту" id="82">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Просмотр, создание и отправка электронных писем с использованием Документооборота.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Перегляд, створення і відправлення електронних листів з використанням Документообігу.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="ПояснениеИспользоватьЭлектроннуюПочтуКонтекстноеМеню" id="83"/>
+											<ExtendedTooltip name="ПояснениеИспользоватьЭлектроннуюПочтуРасширеннаяПодсказка" id="84"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОпцииПравая" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа опции правая</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група опції права</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа опции правая</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група опції права</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОпцииПраваяРасширеннаяПодсказка" id="86"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьСогласованиеЧерез1СДокументооборот" id="31">
+									<DataPath>НаборКонстант.ИспользоватьСогласованиеЧерез1СДокументооборот</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Согласование через Документооборот</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Погодження через Документообіг</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Согласование заказов по данным о состоянии связанных документов в Документообороте</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Погодження замовлень за даними про стан пов'язаних документів у Документообігу</v8:content>
+										</v8:item>
+									</ToolTip>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьСогласованиеЧерез1СДокументооборотКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ИспользоватьСогласованиеЧерез1СДокументооборотExtendedTooltip" id="53"/>
+									<Events>
+										<Event name="OnChange">ИспользоватьСогласованиеЧерез1СДокументооборотПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="ПояснениеИспользоватьСогласованиеЧерез1СДокументооборот" id="29">
+									<Width>43</Width>
+									<Height>7</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возможность изменения статуса на "Согласован" определяется по статусу документов в Документообороте, введенных на основании согласуемых документов:
+- соглашений с клиентами 
+- коммерческих предложений
+- заказов клиентов 
+- заявок на возврат</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Можливість зміни статусу на "Погоджено" визначається за статусом документів у Документообігу, введених на підставі погоджуваних документів:
+- оферт з клієнтами 
+- комерційних пропозицій
+- замовлень клієнтів 
+- заявок на повернення</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус согласования определяется по данным о состоянии документов в Документооборот, введенных на оснвании согласуемых документов: 
+- соглашений с клиентами
+- коммерческих предложений
+- заказов клиентов 
+- заявок на возврат
+
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Статус погодження визначається за даними про стан документів у Документообігу, введених на підставі документів, що узгоджуються: 
+- оферт з клієнтами
+- комерційних пропозицій
+- замовлень клієнтів 
+- заявок на повернення
+
+</v8:content>
+										</v8:item>
+									</ToolTip>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеИспользоватьСогласованиеЧерез1СДокументооборотКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ПояснениеИспользоватьСогласованиеЧерез1СДокументооборотExtendedTooltip" id="54"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаМаксимальныйРазмерФайла" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа максимальный размер файла</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група максимальний розмір файлу</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа максимальный размер файла</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група максимальний розмір файлу</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаМаксимальныйРазмерФайлаExtendedTooltip" id="58"/>
+					<ChildItems>
+						<InputField name="МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот" id="15">
+							<DataPath>МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот</DataPath>
+							<Width>5</Width>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборотКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборотExtendedTooltip" id="59"/>
+							<Events>
+								<Event name="OnChange">МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборотПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelDecoration name="ДекорацияМб" id="23">
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Мбайт</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Мбайт</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияМбКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ДекорацияМбExtendedTooltip" id="60"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ПояснениеМаксимальныйРазмерФайлаДляПередачи" id="17">
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ограничение размера файлов, передаваемых в Документооборот.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Обмеження розміру файлів, що передаються у Документообіг.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеМаксимальныйРазмерФайлаДляПередачиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПояснениеМаксимальныйРазмерФайлаДляПередачиExtendedTooltip" id="61"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаПравилаИнтеграцииС1СДокументооборотом" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки заполнения объектов Документооборота</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група настройки заповнення об'єктів Документообігу</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа правила интеграции с1 с документооборотом</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група правила інтеграції с1 з документообігом</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПравилаИнтеграцииС1СДокументооборотомРасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<Button name="ПравилаИнтеграцииС1СДокументооборотом" id="21">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ПравилаИнтеграцииС1СДокументооборотом</CommandName>
+							<ExtendedTooltip name="ПравилаИнтеграцииС1СДокументооборотомРасширеннаяПодсказка" id="63"/>
+						</Button>
+						<LabelDecoration name="ПояснениеНастройкиЗаполненияОбъектов1СДокументооборота" id="19">
+							<Height>3</Height>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила заполнения объектов, участвующих в интеграции с Документооборотом.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Правила заповнення об'єктів, що беруть участь в інтеграції з Документообігом.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ПояснениеНастройкиЗаполненияОбъектов1СДокументооборотаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПояснениеНастройкиЗаполненияОбъектов1СДокументооборотаExtendedTooltip" id="64"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ИдентификаторКорневойПапкиФайлов1СДокументооборот</Field>
+				<Field>НаборКонстант.ИспользоватьЕжедневныеОтчеты1СДокументооборота</Field>
+				<Field>НаборКонстант.ИспользоватьЭлектроннуюПочту1СДокументооборота</Field>
+				<Field>НаборКонстант.МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ПользовательДокументооборот" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь документооборот</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Користувач документообіг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальный размер передаваемого файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Максимальний розмір переданого файлу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Режим роботи</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПравилаИнтеграцииС1СДокументооборотом" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила интеграции с Документооборотом</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Правила інтеграції з Документообігом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть настройки заполнения объектов Документооборота</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити настройки заповнення об'єктів Документообігу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПравилаИнтеграцииС1СДокументооборотом</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

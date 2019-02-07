@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Items Description="Начальное заполнение справочника Виды доходов НДФЛ" Columns="PredefinedName,Kod,Name#,KindAnteOfResident,KindAnteIncreased,KindAnteWarDuty,KindAnteLimit,ConsiderESV,ConsiderNSL,IsSalary" ColumnNames="ИмяПредопределенного,Код,Наименование,ВидСтавкиРезидента,ВидСтавкиУвеличенная,ОблагаетсяВоеннымСбором,ОблагаетсяСверхПредела,УчитыватьВзносы,УчитыватьНСЛ,СоответствуетОплатеТруда">
+	<Item PredefinedName="Код101" Kod="101" Name="Заработная плата" NameUkr="Заробітна плата" KindAnteOfResident="Основная" KindAnteIncreased="Увеличенная" KindAnteWarDuty="ВоенныйСбор" ConsiderESV="Истина" ConsiderNSL="Истина" IsSalary="Истина"/>
+	<Item PredefinedName="Код101ФСС" Kod="101" Name="Начисления ФСС" NameUkr="Нарахування ФСС" KindAnteOfResident="Основная" KindAnteIncreased="Увеличенная" KindAnteWarDuty="ВоенныйСборФСС" ConsiderESV="Истина" ConsiderNSL="Истина" IsSalary="Истина"/>
+	<Item PredefinedName="Код102" Kod="102" Name="Оплата по договорам ГПХ" NameUkr="Оплата по договорах ЦПХ" KindAnteOfResident="Основная" KindAnteIncreased="Увеличенная" KindAnteWarDuty="ВоенныйСбор" ConsiderESV="Истина"/>
+	<Item PredefinedName="Код103" Kod="103" Name="Авторское вознаграждение" NameUkr="Авторська винагорода" KindAnteOfResident="Основная" KindAnteIncreased="Увеличенная" KindAnteWarDuty="ВоенныйСбор"/>
+	<Item PredefinedName="Код109" Kod="109" Name="Доход в виде дивидендов" NameUkr="Дохід у виді дивідендів" KindAnteOfResident="Уменьшенная" KindAnteIncreased="Уменьшенная" KindAnteWarDuty="ВоенныйСбор"/>
+	<Item PredefinedName="Код126" Kod="126" Name="Дополнительное благо" NameUkr="Додаткове благо" KindAnteOfResident="Основная" KindAnteIncreased="Увеличенная" KindAnteWarDuty="ВоенныйСбор"/>
+	<Item PredefinedName="Код127" Kod="127" Name="Прочие доходы" NameUkr="Інші доходи" KindAnteOfResident="Основная" KindAnteIncreased="Увеличенная" KindAnteWarDuty="ВоенныйСбор"/>
+	<Item PredefinedName="Код118" Kod="118" Name="Излишки потраченных на коммандировку денег" NameUkr="Надлишки витрачених на відрядження грошей" KindAnteOfResident="Основная" KindAnteIncreased="Увеличенная" KindAnteWarDuty="ВоенныйСбор"/>
+	<Item PredefinedName="Код169" Kod="169" Name="Сумма нецелевой благотворительной помощи" NameUkr="Сума нецільової благодійної допомоги" KindAnteOfResident="НеОблагается" KindAnteIncreased="НеОблагается" KindAnteLimit="Код127"/>
+	<Item PredefinedName="Код169Ц" Kod="169" Name="Сумма целевой благотворительной помощи" NameUkr="Сума цільової благодійної допомоги" KindAnteOfResident="НеОблагается" KindAnteIncreased="НеОблагается"/>
+	<Item PredefinedName="Код128" Kod="128" Name="Социальные помощи" NameUkr="Соціальні допомоги" KindAnteOfResident="НеОблагается" KindAnteIncreased="НеОблагается"/>
+	<Item PredefinedName="Код140" Kod="140" Name="Алименты" NameUkr="Аліменти" KindAnteOfResident="НеОблагается" KindAnteIncreased="НеОблагается"/>
+	<Item PredefinedName="Код156" Kod="156" Name="Стоимость путевок нa отдых, оздоровление и лечение" NameUkr="Вартість путівок на відпочинок, оздоровлення та лікування" KindAnteOfResident="НеОблагается" KindAnteIncreased="НеОблагается"/>
+	<Item PredefinedName="Код157" Kod="157" Name="Доход, выплаченный самозанятому лицу" NameUkr="Дохід, що виплачено самозайнятій особі" KindAnteOfResident="НеОблагается" KindAnteIncreased="НеОблагается"/>
+	<Item PredefinedName="Код146" Kod="146" Name="Помощь на погребение" NameUkr="Допомога на поховання" KindAnteOfResident="НеОблагается" KindAnteIncreased="НеОблагается"/>
+	<Item PredefinedName="Код160" Kod="160" Name="Стоимость подарков и призов" NameUkr="Вартість подарунків і призів" KindAnteOfResident="НеОблагается" KindAnteIncreased="НеОблагается" KindAnteLimit="Код126"/>
+	<Item PredefinedName="ВоенныйСбор" Kod="ВЗ" Name="Военный сбор" NameUkr="Військовий збір" KindAnteOfResident="ВоенныйСбор" KindAnteIncreased="ВоенныйСбор"/>
+	<Item PredefinedName="ВоенныйСборФСС" Kod="ВЗ" Name="Военный сбор для ФСС" NameUkr="Військовий збір для ФСС" KindAnteOfResident="ВоенныйСбор" KindAnteIncreased="ВоенныйСбор"/>
+</Items>

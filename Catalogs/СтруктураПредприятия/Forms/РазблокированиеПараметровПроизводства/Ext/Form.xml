@@ -1,0 +1,1942 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="РазрешитьРедактирование" id="5">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.Command.РазрешитьРедактирование</CommandName>
+				<ExtendedTooltip name="РазрешитьРедактированиеExtendedTooltip" id="54"/>
+			</Button>
+			<Button name="Закрыть" id="12">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="55"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаФорма" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа форма</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група форма</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа форма</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група форма</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>75</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаФормаExtendedTooltip" id="56"/>
+			<ChildItems>
+				<Pages name="ГруппаОбъектИспользуетсяСтраницы" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа объект используется страницы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група об'єкт використовується сторінки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа объект используется страницы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група об'єкт використовується сторінки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>false</VerticalStretch>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="ГруппаОбъектИспользуетсяСтраницыExtendedTooltip" id="57"/>
+					<ChildItems>
+						<Page name="ГруппаОбъектИспользуетсяНужноПроверить" id="25">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа объект используется нужно проверить</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група об'єкт використовується потрібно перевірити</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа объект используется нужно проверить</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група об'єкт використовується потрібно перевірити</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаОбъектИспользуетсяНужноПроверитьExtendedTooltip" id="58"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияРекомендуетсяПроверить" id="26">
+									<TextColor>web:FireBrick</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед изменением параметров рекомендуется проверить их использование.
+Если параметры используются, то необходимо оценить последствия изменений.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Перед зміною параметрів рекомендується перевірити їх використання.
+Якщо параметри використовуються, то необхідно оцінити наслідки змін.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияРекомендуетсяПроверитьКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ДекорацияРекомендуетсяПроверитьExtendedTooltip" id="59"/>
+								</LabelDecoration>
+								<Button name="ПроверитьИспользованиеОбъекта" id="20">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроверитьИспользованиеОбъекта</CommandName>
+									<ExtendedTooltip name="ПроверитьИспользованиеОбъектаExtendedTooltip" id="60"/>
+								</Button>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаОбъектИспользуетсяОбъектНеИспользуется" id="29">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа объект используется объект не используется</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група об'єкт використовується об'єкт не використовується</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа объект используется объект не используется</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група об'єкт використовується об'єкт не використовується</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаОбъектИспользуетсяОбъектНеИспользуетсяExtendedTooltip" id="61"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияЗеленаяГалка" id="38">
+									<Width>3</Width>
+									<Height>3</Height>
+									<VerticalStretch>true</VerticalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация зеленая галка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Декорація зелена галка</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ЗеленаяГалкаСредняя</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияЗеленаяГалкаКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ДекорацияЗеленаяГалкаExtendedTooltip" id="62"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДекорацияОбъектНеИспользуется" id="30">
+									<VerticalStretch>true</VerticalStretch>
+									<TextColor>style:ОтметкаПоложительногоВыполненияЗадачи</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры не используются. Можно разрешить редактирование и изменить их.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Параметри не використовуються. Можна дозволити редагування і змінити їх.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияОбъектНеИспользуетсяКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ДекорацияОбъектНеИспользуетсяExtendedTooltip" id="63"/>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаОбъектИспользуетсяОбъектИспользуется" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа объект используется объект используется</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група об'єкт використовується об'єкт використовується</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа объект используется объект используется</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група об'єкт використовується об'єкт використовується</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаОбъектИспользуетсяОбъектИспользуетсяExtendedTooltip" id="64"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияКрасныйКрест" id="36">
+									<Width>3</Width>
+									<Height>3</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация красный крест</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Декорація червоний хрест</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.КрасныйКрест</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияКрасныйКрестКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ДекорацияКрасныйКрестExtendedTooltip" id="65"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДекорацияОбъектИспользуется" id="33">
+									<VerticalStretch>true</VerticalStretch>
+									<TextColor>web:FireBrick</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры используются. После их изменения необходимо оценить последствия.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Параметри використовуються. Після їх зміни необхідно оцінити наслідки.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Center</VerticalAlign>
+									<ContextMenu name="ДекорацияОбъектИспользуетсяКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ДекорацияОбъектИспользуетсяExtendedTooltip" id="66"/>
+								</LabelDecoration>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<UsualGroup name="ГруппаРазрешитьРедактирование" id="104">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешить редакитрование:</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дозволити редагування:</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРазрешитьРедактированиеРасширеннаяПодсказка" id="105"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПодразделениеДиспетчер" id="175">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подразделение-диспетчер</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Підрозділ-диспетчер</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа интервал планирования</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група інтервал планування</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПодразделениеДиспетчерРасширеннаяПодсказка" id="176"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация7" id="177">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подразделение-диспетчер</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Підрозділ-диспетчер</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация7КонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="179"/>
+								</LabelDecoration>
+								<Pages name="СтраницыПодразделениеДиспетчер" id="180">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки інтервал планування</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки інтервал планування</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Height>2</Height>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыПодразделениеДиспетчерРасширеннаяПодсказка" id="181"/>
+									<ChildItems>
+										<Page name="СтраницаПодразделениеДиспетчерНеВыполнена" id="182">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница подразделение диспетчер не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка підрозділ диспетчер не виконана</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования проверка не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування перевірка не виконана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаПодразделениеДиспетчерНеВыполненаРасширеннаяПодсказка" id="183"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация8" id="184">
+													<TextColor>style:ЦветТекстаОтмененнойСтрокиДокумента</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка не выполена</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Перевірка не виконані</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация8КонтекстноеМеню" id="185"/>
+													<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="186"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования4" id="187">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется проверить и при необходимости изменить подразделения, диспетчерующие заказы на производство.
+
+</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно перевірити і при необхідності змінити підрозділи, що диспетчують замовлення на виробництво.
+
+</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланирования4КонтекстноеМеню" id="188"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланирования4РасширеннаяПодсказка" id="189"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаПодразделениеДиспетчерПараметрИспользуется" id="190">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница подразделение диспетчер параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка підрозділ диспетчер параметр використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметр використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаПодразделениеДиспетчерПараметрИспользуетсяРасширеннаяПодсказка" id="191"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектИспользуется4" id="192">
+													<VerticalStretch>true</VerticalStretch>
+													<TextColor>web:FireBrick</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектИспользуется4КонтекстноеМеню" id="193"/>
+													<ExtendedTooltip name="ДекорацияОбъектИспользуется4РасширеннаяПодсказка" id="194"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования5" id="195">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется проверить и при необходимости изменить подразделения, диспетчерующие заказы на производство.
+</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно перевірити і при необхідності змінити підрозділи, що диспетчують замовлення на виробництво.
+</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланирования5КонтекстноеМеню" id="196"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланирования5РасширеннаяПодсказка" id="197"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаПодразделениеДиспетчерНеИспользуется" id="198">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница подразделение диспетчер не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка підрозділ диспетчер не використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметр не використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаПодразделениеДиспетчерНеИспользуетсяРасширеннаяПодсказка" id="199"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектНеИспользуется4" id="200">
+													<TextColor>style:ОтметкаПоложительногоВыполненияЗадачи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр не используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр не використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектНеИспользуется4КонтекстноеМеню" id="201"/>
+													<ExtendedTooltip name="ДекорацияОбъектНеИспользуется4РасширеннаяПодсказка" id="202"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПроизводствоПоЗаказу" id="231">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подразделение-диспетчер</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Підрозділ-диспетчер</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа интервал планирования</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група інтервал планування</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПроизводствоПоЗаказуРасширеннаяПодсказка" id="232"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация11" id="233">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Производство по заказам</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Виробництво по замовленнях</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация11КонтекстноеМеню" id="234"/>
+									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="235"/>
+								</LabelDecoration>
+								<Pages name="СтраницыПроизводствоПоЗаказу" id="236">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки інтервал планування</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки інтервал планування</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыПроизводствоПоЗаказуРасширеннаяПодсказка" id="237"/>
+									<ChildItems>
+										<Page name="СтраницаПроизводствоПоЗаказуНеВыполнена" id="238">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница производство по заказу не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка виробництво за замовленням не виконано</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования проверка не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування перевірка не виконана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Height>5</Height>
+											<ExtendedTooltip name="СтраницаПроизводствоПоЗаказуНеВыполненаРасширеннаяПодсказка" id="239"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация12" id="240">
+													<TextColor>style:ЦветТекстаОтмененнойСтрокиДокумента</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка не выполена</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Перевірка не виконані</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация12КонтекстноеМеню" id="241"/>
+													<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="242"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования6" id="243">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется проверить и при необходимости изменить подразделения, участвующие в производственном процессе по заказам на производство в:
+- ресурсных спецификациях
+- спецификациях заказов на производство
+- маршрутных листах</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно перевірити і за необхідності змінити підрозділи, що беруть участь у виробничому процесі по замовленнях на виробництво у:
+- ресурсних специфікаціях
+- специфікаціях замовлень на виробництво
+- маршрутних листах</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланирования6КонтекстноеМеню" id="244"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланирования6РасширеннаяПодсказка" id="245"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаПроизводствоПоЗаказуПараметрИспользуется" id="246">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница производство по заказу параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка виробництво за замовленням параметр використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметр використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Height>5</Height>
+											<ExtendedTooltip name="СтраницаПроизводствоПоЗаказуПараметрИспользуетсяРасширеннаяПодсказка" id="247"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектИспользуется6" id="248">
+													<VerticalStretch>true</VerticalStretch>
+													<TextColor>web:FireBrick</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектИспользуется6КонтекстноеМеню" id="249"/>
+													<ExtendedTooltip name="ДекорацияОбъектИспользуется6РасширеннаяПодсказка" id="250"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования7" id="251">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется проверить и при необходимости изменить подразделения, участвующие в производственном процессе по заказам на производство в:
+- ресурсных спецификациях
+- спецификациях заказов на производство
+- маршрутных листах</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно перевірити і за необхідності змінити підрозділи, що беруть участь у виробничому процесі по замовленнях на виробництво у:
+- ресурсних специфікаціях
+- специфікаціях замовлень на виробництво
+- маршрутних листах</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланирования7КонтекстноеМеню" id="252"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланирования7РасширеннаяПодсказка" id="253"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаПроизводствоПоЗаказуПараметрНеИспользуется" id="254">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница производство по заказу параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка виробництво за замовленням параметр не використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметр не використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаПроизводствоПоЗаказуПараметрНеИспользуетсяРасширеннаяПодсказка" id="255"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектНеИспользуется6" id="256">
+													<TextColor>style:ОтметкаПоложительногоВыполненияЗадачи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр не используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр не використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектНеИспользуется6КонтекстноеМеню" id="257"/>
+													<ExtendedTooltip name="ДекорацияОбъектНеИспользуется6РасширеннаяПодсказка" id="258"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПроизводствоБезЗаказа" id="259">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подразделение-диспетчер</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Підрозділ-диспетчер</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа интервал планирования</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група інтервал планування</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПроизводствоБезЗаказаРасширеннаяПодсказка" id="260"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияПроизводствоБезЗаказа" id="261">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Производство без заказов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Виробництво без замовлень</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияПроизводствоБезЗаказаКонтекстноеМеню" id="262"/>
+									<ExtendedTooltip name="ДекорацияПроизводствоБезЗаказаРасширеннаяПодсказка" id="263"/>
+								</LabelDecoration>
+								<Pages name="СтраницыПроизводствоБезЗаказов" id="264">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки інтервал планування</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки інтервал планування</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыПроизводствоБезЗаказовРасширеннаяПодсказка" id="265"/>
+									<ChildItems>
+										<Page name="СтраницаПроизводствоБезЗаказовНеВыполнена" id="266">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница производство по заказу не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка виробництво за замовленням не виконано</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования проверка не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування перевірка не виконана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Height>5</Height>
+											<ExtendedTooltip name="СтраницаПроизводствоБезЗаказовНеВыполненаРасширеннаяПодсказка" id="267"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация14" id="268">
+													<TextColor>style:ЦветТекстаОтмененнойСтрокиДокумента</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка не выполена</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Перевірка не виконані</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация14КонтекстноеМеню" id="269"/>
+													<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="270"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования8" id="271">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется проверить и при необходимости изменить подразделения в документах выпуска продукции и списания затрат на выпуск.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно перевірити і за необхідності змінити підрозділи в документах випуску продукції і списання витрат на випуск.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланирования8КонтекстноеМеню" id="272"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланирования8РасширеннаяПодсказка" id="273"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаПроизводствоБезЗаказовПараметрИспользуется" id="274">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница производство по заказу параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка виробництво за замовленням параметр використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметр використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Height>5</Height>
+											<ExtendedTooltip name="СтраницаПроизводствоБезЗаказовПараметрИспользуетсяРасширеннаяПодсказка" id="275"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектИспользуется7" id="276">
+													<VerticalStretch>true</VerticalStretch>
+													<TextColor>web:FireBrick</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектИспользуется7КонтекстноеМеню" id="277"/>
+													<ExtendedTooltip name="ДекорацияОбъектИспользуется7РасширеннаяПодсказка" id="278"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования9" id="279">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется проверить и при необходимости изменить подразделения в документах выпуска продукции и списания затрат на выпуск.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно перевірити і за необхідності змінити підрозділи в документах випуску продукції і списання витрат на випуск.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланирования9КонтекстноеМеню" id="280"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланирования9РасширеннаяПодсказка" id="281"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаПроизводствоБезЗаказовПараметрНеИспользуется" id="282">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница производство по заказу параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка виробництво за замовленням параметр не використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметр не використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаПроизводствоБезЗаказовПараметрНеИспользуетсяРасширеннаяПодсказка" id="283"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектНеИспользуется7" id="284">
+													<TextColor>style:ОтметкаПоложительногоВыполненияЗадачи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр не используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр не використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектНеИспользуется7КонтекстноеМеню" id="285"/>
+													<ExtendedTooltip name="ДекорацияОбъектНеИспользуется7РасширеннаяПодсказка" id="286"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИнтервалПланирования" id="110">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа интервал планирования</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група інтервал планування</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа интервал планирования</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група інтервал планування</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИнтервалПланированияРасширеннаяПодсказка" id="111"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация4" id="138">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Інтервал планування</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация4КонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="140"/>
+								</LabelDecoration>
+								<Pages name="СтраницыИнтервалПланирования" id="71">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки інтервал планування</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки інтервал планування</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыИнтервалПланированияРасширеннаяПодсказка" id="72"/>
+									<ChildItems>
+										<Page name="СтраницаИнтервалПланированияПроверкаНеВыполнена" id="108">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования проверка не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування перевірка не виконана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаИнтервалПланированияПроверкаНеВыполненаРасширеннаяПодсказка" id="109"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация1" id="99">
+													<TextColor>style:ЦветТекстаОтмененнойСтрокиДокумента</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка не выполена</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Перевірка не виконані</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация1КонтекстноеМеню" id="100"/>
+													<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="101"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования" id="52">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется:
+- внести изменения в виды рабочих центров
+- удалить документы "Доступность видов рабочих центров"
+- удалить документы "Доступность рабочих центров"
+- ввести заново доступность видов рабочих центров
+- изменить ресурсные спецификации
+- переформировать график производства.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно:
+- внести зміни до видів робочих центрів
+- вилучити документи "Доступність видів робочих центрів"
+- вилучии документи "Доступність робочих центрів"
+- ввести заново доступність видів робочих центрів
+- змінити ресурсні специфікації
+- переформувати графік виробництва.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланированияКонтекстноеМеню" id="53"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланированияРасширеннаяПодсказка" id="68"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаИнтервалПланированияПараметрИспользуется" id="73">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметр використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаИнтервалПланированияПараметрИспользуетсяРасширеннаяПодсказка" id="74"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектИспользуется1" id="81">
+													<VerticalStretch>true</VerticalStretch>
+													<TextColor>web:FireBrick</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектИспользуется1КонтекстноеМеню" id="82"/>
+													<ExtendedTooltip name="ДекорацияОбъектИспользуется1РасширеннаяПодсказка" id="83"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования1" id="96">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется:
+- внести изменения в виды рабочих центров
+- удалить документы "Доступность видов рабочих центров"
+- удалить документы "Доступность рабочих центров"
+- ввести заново доступность видов рабочих центров
+- изменить ресурсные спецификации
+- полностью переформировать график производства.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно:
+- внести зміни до видів робочих центрів
+- вилучити документи "Доступність видів робочих центрів"
+- вилучити документи "Доступність робочих центрів"
+- ввести заново доступність видів робочих центрів
+- змінити ресурсні специфікації
+- повністю переформувати графік виробництва.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланирования1КонтекстноеМеню" id="97"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланирования1РасширеннаяПодсказка" id="98"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаИнтервалПланированияПараметрНеИспользуется" id="89">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметр не використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаИнтервалПланированияПараметрНеИспользуетсяРасширеннаяПодсказка" id="90"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектНеИспользуется1" id="91">
+													<TextColor>style:ОтметкаПоложительногоВыполненияЗадачи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр не используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр не використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектНеИспользуется1КонтекстноеМеню" id="92"/>
+													<ExtendedTooltip name="ДекорацияОбъектНеИспользуется1РасширеннаяПодсказка" id="93"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУправлениеМаршрутнымиЛистами" id="42">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление маршрутными листами</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Управління маршрутними листами</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУправлениеМаршрутнымиЛистамиРасширеннаяПодсказка" id="69"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация5" id="141">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Управление маршрутными листами</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Управління маршрутними листами</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="143"/>
+								</LabelDecoration>
+								<Pages name="СтраницыУправлениеМаршрутнымиЛистами" id="112">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы интервал планирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки інтервал планування</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыУправлениеМаршрутнымиЛистамиРасширеннаяПодсказка" id="113"/>
+									<ChildItems>
+										<Page name="СтраницаУправлениеМаршрутнымиЛистамиПроверкаНеВыполнена" id="114">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования проверка не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування перевірка не виконана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаУправлениеМаршрутнымиЛистамиПроверкаНеВыполненаРасширеннаяПодсказка" id="115"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация2" id="116">
+													<TextColor>style:ЦветТекстаОтмененнойСтрокиДокумента</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка не выполена</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Перевірка не виконані</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация2КонтекстноеМеню" id="117"/>
+													<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="118"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования2" id="119">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется:
+- повторно сформировать маршрутные листы.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно:
+- повторно сформувати маршрутні листи.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланирования2КонтекстноеМеню" id="120"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланирования2РасширеннаяПодсказка" id="121"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаУправлениеМаршрутнымиЛистамиПараметрИспользуется" id="122">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметр використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаУправлениеМаршрутнымиЛистамиПараметрИспользуетсяРасширеннаяПодсказка" id="123"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектИспользуется2" id="124">
+													<VerticalStretch>true</VerticalStretch>
+													<TextColor>web:FireBrick</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектИспользуется2КонтекстноеМеню" id="125"/>
+													<ExtendedTooltip name="ДекорацияОбъектИспользуется2РасширеннаяПодсказка" id="126"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеИнтервалПланирования3" id="127">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После изменения для корректной работы требуется:
+- повторно сформировать маршрутные листы.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після зміни для коректної роботи потрібно:
+- повторно сформувати маршрутні листи.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеИнтервалПланирования3КонтекстноеМеню" id="128"/>
+													<ExtendedTooltip name="ПояснениеИнтервалПланирования3РасширеннаяПодсказка" id="129"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаУправлениеМаршрутнымиЛистамиПараметрНеИспользуется" id="130">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница интервал планирования параметрне используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка інтервал планування параметрне використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаУправлениеМаршрутнымиЛистамиПараметрНеИспользуетсяРасширеннаяПодсказка" id="131"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектНеИспользуется2" id="132">
+													<TextColor>style:ОтметкаПоложительногоВыполненияЗадачи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр не используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр не використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектНеИспользуется2КонтекстноеМеню" id="133"/>
+													<ExtendedTooltip name="ДекорацияОбъектНеИспользуется2РасширеннаяПодсказка" id="134"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСпособУправленияОперациями" id="144">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Способ управления операциями</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Спосіб управління операціями</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Способ управления операциями (при пооперационном планировании)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Спосіб управління операціями (при поопераційному плануванні)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСпособУправленияОперациямиРасширеннаяПодсказка" id="145"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация6" id="154">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Способ управления операциями</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Спосіб управління операціями</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация6КонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="156"/>
+								</LabelDecoration>
+								<Pages name="СтраницыСпособУправленияОперациями" id="146">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы способ управления операциями</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки спосіб управління операціями</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы способ управления операциями</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки спосіб управління операціями</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыСпособУправленияОперациямиРасширеннаяПодсказка" id="147"/>
+									<ChildItems>
+										<Page name="СтарницаСпособУправленияОперациямиПроверкаНеВыполнена" id="148">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Старница способ управления операциями проверка не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Старница спосіб управління операціями перевірка не виконана</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Старница способ управления операциями проверка не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Старница спосіб управління операціями перевірка не виконана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтарницаСпособУправленияОперациямиПроверкаНеВыполненаРасширеннаяПодсказка" id="149"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация3" id="157">
+													<TextColor>style:ЦветТекстаОтмененнойСтрокиДокумента</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка не выполена</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Перевірка не виконані</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация3КонтекстноеМеню" id="158"/>
+													<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="159"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеСпособУправленияОперациями1" id="160">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После перехода на способ "Регистрация факта" требуется:
+- запустить актуализацию состояния операций в форме
+  пооперационного планирования.
+Перед переходом на способ "Регистрация отклонений" требуется:
+- отразить фактическое состояние выполнение всех незавершенных операций.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після переходу на спосіб "Реєстрація факту" потрібно:
+- запустити актуалізацію стану операцій у формі
+поопераційного планування.
+Перед переходом на спосіб "Реєстрація відхилень" потрібно:
+- відобразити фактичний стан виконання всіх незавершених операцій.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеСпособУправленияОперациями1КонтекстноеМеню" id="161"/>
+													<ExtendedTooltip name="ПояснениеСпособУправленияОперациями1РасширеннаяПодсказка" id="162"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаСпособУправленияОперациямиПараметрИспользуется" id="150">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница способ управления операциями параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка спосіб управління операціями параметр використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница способ управления операциями параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка спосіб управління операціями параметр використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаСпособУправленияОперациямиПараметрИспользуетсяРасширеннаяПодсказка" id="151"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектИспользуется3" id="169">
+													<VerticalStretch>true</VerticalStretch>
+													<TextColor>web:FireBrick</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектИспользуется3КонтекстноеМеню" id="170"/>
+													<ExtendedTooltip name="ДекорацияОбъектИспользуется3РасширеннаяПодсказка" id="171"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеСпособУправленияОперациями2" id="166">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После перехода на способ "Регистрация факта" требуется:
+- запустить актуализацию состояния операций в форме
+  пооперационного планирования.
+Перед переходом на способ "Регистрация отклонений" требуется:
+- отразить фактическое состояние выполнение всех незавершенных операций.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після переходу на спосіб "Реєстрація факту" потрібно:
+- запустити актуалізацію стану операцій у формі
+поопераційного планування.
+Перед переходом на спосіб "Реєстрація відхилень" потрібно:
+- відобразити фактичний стан виконання всіх незавершених операцій.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеСпособУправленияОперациями2КонтекстноеМеню" id="167"/>
+													<ExtendedTooltip name="ПояснениеСпособУправленияОперациями2РасширеннаяПодсказка" id="168"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаСпособУправленияОперациямиПараметрНеИспользуется" id="152">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница способ управления операциями параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка спосіб управління операціями параметр не використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница способ управления операциями параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка спосіб управління операціями параметр не використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаСпособУправленияОперациямиПараметрНеИспользуетсяРасширеннаяПодсказка" id="153"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектНеИспользуется3" id="172">
+													<TextColor>style:ОтметкаПоложительногоВыполненияЗадачи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр не используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр не використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектНеИспользуется3КонтекстноеМеню" id="173"/>
+													<ExtendedTooltip name="ДекорацияОбъектНеИспользуется3РасширеннаяПодсказка" id="174"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВариантСписанияЗатратНаВыпускиБезЗаказов" id="203">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вариант списания затрат на выпуск без заказов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Варіант списання витрат на випуск без замовлень</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Способ управления операциями (при пооперационном планировании)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Спосіб управління операціями (при поопераційному плануванні)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВариантСписанияЗатратНаВыпускиБезЗаказовРасширеннаяПодсказка" id="204"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияВариантСписанияЗатратНаВыпускиБезЗаказов" id="205">
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вариант списания затрат на выпуски без заказов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Варіант списання витрат на випуски без замовлень</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияВариантСписанияЗатратНаВыпускиБезЗаказовКонтекстноеМеню" id="206"/>
+									<ExtendedTooltip name="ДекорацияВариантСписанияЗатратНаВыпускиБезЗаказовРасширеннаяПодсказка" id="207"/>
+								</LabelDecoration>
+								<Pages name="СтраницыВариантСписанияЗатратНаВыпускиБезЗаказов" id="208">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы способ управления операциями</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки спосіб управління операціями</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы способ управления операциями</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінки спосіб управління операціями</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыВариантСписанияЗатратНаВыпускиБезЗаказовРасширеннаяПодсказка" id="209"/>
+									<ChildItems>
+										<Page name="СтарницаВариантСписанияЗатратНаВыпускиБезЗаказовНеВыполнена" id="210">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Старница способ управления операциями проверка не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Старница спосіб управління операціями перевірка не виконана</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Старница способ управления операциями проверка не выполнена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Старница спосіб управління операціями перевірка не виконана</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтарницаВариантСписанияЗатратНаВыпускиБезЗаказовНеВыполненаРасширеннаяПодсказка" id="211"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация10" id="212">
+													<TextColor>style:ЦветТекстаОтмененнойСтрокиДокумента</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка не выполена</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Перевірка не виконані</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация10КонтекстноеМеню" id="213"/>
+													<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="214"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеСпособУправленияОперациями3" id="215">
+													<Height>5</Height>
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После перехода на использование документа "Списание затрат на выпуск" требуется:
+- перепровести документы выпуска продукции
+После перехода на использование правил распределения требуется:
+- пометить на удаление уже введенные документы "Списание затрат на выпуск" (если есть)
+- перепровести документы выпуска продукции
+
+</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після переходу на використання документа "Списання витрат на випуск" потрібно:
+- перепровести документи випуску продукції
+Після переходу на використання правил розподілу потрібно:
+- відмітити на вилучення вже введені документи "Списання витрат на випуск" (якщо є)
+- перепровести документи випуску продукції
+
+</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеСпособУправленияОперациями3КонтекстноеМеню" id="216"/>
+													<ExtendedTooltip name="ПояснениеСпособУправленияОперациями3РасширеннаяПодсказка" id="217"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаВариантСписанияЗатратНаВыпускиБезЗаказовИспользуется" id="218">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница способ управления операциями параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка спосіб управління операціями параметр використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница способ управления операциями параметр используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка спосіб управління операціями параметр використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаВариантСписанияЗатратНаВыпускиБезЗаказовИспользуетсяРасширеннаяПодсказка" id="219"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектИспользуется5" id="220">
+													<VerticalStretch>true</VerticalStretch>
+													<TextColor>web:FireBrick</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектИспользуется5КонтекстноеМеню" id="221"/>
+													<ExtendedTooltip name="ДекорацияОбъектИспользуется5РасширеннаяПодсказка" id="222"/>
+												</LabelDecoration>
+												<LabelDecoration name="ПояснениеСпособУправленияОперациями4" id="223">
+													<Height>5</Height>
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>После перехода на использование документа "Списание затрат на выпуск" требуется:
+- перепровести документы выпуска продукции
+После перехода на использование правил распределения требуется:
+- пометить на удаление уже введенные документы "Списание затрат на выпуск" (если есть)
+- перепровести документы выпуска продукции</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Після переходу на використання документа "Списання витрат на випуск" потрібно:
+- перепровести документи випуску продукції
+Після переходу на використання правил розподілу потрібно:
+- відмітити на вилучення вже введені документи "Списання витрат на випуск" (якщо є)
+- перепровести документи випуску продукції</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеСпособУправленияОперациями4КонтекстноеМеню" id="224"/>
+													<ExtendedTooltip name="ПояснениеСпособУправленияОперациями4РасширеннаяПодсказка" id="225"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаВариантСписанияЗатратНаВыпускиБезЗаказовНеИспользуется" id="226">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница способ управления операциями параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка спосіб управління операціями параметр не використовується</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница способ управления операциями параметр не используется</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінка спосіб управління операціями параметр не використовується</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="СтраницаВариантСписанияЗатратНаВыпускиБезЗаказовНеИспользуетсяРасширеннаяПодсказка" id="227"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОбъектНеИспользуется5" id="228">
+													<TextColor>style:ОтметкаПоложительногоВыполненияЗадачи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр не используется</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Параметр не використовується</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="ДекорацияОбъектНеИспользуется5КонтекстноеМеню" id="229"/>
+													<ExtendedTooltip name="ДекорацияОбъектНеИспользуется5РасширеннаяПодсказка" id="230"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ИдентификаторЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Ідентифікатор завдання</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресХранилища" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес хранилища</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Адреса сховища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РазрешитьРедактирование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить редактирование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дозволити редагування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешить редактирование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дозволити редагування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РазрешитьРедактирование</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьИспользованиеОбъекта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить использование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перевірити використання</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить использование параметров.
+Операция может занять длительное время.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перевірити використання параметрів.
+Операція може зайняти тривалий час.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьИспользованиеОбъекта</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Объект">
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

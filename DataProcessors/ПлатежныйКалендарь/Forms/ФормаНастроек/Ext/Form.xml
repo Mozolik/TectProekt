@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройки платежного календаря</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Настройка платіжного календаря</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПрименитьИЗакрыть" id="68">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПрименитьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаПрименитьИЗакрытьРасширеннаяПодсказка" id="69"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="70">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="71"/>
+			</Button>
+			<Button name="ФормаСправка" id="113">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>true</OnlyInAllActions>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="114"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CheckBoxField name="ОтображатьНеутвержденные" id="72">
+			<DataPath>Объект.ОтображатьНеутвержденные</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтображатьНеутвержденныеКонтекстноеМеню" id="73"/>
+			<ExtendedTooltip name="ОтображатьНеутвержденныеРасширеннаяПодсказка" id="74"/>
+		</CheckBoxField>
+		<InputField name="ОтображениеСумм" id="155">
+			<DataPath>Объект.ОтображениеСумм</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Округление сумм</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Округлення сум</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ОтображениеСуммКонтекстноеМеню" id="156"/>
+			<ExtendedTooltip name="ОтображениеСуммРасширеннаяПодсказка" id="157"/>
+		</InputField>
+		<InputField name="ОтражатьОтрицательныеСуммы" id="178">
+			<DataPath>Объект.ОтражатьОтрицательныеСуммы</DataPath>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ОтражатьОтрицательныеСуммыКонтекстноеМеню" id="179"/>
+			<ExtendedTooltip name="ОтражатьОтрицательныеСуммыРасширеннаяПодсказка" id="180"/>
+		</InputField>
+		<UsualGroup name="ВключаемыеПоступления" id="124">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планируемые поступления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Плановані надходження</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включаемые поступления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Надходження, що включаються</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ВключаемыеПоступленияРасширеннаяПодсказка" id="125"/>
+			<ChildItems>
+				<CheckBoxField name="ЗаказыПокупателей" id="126">
+					<DataPath>Объект.ЗаказыПокупателей</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Графики оплат заказов покупателей и накладных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Графіки оплат замовлень покупців і накладних</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗаказыПокупателейКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="ЗаказыПокупателейРасширеннаяПодсказка" id="128"/>
+				</CheckBoxField>
+				<CheckBoxField name="СчетаНаОплатуПокупателям" id="132">
+					<DataPath>Объект.СчетаНаОплатуПокупателям</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СчетаНаОплатуПокупателямКонтекстноеМеню" id="133"/>
+					<ExtendedTooltip name="СчетаНаОплатуПокупателямРасширеннаяПодсказка" id="134"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВозвратыТоваровПоставщику" id="129">
+					<DataPath>Объект.ВозвратыТоваровПоставщику</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поступления за возвраты товаров поставщикам</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Надходження за повернення товарів постачальникам</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВозвратыТоваровПоставщикуКонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="ВозвратыТоваровПоставщикуРасширеннаяПодсказка" id="131"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПоступленияПоФинансовойДеятельности" id="135">
+					<DataPath>Объект.ПоступленияПоФинансовойДеятельности</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоступленияПоФинансовойДеятельностиКонтекстноеМеню" id="136"/>
+					<ExtendedTooltip name="ПоступленияПоФинансовойДеятельностиРасширеннаяПодсказка" id="137"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПоступленияПоЭквайрингу" id="152">
+					<DataPath>Объект.ПоступленияПоЭквайрингу</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоступленияПоЭквайрингуКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="ПоступленияПоЭквайрингуРасширеннаяПодсказка" id="154"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ВключаемыеСписания" id="138">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включаемые списания без оформленных заявок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Списання без оформлених заявок, що включаються</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включаемые списания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Списання, що включаються</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ВключаемыеСписанияРасширеннаяПодсказка" id="139"/>
+			<ChildItems>
+				<CheckBoxField name="ЗаказыПоставщикам" id="140">
+					<DataPath>Объект.ЗаказыПоставщикам</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Графики оплат заказов поставщикам и накладных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Графіки оплат замовлень постачальникам і накладних</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗаказыПоставщикамКонтекстноеМеню" id="141"/>
+					<ExtendedTooltip name="ЗаказыПоставщикамРасширеннаяПодсказка" id="142"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВозвратыТоваровОтКлиента" id="143">
+					<DataPath>Объект.ВозвратыТоваровОтКлиента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возврат денежных средств клиентам</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Повернення грошових коштів клієнтам</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВозвратыТоваровОтКлиентаКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="ВозвратыТоваровОтКлиентаРасширеннаяПодсказка" id="145"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВедомостиНаВыплатуЗарплаты" id="146">
+					<DataPath>Объект.ВедомостиНаВыплатуЗарплаты</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВедомостиНаВыплатуЗарплатыКонтекстноеМеню" id="147"/>
+					<ExtendedTooltip name="ВедомостиНаВыплатуЗарплатыРасширеннаяПодсказка" id="148"/>
+				</CheckBoxField>
+				<CheckBoxField name="РасходыПоФинансовойДеятельности" id="149">
+					<DataPath>Объект.РасходыПоФинансовойДеятельности</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РасходыПоФинансовойДеятельностиКонтекстноеМеню" id="150"/>
+					<ExtendedTooltip name="РасходыПоФинансовойДеятельностиРасширеннаяПодсказка" id="151"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПлатежныйКалендарь</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрименитьИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить и закрыть</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Застосувати і закрити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить и закрыть</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Застосувати і закрити</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрименитьИЗакрыть</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

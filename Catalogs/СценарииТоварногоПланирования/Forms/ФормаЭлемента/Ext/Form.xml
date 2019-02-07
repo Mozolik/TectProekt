@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеExtendedTooltip" id="88"/>
+		</InputField>
+		<InputField name="Описание" id="64">
+			<DataPath>Объект.Описание</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<VerticalStretch>false</VerticalStretch>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="ОписаниеExtendedTooltip" id="89"/>
+		</InputField>
+		<UsualGroup name="ГруппаПериодичностьВалюта" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа периодичность валюта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група періодичність валюта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа периодичность валюта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група періодичність валюта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодичностьВалютаExtendedTooltip" id="90"/>
+			<ChildItems>
+				<InputField name="Периодичность" id="7">
+					<DataPath>Объект.Периодичность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>11</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ПериодичностьКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПериодичностьExtendedTooltip" id="91"/>
+					<Events>
+						<Event name="OnChange">ПериодичностьПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтображатьПериод" id="120">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отображать период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відображати період</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отображать период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відображати період</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>4</Height>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтображатьПериодРасширеннаяПодсказка" id="121"/>
+			<ChildItems>
+				<RadioButtonField name="ОтображениеПериода" id="117">
+					<DataPath>ОтображениеПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отображение периода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відображення періоду</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Влияет на отображение периода в колонках документов и печатных форм.
+Если "Диапазон дат" — заголовок периода для периодичности "Неделя" будет "08.07—14.07".
+Если "Номер периода (в пределах года)" — заголовок будет "28 неделя".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Впливає на відображення періоду в колонках документів і друкованих форм.
+Якщо "Діапазон дат" — заголовок періоду для періодичності "Тиждень" буде "08.07—14.07".
+Якщо "Номер періоду (в межах року)" — заголовок буде "28 тиждень".</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Диапазон дат</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Діапазон дат</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Номер периода (в пределах года)</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Номер періоду (в межах року)</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ОтображениеПериодаКонтекстноеМеню" id="118"/>
+					<ExtendedTooltip name="ОтображениеПериодаРасширеннаяПодсказка" id="119">
+						<TextColor>style:ПоясняющийТекст</TextColor>
+					</ExtendedTooltip>
+					<Events>
+						<Event name="OnChange">ОтображениеПериодаПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПланировать" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа планировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група планувати</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не рекомендуется изменять параметры после ввода документов планирования.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Не рекомендується змінювати параметри після введення документів планування.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПланироватьExtendedTooltip" id="92">
+				<TextColor>style:ПоясняющийТекст</TextColor>
+			</ExtendedTooltip>
+			<ChildItems>
+				<UsualGroup name="ГруппаПланЗакупокПланироватьВалюта" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа план закупок планировать валюта</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група план купівель планувати валюта</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа план закупок планировать валюта</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група план купівель планувати валюта</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПланЗакупокПланироватьВалютаExtendedTooltip" id="93"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПланыПланировать" id="87">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа планы планировать</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група плани планувати</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа планы планировать</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група плани планувати</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПланыПланироватьExtendedTooltip" id="94"/>
+							<ChildItems>
+								<RadioButtonField name="ПланЗакупокПланировать" id="18">
+									<DataPath>ПланЗакупокПланировать</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Планирование закупок</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Планування купівель</v8:content>
+										</v8:item>
+									</Title>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Только по количеству</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Тільки за кількістю</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По количеству и сумме</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>За кількістю і сумою</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ПланЗакупокПланироватьКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ПланЗакупокПланироватьExtendedTooltip" id="95"/>
+									<Events>
+										<Event name="OnChange">ПланироватьПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<RadioButtonField name="ПланПродажПланировать" id="75">
+									<DataPath>ПланПродажПланировать</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Планирование продаж</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Планування продажів</v8:content>
+										</v8:item>
+									</Title>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Только по количеству</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Тільки за кількістю</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По количеству и сумме</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>За кількістю і сумою</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ПланПродажПланироватьКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ПланПродажПланироватьExtendedTooltip" id="96"/>
+									<Events>
+										<Event name="OnChange">ПланироватьПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Валюта" id="5">
+							<DataPath>Объект.Валюта</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>5</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="ВалютаКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ВалютаExtendedTooltip" id="97"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройки" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиExtendedTooltip" id="106"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаИспользовать" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создавать по сценарию:</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Створювати за сценарієм:</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа использовать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група використовувати</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаИспользоватьExtendedTooltip" id="107"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьВПланированииЗакупок" id="34">
+							<DataPath>Объект.ИспользоватьВПланированииЗакупок</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Планы закупок</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Плани купівель</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьВПланированииЗакупокКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ИспользоватьВПланированииЗакупокExtendedTooltip" id="108"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьВПланированииЗакупокПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаИспользоватьДляЗаказовПоставщику" id="59">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать для заказов поставщику</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група використовувати для замовлень постачальнику</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать для заказов поставщику</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група використовувати для замовлень постачальнику</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИспользоватьДляЗаказовПоставщикуExtendedTooltip" id="109"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация2" id="60">
+									<Width>1</Width>
+									<Height>1</Height>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="Декорация2ExtendedTooltip" id="110"/>
+								</PictureDecoration>
+								<CheckBoxField name="ИспользоватьДляЗаказовПоставщику" id="38">
+									<DataPath>Объект.ИспользоватьДляЗаказовПоставщику</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заказы поставщику</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Замовлення постачальнику</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьДляЗаказовПоставщикуКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ИспользоватьДляЗаказовПоставщикуExtendedTooltip" id="111"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ИспользоватьВПланированииПродажПоКатегориям" id="146">
+							<DataPath>Объект.ИспользоватьВПланированииПродажПоКатегориям</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Планы продаж по категориям</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Плани продажів по категоріях</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьВПланированииПродажПоКатегориямКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="ИспользоватьВПланированииПродажПоКатегориямРасширеннаяПодсказка" id="148"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьВПланированииПродажПоКатегориямПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаИспользоватьРасчетПоСкоростиПродаж" id="178">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать расчет по скорости продаж</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група використовувати розрахунок за швидкістю продажів</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать расчет по скорости продаж</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група використовувати розрахунок за швидкістю продажів</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИспользоватьРасчетПоСкоростиПродажРасширеннаяПодсказка" id="179"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияОтступ6" id="183">
+									<Width>1</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация отступ1</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Декорація отступ1</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияОтступ6КонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="ДекорацияОтступ6РасширеннаяПодсказка" id="185"/>
+								</PictureDecoration>
+								<CheckBoxField name="ИспользоватьРасчетПоСкоростиПродаж" id="180">
+									<DataPath>Объект.ИспользоватьРасчетПоСкоростиПродаж</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расчет по скорости продаж</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Розрахунок за швидкістю продажів</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьРасчетПоСкоростиПродажКонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="ИспользоватьРасчетПоСкоростиПродажРасширеннаяПодсказка" id="182">
+										<TextColor>style:ПоясняющийТекст</TextColor>
+									</ExtendedTooltip>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ИспользоватьВПланированииПродаж" id="40">
+							<DataPath>Объект.ИспользоватьВПланированииПродаж</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Планы продаж по номенклатуре</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Плани продажів по номенклатурі</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьВПланированииПродажКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ИспользоватьВПланированииПродажРасширеннаяПодсказка" id="112"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьВПланированииПродажПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьВПланированииСборкиРазборки" id="125">
+							<DataPath>Объект.ИспользоватьВПланированииСборкиРазборки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Планы сборки (разборки)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Плани збирання (розбирання)</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьВПланированииСборкиРазборкиКонтекстноеМеню" id="126"/>
+							<ExtendedTooltip name="ИспользоватьВПланированииСборкиРазборкиРасширеннаяПодсказка" id="127"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьВПланированииСборкиРазборкиПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаИспользоватьДляЗаказовНаСборкуРазборку" id="128">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать для заказов на сборку разборку</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група використовувати для замовлень на збирання розбирання</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать для заказов на сборку разборку</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група використовувати для замовлень на збирання розбирання</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИспользоватьДляЗаказовНаСборкуРазборкуРасширеннаяПодсказка" id="129"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияОтступ2" id="130">
+									<Width>1</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация отступ1</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Декорація отступ1</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияОтступ2КонтекстноеМеню" id="131"/>
+									<ExtendedTooltip name="ДекорацияОтступ2РасширеннаяПодсказка" id="132"/>
+								</PictureDecoration>
+								<CheckBoxField name="ИспользоватьДляЗаказовНаСборкуРазборку" id="133">
+									<DataPath>Объект.ИспользоватьДляЗаказовНаСборкуРазборку</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заказы на сборку (разборку)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Замовлення на збирання (розбирання)</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьДляЗаказовНаСборкуРазборкуКонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="ИспользоватьДляЗаказовНаСборкуРазборкуРасширеннаяПодсказка" id="135"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИспользоватьВПланированииПроизводства" id="176">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа использовать в планировании производства</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група використовувати у плануванні виробництва</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если флаг "Заказ на производство" снят и установлен "Заказы материалов", то в помощнике
+"Формирование заказов на передачу в производство" заполняются все материалы без учета
+настроек передачи материалов в производство.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Якщо прапорець "Замовлення на виробництво" знятий і встановлений "Замовлення матеріалів", то в помічнику
+"Формування замовлень на передачу у виробництво" заповнюються всі матеріали без урахування
+налаштувань передачі матеріалів у виробництво.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИспользоватьВПланированииПроизводстваРасширеннаяПодсказка" id="177">
+								<TextColor>style:ПоясняющийТекст</TextColor>
+							</ExtendedTooltip>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьВПланированииПроизводства" id="36">
+									<DataPath>Объект.ИспользоватьВПланированииПроизводства</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Планы производства</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Плани виробництва</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьВПланированииПроизводстваКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ИспользоватьВПланированииПроизводстваExtendedTooltip" id="113"/>
+									<Events>
+										<Event name="OnChange">ИспользоватьВПланированииПроизводстваПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаИспользоватьДляЗаказовНаПроизводство" id="149">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать для заказов на производство</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група використовувати для замовлень на виробництво</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать для заказов на производство</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група використовувати для замовлень на виробництво</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИспользоватьДляЗаказовНаПроизводствоРасширеннаяПодсказка" id="147"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияОтступ3" id="173">
+											<Width>1</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация отступ3</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Декорація отступ3</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияОтступ3КонтекстноеМеню" id="174"/>
+											<ExtendedTooltip name="ДекорацияОтступ3РасширеннаяПодсказка" id="175"/>
+										</PictureDecoration>
+										<CheckBoxField name="ИспользоватьДляЗаказовНаПроизводство" id="151">
+											<DataPath>Объект.ИспользоватьДляЗаказовНаПроизводство</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Заказы на производство</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Замовлення на виробництво</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьДляЗаказовНаПроизводствоКонтекстноеМеню" id="152"/>
+											<ExtendedTooltip name="ИспользоватьДляЗаказовНаПроизводствоРасширеннаяПодсказка" id="153"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИспользоватьПланыМатериалов" id="162">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать планы материалов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група використовувати плани матеріалів</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать для заказов на производство</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група використовувати для замовлень на виробництво</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИспользоватьПланыМатериаловРасширеннаяПодсказка" id="163"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияОтступ5" id="164">
+											<Width>1</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация отступ1</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Декорація отступ1</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияОтступ5КонтекстноеМеню" id="165"/>
+											<ExtendedTooltip name="ДекорацияОтступ5РасширеннаяПодсказка" id="166"/>
+										</PictureDecoration>
+										<CheckBoxField name="ИспользоватьДляПланированияМатериалов" id="167">
+											<DataPath>Объект.ИспользоватьДляПланированияМатериалов</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расчет потребностей в материалах, видах РЦ и трудовых ресурсах</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Розрахунок потреб у матеріалах, видах РЦ і трудових ресурсах</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьДляПланированияМатериаловКонтекстноеМеню" id="168"/>
+											<ExtendedTooltip name="ИспользоватьДляПланированияМатериаловРасширеннаяПодсказка" id="169"/>
+											<Events>
+												<Event name="OnChange">ИспользоватьДляПланированияМатериаловПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИспользоватьДляЗаказовНаВнутреннееПотребление" id="154">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать для заказов на производство</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група використовувати для замовлень на виробництво</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать для заказов на производство</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група використовувати для замовлень на виробництво</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИспользоватьДляЗаказовНаВнутреннееПотреблениеРасширеннаяПодсказка" id="155"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияОтступ4" id="156">
+											<Width>1</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация отступ1</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Декорація отступ1</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияОтступ4КонтекстноеМеню" id="157"/>
+											<ExtendedTooltip name="ДекорацияОтступ4РасширеннаяПодсказка" id="158"/>
+										</PictureDecoration>
+										<CheckBoxField name="ИспользоватьДляЗаказовНаВнутреннееПотребление" id="159">
+											<DataPath>Объект.ИспользоватьДляЗаказовНаВнутреннееПотребление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Заказы материалов</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Замовлення матеріалів</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьДляЗаказовНаВнутреннееПотреблениеКонтекстноеМеню" id="160"/>
+											<ExtendedTooltip name="ИспользоватьДляЗаказовНаВнутреннееПотреблениеРасширеннаяПодсказка" id="161"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтражатьВБюджетировании" id="136">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отражение в бюджетировании</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відображення в бюджетуванні</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отражать в бюджетировании</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відображати в бюджетуванні</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаОтражатьВБюджетированииРасширеннаяПодсказка" id="137"/>
+			<ChildItems>
+				<CheckBoxField name="ОтражаетсяВБюджетировании" id="140">
+					<DataPath>Объект.ОтражаетсяВБюджетировании</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отражать планы в бюджетировании</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відображати плани в бюджетуванні</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтражаетсяВБюджетированииКонтекстноеМеню" id="141"/>
+					<ExtendedTooltip name="ОтражаетсяВБюджетированииРасширеннаяПодсказка" id="142"/>
+					<Events>
+						<Event name="OnChange">ОтражаетсяВБюджетированииПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="СценарийБюджетирования" id="143">
+					<DataPath>Объект.СценарийБюджетирования</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По сценарию</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>За сценарієм</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ContextMenu name="СценарийБюджетированияКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="СценарийБюджетированияРасширеннаяПодсказка" id="145"/>
+					<Events>
+						<Event name="StartChoice">СценарийБюджетированияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СценарииТоварногоПланирования</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПланЗакупокПланировать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План закупок планировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>План купівель планувати</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПланированиеЗакупок</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ПланПродажПланировать" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План продаж планировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>План продажів планувати</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПланированиеПродаж</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ОтображениеПериода" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение периода</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відображення періоду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

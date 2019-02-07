@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Items Description="Начальное заполнение справочника Налоговые назначения активов и затрат" Columns="PredefinedName,Name#,KindOfNDS" ColumnNames="ИмяПредопределенного,Наименование,ВидДеятельностиНДС">
+	<Item PredefinedName="НДС_Облагаемая" Name="Обл. НДС" NameUkr="Оподатк. ПДВ" KindOfNDS="Облагаемая"/>
+	<Item PredefinedName="НДС_НеоблагаемаяХозДеятельность" Name="Необл. НДС, любая хоз." NameUkr="Неопод. ПДВ, будь-яка госп." KindOfNDS="Необлагаемая"/>
+	<Item PredefinedName="НДС_Пропорционально" Name="Пропорц. обл. НДС" NameUkr="Пропорц. опод. ПДВ" KindOfNDS="ПропорциональноОблагаемая"/>
+	<Item PredefinedName="НДС_НеоблагаемаяНеХозДеятельность" Name="Необл. НДС, нехоз." NameUkr="Неопод. ПДВ, негосп." KindOfNDS="Необлагаемая"/>
+	<Item PredefinedName="Управленческое" Name="Управленческое" NameUkr="Управлінське" KindOfNDS="Необлагаемая"/>
+</Items>

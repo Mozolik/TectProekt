@@ -1,0 +1,2895 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Width>88</Width>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="1574">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="1632"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="1575">
+					<Width>78</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контроль за состоянием программы, резервное копирование и восстановление, оптимизация быстродействия.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Контроль за станом програми, резервне копіювання і відновлення, оптимізація швидкодії.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="1576"/>
+					<ExtendedTooltip name="ОписаниеРазделаРасширеннаяПодсказка" id="1633"/>
+				</LabelDecoration>
+				<LabelDecoration name="Декорация" id="1584">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ДекорацияКонтекстноеМеню" id="1585"/>
+					<ExtendedTooltip name="ДекорацияРасширеннаяПодсказка" id="1634"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="1577">
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="1635"/>
+					<ChildItems>
+						<Button name="Справка" id="1578">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="1636"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЧастотныйСервис" id="1431">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа частотный сервис</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група частотний сервіс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа частотный сервис</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група частотний сервіс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЧастотныйСервисExtendedTooltip" id="1637"/>
+			<ChildItems>
+				<Button name="ОбработкаЖурналРегистрацииОткрыть" id="1445">
+					<Type>Hyperlink</Type>
+					<CommandName>DataProcessor.ЖурналРегистрации.StandardCommand.Open</CommandName>
+					<ExtendedTooltip name="ОбработкаЖурналРегистрацииОткрытьExtendedTooltip" id="1638"/>
+				</Button>
+				<Button name="ОбработкаАктивныеПользователиОткрыть" id="1446">
+					<Type>Hyperlink</Type>
+					<CommandName>DataProcessor.АктивныеПользователи.StandardCommand.Open</CommandName>
+					<ExtendedTooltip name="ОбработкаАктивныеПользователиОткрытьExtendedTooltip" id="1639"/>
+				</Button>
+				<Button name="ОбработкаБлокировкаСоединенийСИнформационнойБазойОткрыть" id="1447">
+					<Type>Hyperlink</Type>
+					<CommandName>DataProcessor.БлокировкаРаботыПользователей.StandardCommand.Open</CommandName>
+					<ExtendedTooltip name="ОбработкаБлокировкаСоединенийСИнформационнойБазойОткрытьExtendedTooltip" id="1640"/>
+				</Button>
+				<Button name="ОбработкаУдалениеПомеченныхОбъектовОткрыть" id="1448">
+					<Type>Hyperlink</Type>
+					<CommandName>DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open</CommandName>
+					<ExtendedTooltip name="ОбработкаУдалениеПомеченныхОбъектовОткрытьExtendedTooltip" id="1641"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтчетыИОбработки" id="1760">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты и обработки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Звіти і обробки</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаОтчетыИОбработкиExtendedTooltip" id="1761"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОтчетыАдминистратора" id="1836">
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтчетыАдминистратораРасширеннаяПодсказка" id="1837"/>
+					<ChildItems>
+						<Button name="ОбщаяКомандаПанельОтчетовАдминистрирование" id="1838">
+							<Type>Hyperlink</Type>
+							<CommandName>CommonCommand.ПанельОтчетовАдминистрирование</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОбщаяКомандаПанельОтчетовАдминистрированиеРасширеннаяПодсказка" id="1839">
+								<TextColor>style:ПоясняющийТекст</TextColor>
+								<VerticalAlign>Top</VerticalAlign>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа7" id="1840">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="1841"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДополнительныеОтчетыПоАдминистрированию" id="1842">
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДополнительныеОтчетыПоАдминистрированиюРасширеннаяПодсказка" id="1843"/>
+							<ChildItems>
+								<Button name="ДополнительныеОтчетыПоАдминистрированию" id="1844">
+									<Type>Hyperlink</Type>
+									<CommandName>CommonCommand.ДополнительныеОтчетыАдминистрирование</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные отчеты по администрированию</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Додаткові звіти з адміністрування</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДополнительныеОтчетыПоАдминистрированиюРасширеннаяПодсказка" id="1845"/>
+								</Button>
+								<LabelDecoration name="ПояснениеДополнительныеОтчетыПоАдминистрированию" id="1846">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Команды дополнительных отчетов, подключенных к программе.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Команди додаткових звітів, підключених до програми.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеДополнительныеОтчетыПоАдминистрированиюКонтекстноеМеню" id="1847"/>
+									<ExtendedTooltip name="ПояснениеДополнительныеОтчетыПоАдминистрированиюРасширеннаяПодсказка" id="1848"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДополнительныеОбработкиПоАдминистрированию" id="1849">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДополнительныеОбработкиПоАдминистрированиюРасширеннаяПодсказка" id="1850"/>
+							<ChildItems>
+								<Button name="ДополнительныеОбработкиПоАдминистрированию" id="1851">
+									<Type>Hyperlink</Type>
+									<CommandName>CommonCommand.ДополнительныеОбработкиАдминистрирование</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные обработки по администрированию</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Додаткові обробки з адміністрування</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДополнительныеОбработкиПоАдминистрированиюРасширеннаяПодсказка" id="1852"/>
+								</Button>
+								<LabelDecoration name="ПояснениеДополнительныеОбработкиПоАдминистрированию" id="1853">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Команды дополнительных обработок, подключенных к программе.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Команди додаткових обробок, підключених до програми.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеДополнительныеОбработкиПоАдминистрированиюКонтекстноеМеню" id="1854"/>
+									<ExtendedTooltip name="ПояснениеДополнительныеОбработкиПоАдминистрированиюРасширеннаяПодсказка" id="1855"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРегламентныеОперации" id="1527">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентные операции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Регламентні операції</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентные операции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Регламентні операції</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаРегламентныеОперацииExtendedTooltip" id="1642"/>
+			<ChildItems>
+				<UsualGroup name="Группа5" id="1586">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5ExtendedTooltip" id="1643"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОбработкаРегламентныеИФоновыеЗадания" id="1509">
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбработкаРегламентныеИФоновыеЗаданияExtendedTooltip" id="1644"/>
+							<ChildItems>
+								<Button name="ОбработкаРегламентныеИФоновыеЗадания" id="1502">
+									<Type>Hyperlink</Type>
+									<CommandName>DataProcessor.РегламентныеИФоновыеЗадания.Command.РегламентныеИФоновыеЗадания</CommandName>
+									<ExtendedTooltip name="ОбработкаРегламентныеИФоновыеЗаданияExtendedTooltip" id="1645"/>
+								</Button>
+								<LabelDecoration name="ПояснениеОбработкаРегламентныеИФоновыеЗадания" id="1510">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Планирование и запуск регламентных заданий.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Планування і запуск регламентних завдань.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеОбработкаРегламентныеИФоновыеЗаданияКонтекстноеМеню" id="1511"/>
+									<ExtendedTooltip name="ПояснениеОбработкаРегламентныеИФоновыеЗаданияExtendedTooltip" id="1646"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаБлокировкаРаботыСВнешнимиРесурсами" id="2103">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа блокировка работы с внешними ресурсами</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група блокування роботи із зовнішніми ресурсами</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа блокировка работы с внешними ресурсами</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група блокування роботи із зовнішніми ресурсами</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаБлокировкаРаботыСВнешнимиРесурсамиРасширеннаяПодсказка" id="2104"/>
+							<ChildItems>
+								<Button name="РазблокироватьРаботуСВнешнимиРесурсами" id="2105">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.РазблокироватьРаботуСВнешнимиРесурсами</CommandName>
+									<ExtendedTooltip name="РазблокироватьРаботуСВнешнимиРесурсамиРасширеннаяПодсказка" id="2106"/>
+								</Button>
+								<LabelDecoration name="ПояснениеБлокировкаРаботыСВнешнимиРесурсами" id="2107">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Работа со всеми внешними ресурсами (синхронизация данных, отправка почты и т.п.), выполняемая по расписанию заблокирована для предотвращения конфликтов с основной информационной базой.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Робота зі всіма зовнішніми ресурсами (синхронізація даних, відправка пошти тощо), що виконується за розкладом заблокована для запобігання конфліктів з основною інформаційною базою.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПояснениеБлокировкаРаботыСВнешнимиРесурсамиКонтекстноеМеню" id="2108"/>
+									<ExtendedTooltip name="ПояснениеБлокировкаРаботыСВнешнимиРесурсамиРасширеннаяПодсказка" id="2109"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа6" id="1587">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6ExtendedTooltip" id="1650"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОбработкаУправлениеИтогамиИАгрегатамиОткрыть" id="1506">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обработка управление итогами и агрегатами открыть</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група обробка управління підсумками і агрегатами відкрити</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обработка управление итогами и агрегатами открыть</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група обробка управління підсумками і агрегатами відкрити</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбработкаУправлениеИтогамиИАгрегатамиОткрытьExtendedTooltip" id="1651"/>
+							<ChildItems>
+								<Button name="ОбработкаУправлениеИтогамиИАгрегатамиОткрыть" id="1501">
+									<Type>Hyperlink</Type>
+									<CommandName>DataProcessor.УправлениеИтогамиИАгрегатами.StandardCommand.Open</CommandName>
+									<ExtendedTooltip name="ОбработкаУправлениеИтогамиИАгрегатамиОткрытьExtendedTooltip" id="1652"/>
+								</Button>
+								<LabelDecoration name="ПояснениеОбработкаУправлениеИтогамиИАгрегатамиОткрыть" id="1507">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установка периода рассчитанных итогов.
+Перестройка, заполнение и оптимизация агрегатов.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Установка періоду розрахованих підсумків.
+Перебудова, заповнення та оптимізація агрегатів.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеОбработкаУправлениеИтогамиИАгрегатамиОткрытьКонтекстноеМеню" id="1508"/>
+									<ExtendedTooltip name="ПояснениеОбработкаУправлениеИтогамиИАгрегатамиОткрытьExtendedTooltip" id="1653"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="1512">
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстовExtendedTooltip" id="1654"/>
+							<ChildItems>
+								<Button name="УправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="1503">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.УправлениеПолнотекстовымПоискомИИзвлечениемТекстов</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Управление полнотекстовым поиском</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Управління повнотекстовим пошуком</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УправлениеПолнотекстовымПоискомИИзвлечениемТекстовExtendedTooltip" id="1655"/>
+								</Button>
+								<LabelDecoration name="ПояснениеУправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="1513">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновление и очистка индекса полнотекстового поиска.
+Управление извлечением текстов из файлов.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Оновлення та очищення індексу повнотекстового пошуку.
+Управління витягуванням текстів з файлів.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеУправлениеПолнотекстовымПоискомИИзвлечениемТекстовКонтекстноеМеню" id="1514"/>
+									<ExtendedTooltip name="ПояснениеУправлениеПолнотекстовымПоискомИИзвлечениемТекстовExtendedTooltip" id="1656"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДатыЗапретаИзменения" id="2006">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа даты запрета изменения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група дати заборони зміни</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДатыЗапретаИзмененияРасширеннаяПодсказка" id="2007"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДатыЗапретаИзмененияИспользование" id="2008">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа даты запрета изменения использование</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група дати заборони зміни використання</v8:content>
+								</v8:item>
+							</Title>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатыЗапретаИзмененияИспользованиеРасширеннаяПодсказка" id="2009"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьДатыЗапретаИзменения" id="2010">
+									<DataPath>НаборКонстант.ИспользоватьДатыЗапретаИзменения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Даты запрета изменения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дати заборони зміни</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьДатыЗапретаИзмененияКонтекстноеМеню" id="2011"/>
+									<ExtendedTooltip name="ИспользоватьДатыЗапретаИзмененияРасширеннаяПодсказка" id="2012"/>
+									<Events>
+										<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="ИспользоватьДатыЗапретаИзмененияПояснение" id="2013">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запрет изменения данных прошлых периодов.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Заборона зміни даних минулих періодів.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИспользоватьДатыЗапретаИзмененияПояснениеКонтекстноеМеню" id="2014"/>
+									<ExtendedTooltip name="ИспользоватьДатыЗапретаИзмененияПояснениеРасширеннаяПодсказка" id="2015"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДатыЗапретаИзмененияНастройка" id="2016">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа даты запрета изменения настройка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група дати заборони зміни налаштування</v8:content>
+								</v8:item>
+							</Title>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатыЗапретаИзмененияНастройкаРасширеннаяПодсказка" id="2017"/>
+							<ChildItems>
+								<Button name="НастроитьДатыЗапретаИзменения" id="2018">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.НастроитьДатыЗапретаИзменения</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настроить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Настроїти</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="НастроитьДатыЗапретаИзмененияРасширеннаяПодсказка" id="2019"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаУдалениеПомеченныхОбъектовПоРасписанию" id="1815">
+					<Width>86</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУдалениеПомеченныхОбъектовПоРасписаниюРасширеннаяПодсказка" id="1816"/>
+					<ChildItems>
+						<UsualGroup name="Группа8" id="1817">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="1818"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаУдалениеПомеченныхИспользование" id="2004">
+									<Width>43</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУдалениеПомеченныхИспользованиеРасширеннаяПодсказка" id="2005"/>
+									<ChildItems>
+										<CheckBoxField name="УдалениеПомеченныхИспользование" id="1819">
+											<DataPath>УдалениеПомеченныхИспользование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Автоматически удалять помеченные объекты по расписанию</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Автоматично видаляти позначені об'єкти за розкладом</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="УдалениеПомеченныхИспользованиеКонтекстноеМеню" id="1820"/>
+											<ExtendedTooltip name="УдалениеПомеченныхИспользованиеРасширеннаяПодсказка" id="1821"/>
+											<Events>
+												<Event name="OnChange">УдалениеПомеченныхИспользованиеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="УдалениеПомеченныхНастроитьРасписание" id="1822">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.УдалениеПомеченныхНастроитьРасписание</CommandName>
+									<ExtendedTooltip name="УдалениеПомеченныхНастроитьРасписаниеРасширеннаяПодсказка" id="1823"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="УдалениеПомеченныхПредставлениеРасписания" id="1824">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удаление помеченных представление расписания</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Вилучення відмічених представлення розкладу</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="УдалениеПомеченныхПредставлениеРасписанияКонтекстноеМеню" id="1825"/>
+							<ExtendedTooltip name="УдалениеПомеченныхПредставлениеРасписанияРасширеннаяПодсказка" id="1826"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРезервноеКопированиеИВосстановление" id="1467">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервное копирование и восстановление</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Резервне копіювання і відновлення</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервное копирование и восстановление</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Резервне копіювання і відновлення</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаРезервноеКопированиеИВосстановлениеExtendedTooltip" id="1657"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="1620">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1ExtendedTooltip" id="1658"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="1471">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3ExtendedTooltip" id="1659"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРезервноеКопированиеПрограммы" id="1473">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа резервное копирование программы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група резервне копіювання програми</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа резервное копирование программы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група резервне копіювання програми</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРезервноеКопированиеПрограммыExtendedTooltip" id="1660"/>
+									<ChildItems>
+										<LabelDecoration name="РезервноеКопированиеПрограммы" id="1570">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Создание резервной копии</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Створення резервної копії</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="РезервноеКопированиеПрограммыКонтекстноеМеню" id="1571"/>
+											<ExtendedTooltip name="РезервноеКопированиеПрограммыExtendedTooltip" id="1661"/>
+											<Events>
+												<Event name="Click">РезервноеКопированиеПрограммыНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ПояснениеРезервноеКопированиеПрограммы" id="1474">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Запуск процедуры создания резервной копии.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Запуск процедури створення резервної копії.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="ПояснениеРезервноеКопированиеПрограммыКонтекстноеМеню" id="1475"/>
+											<ExtendedTooltip name="ПояснениеРезервноеКопированиеПрограммыExtendedTooltip" id="1662"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаВосстановлениеРезервнойКопии" id="1476">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа восстановление резервной копии</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група оновлення резервної копії</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа восстановление резервной копии</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група оновлення резервної копії</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВосстановлениеРезервнойКопииExtendedTooltip" id="1663"/>
+									<ChildItems>
+										<LabelDecoration name="ВосстановлениеИзРезервнойКопии" id="1568">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Восстановление из резервной копии</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Відновлення з резервної копії</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ВосстановлениеИзРезервнойКопииКонтекстноеМеню" id="1569"/>
+											<ExtendedTooltip name="ВосстановлениеИзРезервнойКопииExtendedTooltip" id="1664"/>
+											<Events>
+												<Event name="Click">ВосстановлениеИзРезервнойКопииНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ПояснениеВосстановлениеРезервнойКопии" id="1477">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Запуск восстановления данных из файлов резервной копии.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Запуск відновлення даних з файлів резервної копії.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="ПояснениеВосстановлениеРезервнойКопииКонтекстноеМеню" id="1478"/>
+											<ExtendedTooltip name="ПояснениеВосстановлениеРезервнойКопииExtendedTooltip" id="1665"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкаРезервногоКопирования" id="1479">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка резервного копирования</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група настройка резервного копіювання</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка резервного копирования</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група настройка резервного копіювання</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкаРезервногоКопированияExtendedTooltip" id="1666"/>
+							<ChildItems>
+								<LabelDecoration name="НастройкаРезервногоКопирования" id="1572">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка резервного копирования</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Настройка резервного копіювання</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="НастройкаРезервногоКопированияКонтекстноеМеню" id="1573"/>
+									<ExtendedTooltip name="НастройкаРезервногоКопированияExtendedTooltip" id="1667"/>
+									<Events>
+										<Event name="Click">НастройкаРезервногоКопированияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="ПояснениеНастройкаРезервногоКопирования" id="1480">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка параметров резервного копирования.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Настройка параметрів резервного копіювання.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеНастройкаРезервногоКопированияКонтекстноеМеню" id="1481"/>
+									<ExtendedTooltip name="ПояснениеНастройкаРезервногоКопированияExtendedTooltip" id="1668"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВерсионирование" id="1876">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версионирование объектов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Версіонування об'єктів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версионирование объектов </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Версіонування об'єктів </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаВерсионированиеРасширеннаяПодсказка" id="1877"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаИспользоватьВерсионированиеОбъектов" id="1878">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа использовать версионирование объектов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група використовувати версіонування об'єктів</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа использовать версионирование объектов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група використовувати версіонування об'єктів</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИспользоватьВерсионированиеОбъектовExtendedTooltip" id="1879"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьВерсионированиеОбъектов" id="1880">
+							<DataPath>НаборКонстант.ИспользоватьВерсионированиеОбъектов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Версионирование объектов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Версіонування об'єктів</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьВерсионированиеОбъектовКонтекстноеМеню" id="1881"/>
+							<ExtendedTooltip name="ИспользоватьВерсионированиеОбъектовExtendedTooltip" id="1882"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьВерсионированиеОбъектовПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ПояснениеИспользоватьВерсионирование" id="1883">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Хранение и просмотр версий документов и справочников программы.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Зберігання та перегляд версій документів і довідників програми.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ПояснениеИспользоватьВерсионированиеКонтекстноеМеню" id="1884"/>
+							<ExtendedTooltip name="ПояснениеИспользоватьВерсионированиеExtendedTooltip" id="1885"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРегистрСведенийНастройкиВерсионированияОбъектов" id="1886">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регистр сведений настройки версионирования объектов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група регістр відомостей настройки версіонування об'єктів</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регистр сведений настройки версионирования объектов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група регістр відомостей настройки версіонування об'єктів</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРегистрСведенийНастройкиВерсионированияОбъектовExtendedTooltip" id="1887"/>
+					<ChildItems>
+						<Button name="РегистрСведенийНастройкиВерсионированияОбъектов" id="1888">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.РегистрСведенийНастройкиВерсионированияОбъектов</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки хранения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Настройки зберігання</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ExtendedTooltip name="РегистрСведенийНастройкиВерсионированияОбъектовExtendedTooltip" id="1889"/>
+						</Button>
+						<LabelDecoration name="ПояснениеРегистрСведенийНастройкиВерсионированияОбъектов" id="1890">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка хранения и очистка версий документов и справочников.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Настройка зберігання і очищення версій документів і довідників.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ПояснениеРегистрСведенийНастройкиВерсионированияОбъектовКонтекстноеМеню" id="1891"/>
+							<ExtendedTooltip name="ПояснениеРегистрСведенийНастройкиВерсионированияОбъектовExtendedTooltip" id="1892"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКлассификаторы" id="1556">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификаторы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Класифікатори</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Классификаторы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Класифікатори</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаКлассификаторыExtendedTooltip" id="1679"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаАдресныйКлассификаторНастройки" id="1903">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адресный классификатор</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Адресний класифікатор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа адресный классификатор настройки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група адресний класифікатор налаштування</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаАдресныйКлассификаторНастройкиРасширеннаяПодсказка" id="1904"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАдресныйКлассификатор" id="2002">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа адресный классификатор</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група адресний класифікатор</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа адресный классификатор</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група адресний класифікатор</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдресныйКлассификаторРасширеннаяПодсказка" id="2003"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаАдресныйКлассификаторЛеваяКолонка" id="1905">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа адресный классификатор левая колонка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група адресний класифікатор ліва колонка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаАдресныйКлассификаторЛеваяКолонкаРасширеннаяПодсказка" id="1906"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаИсточникДанных" id="1907">
+											<TitleTextColor>style:FormTextColor</TitleTextColor>
+											<TitleFont ref="style:NormalTextFont" kind="StyleItem"/>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа источник данных</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Група джерело даних</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>43</Width>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИсточникДанныхРасширеннаяПодсказка" id="1908"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаИсточникДанныхВарианты" id="1909">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа источник данных варианты</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Група джерело даних варіанти</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа источник данных варианты</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Група джерело даних варіанти</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаИсточникДанныхВариантыРасширеннаяПодсказка" id="1910"/>
+													<ChildItems>
+														<RadioButtonField name="ИсточникДанныхФИАССервис1С" id="1911">
+															<DataPath>НаборКонстант.ИсточникДанныхАдресногоКлассификатора</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<RadioButtonType>Auto</RadioButtonType>
+															<ColumnsCount>1</ColumnsCount>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Использовать веб-сервис 1С для ввода и проверки адресов</v8:content>
+																			</v8:item>
+																			<v8:item>
+																				<v8:lang>uk</v8:lang>
+																				<v8:content>Використовувати веб-сервіс 1С для введення і перевірки адрес</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:string">Сервис1С</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ИсточникДанныхФИАССервис1СКонтекстноеМеню" id="1912"/>
+															<ExtendedTooltip name="ИсточникДанныхФИАССервис1СРасширеннаяПодсказка" id="1913"/>
+															<Events>
+																<Event name="OnChange">АдресныйКлассификаторПриИзменении</Event>
+															</Events>
+														</RadioButtonField>
+														<LabelDecoration name="ПояснениеАдресныйКлассификаторВебСервис" id="1914">
+															<TextColor>style:ПоясняющийТекст</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Использовать веб-сервис, предоставляемый фирмой 1С. Требуется постоянное подключение к Интернету.</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Використовувати веб-сервіс, що надається фірмою 1С. Потрібно постійне підключення до Інтернету.</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Top</VerticalAlign>
+															<ContextMenu name="ПояснениеАдресныйКлассификаторВебСервисКонтекстноеМеню" id="1915"/>
+															<ExtendedTooltip name="ПояснениеАдресныйКлассификаторВебСервисРасширеннаяПодсказка" id="1916"/>
+														</LabelDecoration>
+														<RadioButtonField name="ИсточникДанныхФИАСЛокально" id="1917">
+															<DataPath>НаборКонстант.ИсточникДанныхАдресногоКлассификатора</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<RadioButtonType>Auto</RadioButtonType>
+															<ColumnsCount>1</ColumnsCount>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Загружать классификатор в программу</v8:content>
+																			</v8:item>
+																			<v8:item>
+																				<v8:lang>uk</v8:lang>
+																				<v8:content>Завантажувати класифікатор в програму</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:string"/>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ИсточникДанныхФИАСЛокальноКонтекстноеМеню" id="1918"/>
+															<ExtendedTooltip name="ИсточникДанныхФИАСЛокальноРасширеннаяПодсказка" id="1919"/>
+															<Events>
+																<Event name="OnChange">АдресныйКлассификаторПриИзменении</Event>
+															</Events>
+														</RadioButtonField>
+														<LabelDecoration name="ПояснениеЗагружатьАдресныйКлассификатор" id="1920">
+															<TextColor>style:ПоясняющийТекст</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Использовать данные, загружаемые с сайта 1С или из папки на диске. Возможна работа без подключения к Интернету.</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Використовувати дані, програми для завантаження з сайту 1С " або папки на диску. Можлива робота без підключення до Інтернету.</v8:content>
+																</v8:item>
+															</Title>
+															<VerticalAlign>Top</VerticalAlign>
+															<ContextMenu name="ПояснениеЗагружатьАдресныйКлассификаторКонтекстноеМеню" id="1921"/>
+															<ExtendedTooltip name="ПояснениеЗагружатьАдресныйКлассификаторРасширеннаяПодсказка" id="1922"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаАдресныйКлассификаторПраваяКолонка" id="1923">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа адресный классификатор правая колонка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група адресний класифікатор права колонка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа адресный классификатор правая колонка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група адресний класифікатор права колонка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаАдресныйКлассификаторПраваяКолонкаРасширеннаяПодсказка" id="1924"/>
+									<ChildItems>
+										<Button name="РегистрСведенийАдресныеОбъектыАвторизацияНаСайтеПоддержкиПользователей" id="1925">
+											<Type>Hyperlink</Type>
+											<CommandName>InformationRegister.АдресныеОбъекты.Command.АвторизацияНаСайтеПоддержки</CommandName>
+											<ExtendedTooltip name="РегистрСведенийАдресныеОбъектыАвторизацияНаСайтеПоддержкиПользователейРасширеннаяПодсказка" id="1926"/>
+										</Button>
+										<LabelDecoration name="ПояснениеАвторизацияНаСайте" id="1927">
+											<Height>4</Height>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt;Для использования веб-сервиса 1С и загрузки обновлений адресного классификатора &lt;/&gt;&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt;необходимо указать логин и пароль, полученный при регистрации &lt;/&gt;&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt;на сайте поддержки пользователей 1С.&lt;/&gt;</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt;Для використання веб-сервісу 1С і завантаження оновлень адресного класифікатора &lt;/&gt;&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt;необхідно вказати логін та пароль, отриманий при реєстрації &lt;/&gt;&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt;на сайті підтримки користувачів 1С.&lt;/&gt;</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="ПояснениеАвторизацияНаСайтеКонтекстноеМеню" id="1928"/>
+											<ExtendedTooltip name="ПояснениеАвторизацияНаСайтеРасширеннаяПодсказка" id="1929"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАдресныйКлассификаторКоманды" id="1930">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адресный классификатор</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Адресний класифікатор</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="sys:DefaultGUIFont" faceName="MS Shell Dlg" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Group>Horizontal</Group>
+							<Representation>NormalSeparation</Representation>
+							<ChildItemsWidth>Equal</ChildItemsWidth>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдресныйКлассификаторКомандыРасширеннаяПодсказка" id="1931"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКомандАдресныйКлассификатор" id="1932">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа команд адресный классификатор</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група команд адресний класифікатор</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа команд адресный классификатор</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група команд адресний класифікатор</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомандАдресныйКлассификаторРасширеннаяПодсказка" id="1933"/>
+									<ChildItems>
+										<UsualGroup name="АдресныйКлассификаторЛеваяКолонка" id="1934">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адресный классификатор левая колонка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Адресний класифікатор ліва колонка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адресный классификатор левая колонка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Адресний класифікатор ліва колонка</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>43</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="АдресныйКлассификаторЛеваяКолонкаРасширеннаяПодсказка" id="1935"/>
+											<ChildItems>
+												<Button name="РегистрСведенийАдресныеОбъектыЗагрузитьАдресныйКлассификатор" id="1936">
+													<Type>Hyperlink</Type>
+													<CommandName>InformationRegister.АдресныеОбъекты.Command.ЗагрузитьАдресныйКлассификатор</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Загрузить классификатор</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Завантажити класифікатор</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="РегистрСведенийАдресныеОбъектыЗагрузитьАдресныйКлассификаторРасширеннаяПодсказка" id="1937"/>
+												</Button>
+												<LabelDecoration name="ПояснениеАдресныйКлассификаторЗагрузка" id="1938">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Загрузка и проверка обновления адресного классификатора с сайта 1С или из папки на диске.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Завантаження і перевірка оновлення адресного класифікатора з сайту 1С або з папки на диску.</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Top</VerticalAlign>
+													<ContextMenu name="ПояснениеАдресныйКлассификаторЗагрузкаКонтекстноеМеню" id="1939"/>
+													<ExtendedTooltip name="ПояснениеАдресныйКлассификаторЗагрузкаРасширеннаяПодсказка" id="1940"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="АдресныйКлассификаторПраваяКолонка" id="1946">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адресный классификатор правая колонка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Адресний класифікатор права колонка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адресный классификатор правая колонка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Адресний класифікатор права колонка</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>43</Width>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="АдресныйКлассификаторПраваяКолонкаРасширеннаяПодсказка" id="1947"/>
+											<ChildItems>
+												<Button name="РегистрСведенийАдресныеОбъектыОчиститьАдресныйКлассификатор" id="1948">
+													<Type>Hyperlink</Type>
+													<CommandName>InformationRegister.АдресныеОбъекты.Command.ОчиститьАдресныйКлассификатор</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Очистить адресные сведения</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Очистити адресні відомості</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="РегистрСведенийАдресныеОбъектыОчиститьАдресныйКлассификаторРасширеннаяПодсказка" id="1949"/>
+												</Button>
+												<LabelDecoration name="ПояснениеАдресныйКлассификаторОчистка" id="1950">
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Удаление загруженных адресных сведений по выбранным, неиспользуемым регионам для уменьшения размера базы.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Видалення завантажених адресних дані за обраним, невживаним регіонам для зменшення розміру бази.</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Top</VerticalAlign>
+													<ContextMenu name="ПояснениеАдресныйКлассификаторОчисткаКонтекстноеМеню" id="1951"/>
+													<ExtendedTooltip name="ПояснениеАдресныйКлассификаторОчисткаРасширеннаяПодсказка" id="1952"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаБанкиВалюты" id="1557">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Другие классификаторы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інші класифікатори</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа банки валюты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група банки валюти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаБанкиВалютыРасширеннаяПодсказка" id="1680"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОбработкаЗагрузкаКурсовВалют" id="1564">
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбработкаЗагрузкаКурсовВалютExtendedTooltip" id="1687"/>
+							<ChildItems>
+								<Button name="ОбработкаЗагрузкаКурсовВалют" id="1893">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОбработкаЗагрузкаКурсовВалют</CommandName>
+									<ExtendedTooltip name="ОбработкаЗагрузкаКурсовВалютExtendedTooltip" id="1894"/>
+								</Button>
+								<LabelDecoration name="ПояснениеОбработкаЗагрузкаКурсовВалют" id="1895">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузка курсов выбранных валют за указанный период с сайта finance.ua</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Завантаження вибраних курсів валют за вказаний період з сайту finance.ua</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеОбработкаЗагрузкаКурсовВалютКонтекстноеМеню" id="1896"/>
+									<ExtendedTooltip name="ПояснениеОбработкаЗагрузкаКурсовВалютExtendedTooltip" id="1897"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОценкаПроизводительности" id="1598">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценка производительности</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оцінка продуктивності</v8:content>
+				</v8:item>
+			</Title>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаОценкаПроизводительностиExtendedTooltip" id="1672"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВыполнятьЗамерыПроизводительности" id="1589">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выполнять замеры производительности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група виконувати заміри продуктивності</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выполнять замеры производительности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група виконувати заміри продуктивності</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыполнятьЗамерыПроизводительностиExtendedTooltip" id="1673"/>
+					<ChildItems>
+						<CheckBoxField name="ВыполнятьЗамерыПроизводительности" id="1590">
+							<DataPath>НаборКонстант.ВыполнятьЗамерыПроизводительности</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оценка производительности</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Оцінка продуктивності</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыполнятьЗамерыПроизводительностиКонтекстноеМеню" id="1591"/>
+							<ExtendedTooltip name="ВыполнятьЗамерыПроизводительностиExtendedTooltip" id="1674"/>
+							<Events>
+								<Event name="OnChange">ВыполнятьЗамерыПроизводительностиПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ПояснениеВыполнятьЗамерыПроизводительности" id="1592">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оценка интегральной производительности программы по методике APDEX.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Оцінка інтегральної продуктивності програми за методикою APDEX.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ПояснениеВыполнятьЗамерыПроизводительностиКонтекстноеМеню" id="1593"/>
+							<ExtendedTooltip name="ПояснениеВыполнятьЗамерыПроизводительностиExtendedTooltip" id="1675"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОбработкаОценкаПроизводительности" id="1594">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обработка оценка производительности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група обробка оцінка продуктивності</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обработка оценка производительности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група обробка оцінка продуктивності</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОбработкаОценкаПроизводительностиExtendedTooltip" id="1676"/>
+					<ChildItems>
+						<Button name="ОбработкаОценкаПроизводительности" id="1595">
+							<Type>Hyperlink</Type>
+							<CommandName>DataProcessor.ОценкаПроизводительности.StandardCommand.Open</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показатели производительности</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Показники продуктивності</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОбработкаОценкаПроизводительностиExtendedTooltip" id="1677"/>
+						</Button>
+						<LabelDecoration name="ПояснениеОбработкаОценкаПроизводительности" id="1596">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Просмотр и оценка результатов замеров производительности.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Перегляд та оцінка результатів вимірів продуктивності.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ПояснениеОбработкаОценкаПроизводительностиКонтекстноеМеню" id="1597"/>
+							<ExtendedTooltip name="ПояснениеОбработкаОценкаПроизводительностиExtendedTooltip" id="1678"/>
+						</LabelDecoration>
+						<Button name="ОбработкаНастройкиОценкиПроизводительности" id="2020">
+							<Type>Hyperlink</Type>
+							<CommandName>DataProcessor.ОценкаПроизводительности.Command.НастройкиОценкиПроизводительности</CommandName>
+							<ExtendedTooltip name="ОбработкаНастройкиОценкиПроизводительностиРасширеннаяПодсказка" id="2021"/>
+						</Button>
+						<LabelDecoration name="ПояснениеОбработкаНастройкиОценкиПроизводительности" id="2022">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки параметров оценки производительности.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Настройки параметрів оцінки продуктивності.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеОбработкаНастройкиОценкиПроизводительностиКонтекстноеМеню" id="2023"/>
+							<ExtendedTooltip name="ПояснениеОбработкаНастройкиОценкиПроизводительностиРасширеннаяПодсказка" id="2024"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКорректировкаДанных" id="1781">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Коригування даних</v8:content>
+				</v8:item>
+			</Title>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаКорректировкаДанныхExtendedTooltip" id="1782"/>
+			<ChildItems>
+				<UsualGroup name="Группа10" id="1870">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="1871"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОбработкаГрупповоеИзменениеОбъектов" id="1856">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обработка групповое изменение объектов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група обробка групова зміна об'єктів</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обработка групповое изменение объектов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група обробка групова зміна об'єктів</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбработкаГрупповоеИзменениеОбъектовРасширеннаяПодсказка" id="1857"/>
+							<ChildItems>
+								<Button name="ОбработкаГрупповоеИзменениеОбъектовГрупповоеИзменениеРеквизитов" id="1858">
+									<Type>Hyperlink</Type>
+									<CommandName>DataProcessor.ГрупповоеИзменениеРеквизитов.Command.ГрупповоеИзменениеРеквизитов</CommandName>
+									<ExtendedTooltip name="ОбработкаГрупповоеИзменениеОбъектовГрупповоеИзменениеРеквизитовРасширеннаяПодсказка" id="1859"/>
+								</Button>
+								<LabelDecoration name="ПояснениеКОбработкеГрупповоеИзменениеОбъектов" id="1860">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изменение реквизитов и табличных частей в выбранных элементах.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Зміна реквізитів і табличних частин в обраних елементах.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеКОбработкеГрупповоеИзменениеОбъектовКонтекстноеМеню" id="1861"/>
+									<ExtendedTooltip name="ПояснениеКОбработкеГрупповоеИзменениеОбъектовРасширеннаяПодсказка" id="1862"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПоискИУдалениеДублей" id="1863">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа поиск и удаление дублей</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група пошук і вилучення дублів</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа поиск и удаление дублей</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група пошук і вилучення дублів</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПоискИУдалениеДублейРасширеннаяПодсказка" id="1864"/>
+							<ChildItems>
+								<Button name="ПоискИУдалениеДублей" id="1865">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ПоискИУдалениеДублей</CommandName>
+									<ExtendedTooltip name="ПоискИУдалениеДублейРасширеннаяПодсказка" id="1866"/>
+								</Button>
+								<LabelDecoration name="ПояснениеКПоискуИУдалениюДублей" id="1867">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поиск похожих элементов по заданным условиям сравнения.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Пошук схожих елементів за заданих умов порівняння.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеКПоискуИУдалениюДублейКонтекстноеМеню" id="1868"/>
+									<ExtendedTooltip name="ПояснениеКПоискуИУдалениюДублейРасширеннаяПодсказка" id="1869"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКорректировкаДанныхВтораяСтрока" id="2110">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа корректировка данных вторая строка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група коригування даних друга рядок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа корректировка данных вторая строка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група коригування даних друга рядок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКорректировкаДанныхВтораяСтрокаРасширеннаяПодсказка" id="2111"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДокументКорректировкаРегистров" id="1783">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа документ корректировка регистров</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група документ коригування регістрів</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДокументКорректировкаРегистровExtendedTooltip" id="1784"/>
+							<ChildItems>
+								<Button name="ДокументКорректировкаРегистровКорректировкаРегистров" id="1785">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.КорректировкаРегистров.Command.КорректировкаРегистров</CommandName>
+									<ExtendedTooltip name="ДокументКорректировкаРегистровКорректировкаРегистровExtendedTooltip" id="1786"/>
+								</Button>
+								<LabelDecoration name="ПояснениеДокументКорректировкаРегистровКорректировкаРегистров" id="1787">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ручная корректировка записей регистров накопления
+и регистров сведений.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Ручне коригування записів регістрів накопичення
+і регістрів даних.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеДокументКорректировкаРегистровКорректировкаРегистровКонтекстноеМеню" id="1788"/>
+									<ExtendedTooltip name="ПояснениеДокументКорректировкаРегистровКорректировкаРегистровExtendedTooltip" id="1789"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОбработкаНачальноеЗаполнение_НачальноеЗаполнениеИОбновлениеОбъектов_НачальноеЗаполнениеИОбновлениеОбъектов" id="2112">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обработка начальное заполнение начальное заполнение и обновление объектов начальное заполнение и обновление объектов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група обробка початкове заповнення початкове заповнення та оновлення об'єктів початкове заповнення та оновлення об'єктів</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа документ корректировка регистров</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група документ коригування регістрів</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбработкаНачальноеЗаполнение_НачальноеЗаполнениеИОбновлениеОбъектов_НачальноеЗаполнениеИОбновлениеОбъектовРасширеннаяПодсказка" id="2113"/>
+							<ChildItems>
+								<Button name="НачальноеЗаполнениеИОбновлениеОбъектов_НачальноеЗаполнениеИОбновлениеОбъектов" id="2114">
+									<Type>Hyperlink</Type>
+									<CommandName>DataProcessor.НачальноеЗаполнениеИОбновлениеОбъектов.Command.НачальноеЗаполнениеИОбновлениеОбъектов</CommandName>
+									<ExtendedTooltip name="НачальноеЗаполнениеИОбновлениеОбъектов_НачальноеЗаполнениеИОбновлениеОбъектовРасширеннаяПодсказка" id="2115"/>
+								</Button>
+								<LabelDecoration name="ПояснениеНачальноеЗаполнениеИОбновлениеОбъектов_НачальноеЗаполнениеИОбновлениеОбъектов" id="2116">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ручной запуск алгоритмов начального заполнения и обновления объектов</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Ручний запуск алгоритмів початкового заповнення та оновлення об'єктів</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеНачальноеЗаполнениеИОбновлениеОбъектов_НачальноеЗаполнениеИОбновлениеОбъектовКонтекстноеМеню" id="2117"/>
+									<ExtendedTooltip name="ПояснениеНачальноеЗаполнениеИОбновлениеОбъектов_НачальноеЗаполнениеИОбновлениеОбъектовРасширеннаяПодсказка" id="2118"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКорректировкаДанныхТретьяСтрока" id="2119">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа корректировка данных третья строка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група коригування даних третій рядок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа корректировка данных третья строка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група коригування даних третій рядок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКорректировкаДанныхТретьяСтрокаРасширеннаяПодсказка" id="2120"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОбработкаНачальноеЗаполнениеИОбновлениеОбъектов_ПриИзмененииЯзыкаИнформационнойБазы" id="2121">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обработка начальное заполнение начальное заполнение и обновление объектов начальное заполнение и обновление объектов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група обробка початкове заповнення початкове заповнення та оновлення об'єктів початкове заповнення та оновлення об'єктів</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа документ корректировка регистров</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група документ коригування регістрів</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбработкаНачальноеЗаполнениеИОбновлениеОбъектов_ПриИзмененииЯзыкаИнформационнойБазыРасширеннаяПодсказка" id="2122"/>
+							<ChildItems>
+								<Button name="НачальноеЗаполнениеИОбновлениеОбъектов_ПриИзмененииЯзыкаИнформационнойБазы" id="2123">
+									<Type>Hyperlink</Type>
+									<CommandName>DataProcessor.НачальноеЗаполнениеИОбновлениеОбъектов.Command.ПриИзмененииЯзыкаИнформационнойБазы</CommandName>
+									<ExtendedTooltip name="НачальноеЗаполнениеИОбновлениеОбъектов_ПриИзмененииЯзыкаИнформационнойБазыРасширеннаяПодсказка" id="2124"/>
+								</Button>
+								<LabelDecoration name="ПояснениеНачальноеЗаполнениеИОбновлениеОбъектов_ПриИзмененииЯзыкаИнформационнойБазы" id="2125">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запуск заполнения наименований предопределеннных элементов на языке информационной базы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Запуск заповнення найменувань напередвизначенних елементів мовою інформаційної бази</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеНачальноеЗаполнениеИОбновлениеОбъектов_ПриИзмененииЯзыкаИнформационнойБазыКонтекстноеМеню" id="2126"/>
+									<ExtendedTooltip name="ПояснениеНачальноеЗаполнениеИОбновлениеОбъектов_ПриИзмененииЯзыкаИнформационнойБазыРасширеннаяПодсказка" id="2127"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРезультатыОбновленияПрограммы" id="2059">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты обновления программы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Результати оновлення програми</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа результаты обновления программы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група результати оновлення програми</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаРезультатыОбновленияПрограммыРасширеннаяПодсказка" id="2060"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОбновлениеИОписаниеИзмененийВтораяСтрока" id="2077">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обновление и описание изменений вторая строка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група оновлення та опис змін другий рядок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обновление и описание изменений вторая строка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група оновлення та опис змін другий рядок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОбновлениеИОписаниеИзмененийВтораяСтрокаРасширеннаяПодсказка" id="2078"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОткрытьОписаниеИзмененийСистемы" id="2079">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа открыть описание изменений системы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група відкрити опис змін системи</v8:content>
+								</v8:item>
+							</Title>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОткрытьОписаниеИзмененийСистемыExtendedTooltip" id="2080"/>
+							<ChildItems>
+								<Button name="ОткрытьОписаниеИзмененийСистемы" id="2081">
+									<Type>Hyperlink</Type>
+									<CommandName>CommonForm.ОписаниеИзмененийПрограммы.StandardCommand.Open</CommandName>
+									<ExtendedTooltip name="ОткрытьОписаниеИзмененийСистемыExtendedTooltip" id="2082"/>
+								</Button>
+								<LabelDecoration name="ПояснениеОткрытьОписаниеИзмененийСистемы" id="2083">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>История изменений по версиям программы.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Історія змін за версіями програми.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПояснениеОткрытьОписаниеИзмененийСистемыКонтекстноеМеню" id="2084"/>
+									<ExtendedTooltip name="ПояснениеОткрытьОписаниеИзмененийСистемыExtendedTooltip" id="2085"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОтложеннаяОбработкаДанных" id="2086">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отложенная обработка данных</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група відкладена обробка даних</v8:content>
+								</v8:item>
+							</Title>
+							<Width>43</Width>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтложеннаяОбработкаДанныхExtendedTooltip" id="2087"/>
+							<ChildItems>
+								<Button name="РезультатыОбновленияИДополнительнаяОбработкаДанных" id="2088">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.РезультатыОбновленияИДополнительнаяОбработкаДанных</CommandName>
+									<ExtendedTooltip name="РезультатыОбновленияИДополнительнаяОбработкаДанныхExtendedTooltip" id="2089"/>
+								</Button>
+								<LabelDecoration name="ПояснениеОтложеннаяОбработкаДанных" id="2090">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сведения о ходе обновления версии программы, отложенное выполнение дополнительных процедур обработки данных.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Відомості про хід оновлення версії програми, відкладене виконання додаткових процедур обробки даних.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПояснениеОтложеннаяОбработкаДанныхКонтекстноеМеню" id="2091"/>
+									<ExtendedTooltip name="ПояснениеОтложеннаяОбработкаДанныхExtendedTooltip" id="2092"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОбновлениеИОписаниеИзмененийТретьяСтрока" id="2093">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обновление и описание изменений третья строка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група оновлення та опис змін третій рядок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обновление и описание изменений третья строка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група оновлення та опис змін третій рядок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОбновлениеИОписаниеИзмененийТретьяСтрокаРасширеннаяПодсказка" id="2094"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДетализироватьОбновлениеИБВЖурналеРегистрации" id="2095">
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДетализироватьОбновлениеИБВЖурналеРегистрацииExtendedTooltip" id="2096"/>
+							<ChildItems>
+								<CheckBoxField name="ДетализироватьОбновлениеИБВЖурналеРегистрации" id="2097">
+									<DataPath>НаборКонстант.ДетализироватьОбновлениеИБВЖурналеРегистрации</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Детализировать ход обновления в журнале регистрации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Деталізувати хід оновлення в журналі реєстрації</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДетализироватьОбновлениеИБВЖурналеРегистрацииКонтекстноеМеню" id="2098"/>
+									<ExtendedTooltip name="ДетализироватьОбновлениеИБВЖурналеРегистрацииExtendedTooltip" id="2099"/>
+									<Events>
+										<Event name="OnChange">ДетализироватьОбновлениеИБВЖурналеРегистрацииПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<LabelDecoration name="ПояснениеДетализироватьОбновлениеИБВЖурналеРегистрации" id="2100">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Записывать в журнал регистрации подробную информацию о ходе выполнения обновления.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Записувати в журнал реєстрації детальну інформацію про хід виконання оновлення.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПояснениеДетализироватьОбновлениеИБВЖурналеРегистрацииКонтекстноеМеню" id="2101"/>
+									<ExtendedTooltip name="ПояснениеДетализироватьОбновлениеИБВЖурналеРегистрацииExtendedTooltip" id="2102"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЦентрМониторинга" id="2025">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Центр мониторинга</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Центр моніторингу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа оценка производительности</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група оцінка продуктивності</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаЦентрМониторингаРасширеннаяПодсказка" id="2026"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРазрешитьОтправлятьДанные" id="2027">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка автоматической отправки сведений об использовании программы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Настройка автоматичної відправки відомостей про використання програми</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа разрешить отправлять данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група дозволити відправляти дані</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРазрешитьОтправлятьДанныеРасширеннаяПодсказка" id="2028"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПояснение" id="2029">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты об использовании программы помогают нам определить, над чем следует поработать в первую очередь.
+Собранные сведения являются обезличенными и содержат только статистические показатели. Подготовка
+и отправка отчетов не замедлит работу программы.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Звіти про використання програми допомагають нам визначити, над чим слід попрацювати у першу чергу.
+Зібрані відомості є знеособленими і містять тільки статистичні показники. Підготовка
+і відправка звітів не сповільнить роботу програми.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПояснениеКонтекстноеМеню" id="2030"/>
+							<ExtendedTooltip name="ДекорацияПояснениеРасширеннаяПодсказка" id="2031"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаПереключатель" id="2032">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа переключатель</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група перемикач</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа переключатель</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група перемикач</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПереключательРасширеннаяПодсказка" id="2033"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияПереключатель" id="2034">
+									<ContextMenu name="ДекорацияПереключательКонтекстноеМеню" id="2035"/>
+									<ExtendedTooltip name="ДекорацияПереключательРасширеннаяПодсказка" id="2036"/>
+								</LabelDecoration>
+								<RadioButtonField name="ЦентрМониторингаРазрешитьОтправлятьДанные" id="2037">
+									<DataPath>ЦентрМониторингаРазрешитьОтправлятьДанные</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>RadioButtons</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Разрешить автоматическую отправку сведений об использовании программы</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Дозволити автоматичну відправку відомостей про використання програми</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Разрешить отправку сведений стороннему разработчику</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Дозволити надсилання інформації сторонньому розробнику</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ЦентрМониторингаРазрешитьОтправлятьДанныеКонтекстноеМеню" id="2038"/>
+									<ExtendedTooltip name="ЦентрМониторингаРазрешитьОтправлятьДанныеРасширеннаяПодсказка" id="2039"/>
+									<Events>
+										<Event name="OnChange">РазрешитьОтправлятьДанныеПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтправкиДанныхНастройкаРесурсаОбщая" id="2040">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отправки данных настройка ресурса общая</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група відправки даних налаштування ресурсу загальна</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отправки данных настройка ресурса общая</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група відправки даних налаштування ресурсу загальна</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтправкиДанныхНастройкаРесурсаОбщаяРасширеннаяПодсказка" id="2041"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияАдресСервиса" id="2042">
+							<Width>4</Width>
+							<ContextMenu name="ДекорацияАдресСервисаКонтекстноеМеню" id="2043"/>
+							<ExtendedTooltip name="ДекорацияАдресСервисаРасширеннаяПодсказка" id="2044"/>
+						</LabelDecoration>
+						<InputField name="ЦентрМониторингаАдресСервиса" id="2045">
+							<DataPath>ЦентрМониторингаАдресСервиса</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес сервиса</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Адреса сервісу</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЦентрМониторингаАдресСервисаКонтекстноеМеню" id="2046"/>
+							<ExtendedTooltip name="ЦентрМониторингаАдресСервисаРасширеннаяПодсказка" id="2047"/>
+							<Events>
+								<Event name="OnChange">ЦентрМониторингаАдресСервисаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЗапретитьОтправлятьДанные" id="2048">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запретить отправлять данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група заборонити відправляти дані</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа запретить отправлять данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група заборонити відправляти дані</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗапретитьОтправлятьДанныеРасширеннаяПодсказка" id="2049"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияЗапретитьОтправлятьДанные" id="2050">
+							<ContextMenu name="ДекорацияЗапретитьОтправлятьДанныеКонтекстноеМеню" id="2051"/>
+							<ExtendedTooltip name="ДекорацияЗапретитьОтправлятьДанныеРасширеннаяПодсказка" id="2052"/>
+						</LabelDecoration>
+						<RadioButtonField name="ЦентрМониторингаЗапретитьОтправлятьДанные" id="2053">
+							<DataPath>ЦентрМониторингаРазрешитьОтправлятьДанные</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>RadioButtons</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Запретить отправку сведений</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Заборонити відправку відомостей</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ЦентрМониторингаЗапретитьОтправлятьДанныеКонтекстноеМеню" id="2054"/>
+							<ExtendedTooltip name="ЦентрМониторингаЗапретитьОтправлятьДанныеРасширеннаяПодсказка" id="2055"/>
+							<Events>
+								<Event name="OnChange">РазрешитьОтправлятьДанныеПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияГруппаЦентрМониторинга" id="2056">
+					<ContextMenu name="ДекорацияГруппаЦентрМониторингаКонтекстноеМеню" id="2057"/>
+					<ExtendedTooltip name="ДекорацияГруппаЦентрМониторингаРасширеннаяПодсказка" id="2058"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Набір констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ИспользоватьДополнительныеОтчетыИОбработки</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы (фиксированная структура)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Режим роботи (фіксована структура)</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Edit>
+				<xr:Common>false</xr:Common>
+			</Edit>
+		</Attribute>
+		<Attribute name="УдалениеПомеченныхИдентификатор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление помеченных идентификатор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вилучення відмічених ідентифікатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="УдалениеПомеченныхИспользование" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление помеченных использование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вилучення відмічених використання</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УдалениеПомеченныхРасписание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление помеченных расписание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вилучення відмічених розклад</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПараметрыЦентраМониторинга" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры центра мониторинга</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Параметри центру моніторингу</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЦентрМониторингаАдресСервиса" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Центр мониторинга адрес сервиса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Центр моніторингу адресу сервісу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦентрМониторингаРазрешитьОтправлятьДанные" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Центр мониторинга разрешить отправлять данные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Центр моніторингу дозволити відправляти дані</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление полнотекстовым поиском</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Управління повнотекстовим пошуком</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление полнотекстовым поиском и извлечением текстов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Управління повнотекстовим пошуком і витягуванням текстів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаУправлениеПолнотекстовымПоиском</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбработкаЗагрузкаКурсовВалют" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить курсы валют</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити курси валют</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить курсы валют с веб-сайта finance.ua</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити курси валют з веб-сайта finance.ua</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаЗагрузкаКурсовВалют</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.СтандартныеПодсистемыВЛокальномРежиме</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалениеПомеченныхНастроитьРасписание" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настроїти розклад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание для автоматического удаления помеченных объектов в регламентном задании.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштувати розклад для автоматичного видалення помічених об'єктів у регламентному завданні.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалениеПомеченныхНастроитьРасписание</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоискИУдалениеДублей" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск и удаление дублей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Пошук і вилучення дублів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск и удаление дублей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Пошук і вилучення дублів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискИУдалениеДублей</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РегистрСведенийНастройкиВерсионированияОбъектов" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версионируемые объекты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Об'єкти, що версіонуються</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистр сведений "Настройки версионирования объектов"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Регістр відомостей "Настройки версіонування об'єктів"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РегистрСведенийНастройкиВерсионированияОбъектов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РезультатыОбновленияИДополнительнаяОбработкаДанных" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты обновления и дополнительная обработка данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Результати оновлення і додаткова обробка даних</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты обновления и дополнительная обработка данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Результати оновлення і додаткова обробка даних</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтложеннаяОбработкаДанных</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РазблокироватьРаботуСВнешнимиРесурсами" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разблокировать работу с внешними ресурсами</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Розблокувати роботу із зовнішніми ресурсами</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разблокировать работу с внешними ресурсами</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Розблокувати роботу із зовнішніми ресурсами</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РазблокироватьРаботуСВнешнимиРесурсами</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастроитьДатыЗапретаИзменения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить даты запрета изменения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настроїти дати заборони зміни</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить даты запрета изменения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настроїти дати заборони зміни</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьДатыЗапретаИзменения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

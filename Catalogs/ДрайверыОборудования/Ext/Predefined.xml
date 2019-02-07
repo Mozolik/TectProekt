@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.6">
+	<Item id="caf43bd7-ad57-4b98-92a1-a57e3182951f">
+		<Name>Драйвер1СWebСервисОборудование</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Web-сервис оборудование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="353a51d8-c283-44cc-9e4e-05dc20ebf817">
+		<Name>Драйвер1СДисплейПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Дисплей покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="359d6127-2033-420d-8827-a73298a66100">
+		<Name>Драйвер1СПринтерЧеков</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Принтер чеков</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3ed25985-ea6e-45f8-9ca8-ed3c30face07">
+		<Name>Драйвер1ССканерыШтрихкода</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Сканеры штрихкода (COM)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4eca0a6e-8e58-45fa-ae38-344ee76401bb">
+		<Name>Драйвер1ССканерыШтрихкодаNative</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Сканеры штрихкода (NativeApi)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9a0eb32a-0c8b-497f-b9eb-5df7138961af">
+		<Name>Драйвер1ССчитывателиМагнитныхКарт</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Считыватели магнитных карт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c7899b30-c93a-4014-b5f8-ec6467690905">
+		<Name>Драйвер1ССчитывателиМагнитныхКартNative</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Считыватели магнитных карт (NativeApi)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d30c1fe3-8271-47c6-aa28-8b5047b4a8dc">
+		<Name>Драйвер1СФискальныйРегистраторЭмулятор</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>1С:Фискальный регистратор (эмулятор)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="eab8bc20-0e90-4317-a9e8-b2e3742327a4">
+		<Name>ДрайверACOMВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ACOM:Весы с печатью этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7fe7776d-79ef-4f32-81a0-5dea76f50673">
+		<Name>ДрайверCASВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>CAS:Весы с печатью этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5a428475-0087-467b-b0e6-612a70a83f65">
+		<Name>ДрайверCASЭлектронныеВесы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>CAS:Электронные весы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cbc15f05-d3ee-4baa-879a-e7f5e9add44a">
+		<Name>ДрайверАртСофтФискальныйРегистратор</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АртСофт: Фискальный регистратор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d5392e5b-70b6-40f8-968d-e5fa749c8592">
+		<Name>ДрайверАтолДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="455d306d-5653-495b-ba22-5683b1d854e6">
+		<Name>ДрайверАтолСканерыШтрихкода</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Сканеры штрихкода</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b40ca7ff-cef0-4c62-9d78-d414800d4b7f">
+		<Name>ДрайверАтолСчитывателиМагнитныхКарт</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Считыватели магнитных карт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="25483988-7238-4a66-bd73-d35bda09fe0f">
+		<Name>ДрайверАтолТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1d38b07e-1f02-40ef-95d3-ed9ea238af3c">
+		<Name>ДрайверАтолТерминалыСбораДанныхMobileLogistics</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Терминалы сбора данных MobileLogistics 8.Х</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c56a37bc-5d15-4852-b2ba-fa8a26fb7fb3">
+		<Name>ДрайверАтолЭлектронныеВесы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Электронные весы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="308e678e-8bc0-44ad-b92c-34d85bfebfdf">
+		<Name>ДрайверАтолЭлектронныеВесы8X</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>АТОЛ:Электронные весы 8.Х</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fc6e00fb-e9cf-47f2-a36e-bc5590f7555d">
+		<Name>ДрайверГексагонПринтераЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Гексагон:Принтера этикеток Zebra и Proton</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="195e0f6c-1100-4275-8e07-146a2c7e22fd">
+		<Name>ДрайверГексагонСканерыШтрихкода</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Гексагон:Сканеры штрихкода Proton</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d9fb4749-08ea-4c0f-aed7-cd97d0a7aa19">
+		<Name>ДрайверГексагонТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Гексагон:Терминалы сбора данных Goods</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="16a13f5c-9c24-4323-befd-be711eaa3de8">
+		<Name>ДрайверККСДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>ККС:Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df2d0be7-3337-4e84-a1bd-b4cd10dd6ee8">
+		<Name>ДрайверКлеверенсТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Клеверенс:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="052034e9-ff14-4f2c-89dd-d43fe2241d97">
+		<Name>ДрайверКристаллСервисДисплеиПокупателяVikiVision</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Кристалл Сервис:Дисплей покупателя VikiVision</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="48fe8216-d3c7-4d0a-a9ad-99d2813fc2d6">
+		<Name>ДрайверПриватбанкЭквайринговыеТерминалы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Приватбанк:Эквайринговые терминалы Ingenico ECRCommX</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e6186eb2-487e-4b1e-90bc-35bef8b61322">
+		<Name>ДрайверСканкодДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="20ba91b1-e52c-4e00-9282-9caaf86f95d8">
+		<Name>ДрайверСканкодТерминалыСбораДанныхNative</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Драйвер для ТСД CipherLAB 8x00 (NativeApi)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9c51229e-a4da-4957-9773-d59e2bd3af19">
+		<Name>ДрайверСканкодСканерыШтрихкода</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Сканеры штрихкода</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3664c6df-f092-4e23-aab4-f1d9ac71dbb3">
+		<Name>ДрайверСканкодТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сканкод:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2fa2183a-f8db-4d0b-8b96-058f8b957545">
+		<Name>ДрайверСканситиПринтераЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Скансити:Принтер печати этикеток TSC</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4ea32ec9-87a0-4893-9382-4b07d6352d49">
+		<Name>ДрайверСканситиТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Скансити:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cdbf57bc-c4fe-41c2-b15b-91685929717f">
+		<Name>ДрайверScaleCASВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>СКЕЙЛ:Весы c печатью этикеток CL5000J</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4f04e808-d08e-4bed-b9b8-9d66aff43de9">
+		<Name>ДрайверШтрихМВесыСПечатьюЭтикеток</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Штрих-М:Весы с печатью этикеток</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e6e7f3ac-fee4-4023-b7d1-ea09b08bfa49">
+		<Name>ДрайверШтрихМДисплеиПокупателя</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Штрих-М:Дисплеи покупателя</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bbf0cd82-7dec-4e20-be2e-3ac2d7c21daf">
+		<Name>ДрайверШтрихМТерминалыСбораДанных</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Штрих-М:Терминалы сбора данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8d9e426d-2a9f-4404-b925-185022de70e5">
+		<Name>ДрайверШтрихМЭлектронныеВесы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Штрих-М:Электронные весы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

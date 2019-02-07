@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<CommandsVisibility>
+		<Command name="CommonCommand.ДополнительныеОтчетыРегламентированныйУчет">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.СинхронизацияДанных">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияДоходов.Command.ПорядокОтраженияДоходов">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияНоменклатуры.Command.ПорядокОтраженияНоменклатуры">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияНоменклатурыПереданнойНаКомиссию.Command.ПорядокОтраженияНоменклатурыПереданнойНаКомиссию">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияПрочихОпераций.Command.ПорядокОтраженияПрочихОпераций">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияРасходов.Command.ПорядокОтраженияРасходов">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияРасчетовСПартнерами.Command.ПорядокОтраженияРасчетовСПартнерами">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ПанельОтчетовСтандартныеБухгалтерскеОтчеты">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ОтчетыИОбработкиБухгалтера">true</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.СинхронизацияДанных">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.ДополнительныеОтчетыРегламентированныйУчет">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.СинхронизацияДанных">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияДоходов.Command.ПорядокОтраженияДоходов">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияНоменклатуры.Command.ПорядокОтраженияНоменклатуры">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияНоменклатурыПереданнойНаКомиссию.Command.ПорядокОтраженияНоменклатурыПереданнойНаКомиссию">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияПрочихОпераций.Command.ПорядокОтраженияПрочихОпераций">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияРасходов.Command.ПорядокОтраженияРасходов">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПорядокОтраженияРасчетовСПартнерами.Command.ПорядокОтраженияРасчетовСПартнерами">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.НастройкаОтраженияДокументовВРеглУчете.Command.ПосмотретьСтатусыДокументов">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПанельОтчетовСтандартныеБухгалтерскеОтчеты">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПанельСправочниковРегламентированныйУчет.Command.РазделСправочниковРегламентированныйУчет">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ФункциональнаяМодельРегламентированныйУчет">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:6668115d-782e-4b01-8db6-c1fbfbf374df">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.НастройкиИСправочники</Subsystem>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.БухгалтерскийИНалоговыйУчет</Subsystem>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.ОсновныеСредства</Subsystem>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.Лизинг</Subsystem>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.НематериальныеАктивы</Subsystem>
+		<Subsystem/>
+		<Subsystem/>
+		<Subsystem/>
+		<Subsystem/>
+		<Subsystem>Subsystem.РегламентированныйУчет.Subsystem.СтандартныеОтчеты</Subsystem>
+		<Subsystem>7cc23a65-0671-4756-8553-c8c7fdc13f7a</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelReports</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

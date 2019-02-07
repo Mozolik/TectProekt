@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ФормаГруппа1" id="44">
+				<ExtendedTooltip name="ФормаГруппа1ExtendedTooltip" id="45"/>
+				<ChildItems>
+					<Button name="ФормаИмпортироватьСертификат" id="40">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИмпортироватьСертификат</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Импорт</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Імпорт</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаИмпортироватьСертификатExtendedTooltip" id="46"/>
+					</Button>
+					<Button name="ФормаЭкспортироватьСертификат" id="42">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЭкспортироватьСертификат</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Экспорт</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Експорт</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаЭкспортироватьСертификатExtendedTooltip" id="47"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група користувацьких настройок</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиExtendedTooltip" id="48"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="49"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="61">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="62"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="63"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="64">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="65"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="66"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="67">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="68"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="69"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЛогическоеХранилище" id="7">
+					<DataPath>Список.ЛогическоеХранилище</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ЛогическоеХранилищеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ЛогическоеХранилищеExtendedTooltip" id="50"/>
+				</LabelField>
+				<LabelField name="Отпечаток" id="10">
+					<DataPath>Список.Отпечаток</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ОтпечатокКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ОтпечатокExtendedTooltip" id="51"/>
+				</LabelField>
+				<LabelField name="Версия" id="13">
+					<DataPath>Список.Версия</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ВерсияКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ВерсияExtendedTooltip" id="52"/>
+				</LabelField>
+				<LabelField name="ДействителенС" id="16">
+					<DataPath>Список.ДействителенС</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДействителенСКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДействителенСExtendedTooltip" id="53"/>
+				</LabelField>
+				<LabelField name="ДействителенДо" id="19">
+					<DataPath>Список.ДействителенДо</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДействителенДоКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ДействителенДоExtendedTooltip" id="54"/>
+				</LabelField>
+				<LabelField name="Издатель" id="22">
+					<DataPath>Список.Издатель</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ИздательКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ИздательExtendedTooltip" id="55"/>
+				</LabelField>
+				<LabelField name="СерийныйНомер" id="25">
+					<DataPath>Список.СерийныйНомер</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СерийныйНомерКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СерийныйНомерExtendedTooltip" id="56"/>
+				</LabelField>
+				<LabelField name="Субъект" id="28">
+					<DataPath>Список.Субъект</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="СубъектКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СубъектExtendedTooltip" id="57"/>
+				</LabelField>
+				<LabelField name="Наименование" id="31">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="58"/>
+				</LabelField>
+				<CheckBoxField name="ИспользоватьДляПодписи" id="34">
+					<DataPath>Список.ИспользоватьДляПодписи</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьДляПодписиКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ИспользоватьДляПодписиExtendedTooltip" id="59"/>
+				</CheckBoxField>
+				<CheckBoxField name="ИспользоватьДляШифрования" id="37">
+					<DataPath>Список.ИспользоватьДляШифрования</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьДляШифрованияКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ИспользоватьДляШифрованияExtendedTooltip" id="60"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ХранилищеСертификатов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИмпортироватьСертификат" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать сертификат</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Імпортувати сертифікат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать сертификат</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Імпортувати сертифікат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗагрузитьФайл</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИмпортироватьСертификат</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЭкспортироватьСертификат" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспортировать сертификат</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Експортувати сертифікат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспортировать сертификат</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Експортувати сертифікат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВыгрузитьФайл</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЭкспортироватьСертификат</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

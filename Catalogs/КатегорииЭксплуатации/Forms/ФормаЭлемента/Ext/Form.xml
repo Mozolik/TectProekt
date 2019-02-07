@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>45</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Родитель" id="30">
+			<DataPath>Объект.Parent</DataPath>
+			<Width>28</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="РодительКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="Описание" id="33">
+			<DataPath>Объект.Описание</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="35"/>
+		</InputField>
+		<InputField name="СрокЭксплуатации" id="68">
+			<DataPath>Объект.СрокЭксплуатации</DataPath>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="СрокЭксплуатацииКонтекстноеМеню" id="69"/>
+			<ExtendedTooltip name="СрокЭксплуатацииРасширеннаяПодсказка" id="70"/>
+		</InputField>
+		<UsualGroup name="ГруппаОтражениеВРеглУчета" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отражение в регламентированном учете</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відображення в регламентованому обліку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отражение в регл учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відображення в обліку регл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаОтражениеВРеглУчетаРасширеннаяПодсказка" id="37"/>
+			<ChildItems>
+				<InputField name="ВидТМЦ" id="60">
+					<DataPath>Объект.ВидТМЦ</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ВидТМЦКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ВидТМЦРасширеннаяПодсказка" id="62"/>
+					<Events>
+						<Event name="OnChange">ВидТМЦПриИзменении</Event>
+					</Events>
+				</InputField>
+				<UsualGroup name="ГруппаСчетаУчетаПоУмолчанию" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счета учета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Рахунки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа счета учета по умолчанию</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група рахунки обліку по умовчанню</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="ГруппаСчетаУчетаПоУмолчаниюРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="СчетУчета" id="38">
+							<DataPath>Объект.СчетУчета</DataPath>
+							<Enabled>false</Enabled>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В эксплуатации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>В експлуатації</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетУчетаКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="СчетУчетаРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<InputField name="СчетАмортизации" id="41">
+							<DataPath>Объект.СчетАмортизации</DataPath>
+							<Enabled>false</Enabled>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Амортизации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Амортизації</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СчетАмортизацииКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="СчетАмортизацииРасширеннаяПодсказка" id="43"/>
+						</InputField>
+						<Button name="НастроитьСчетаРеглУчетаПоОрганизациям" id="63">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастроитьСчетаРеглУчетаПоОрганизациям</CommandName>
+							<ExtendedTooltip name="НастроитьСчетаРеглУчетаПоОрганизациямРасширеннаяПодсказка" id="64"/>
+						</Button>
+						<LabelDecoration name="НадписьПодсказкаСчетаУчетаПоУмолчанию" id="65">
+							<Width>66</Width>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счета учета используются по умолчанию при отражении документов в учете, если по организации не определены индивидуальные значения.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Рахунки обліку використовуються по умовчанню при відображенні документів в обліку, якщо по організації не визначені індивідуальні значення.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьПодсказкаСчетаУчетаПоУмолчаниюКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="НадписьПодсказкаСчетаУчетаПоУмолчаниюРасширеннаяПодсказка" id="67"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.КатегорииЭксплуатации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьСчетаРеглУчетаПоОрганизациям" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить счета учета по организациям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настроїти рахунки обліку по організаціях</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить счета регл учета по организациям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настроїти рахунки регл обліку по організаціях</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьСчетаРеглУчетаПоОрганизациям</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.УправлениеПредприятием</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

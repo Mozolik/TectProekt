@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Width>45</Width>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="6">
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="20"/>
+			<ChildItems>
+				<Button name="ОткрытьПомощникЗаполненияНастроекИСправочников" id="12">
+					<Type>UsualButton</Type>
+					<Width>45</Width>
+					<CommandName>Form.Command.ОткрытьПомощникЗаполненияНастроекИСправочников</CommandName>
+					<ExtendedTooltip name="ОткрытьПомощникЗаполненияНастроекИСправочниковExtendedTooltip" id="21"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="8">
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3ExtendedTooltip" id="24"/>
+			<ChildItems>
+				<Button name="ОткрытьПомощникПереходаСУправлениеТорговлей23" id="14">
+					<Type>UsualButton</Type>
+					<Width>45</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.ОткрытьПомощникПереходаСУправлениеТорговлей23</CommandName>
+					<ExtendedTooltip name="ОткрытьПомощникПереходаСУправлениеТорговлей23РасширеннаяПодсказка" id="25"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="15">
+			<Width>45</Width>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4ExtendedTooltip" id="26"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация1" id="16">
+					<Width>2</Width>
+					<Height>3</Height>
+					<Picture>
+						<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="Декорация1ExtendedTooltip" id="27"/>
+				</PictureDecoration>
+				<LabelDecoration name="Пояснение" id="4">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Помощники настройки параметров учета и переноса данных могут быть запущены позднее в разделе "НСИ и администрирование / Сервис / Начальное заполнение".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Помічники настройки параметрів обліку і перенесення даних можуть бути запущені пізніше у розділі "НДІ та адміністрування / Сервіс / Початкове заповнення".</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПояснениеExtendedTooltip" id="28"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="19">
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5ExtendedTooltip" id="29"/>
+			<ChildItems>
+				<Button name="Закрыть" id="18">
+					<Type>UsualButton</Type>
+					<Width>45</Width>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ЗакрытьExtendedTooltip" id="30"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ОткрытьПомощникЗаполненияНастроекИСправочников" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помощник заполнения настроек и справочников</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Помічник заповнення настройок і довідників</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник заполнения настроек и справочников</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити помічник заповнення настройок і довідників</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПомощникЗаполненияНастроекИСправочников</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьПомощникПереходаСУправлениеТорговлей23" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка данных из "Управление торговлей для Украины, редакция 2.3"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантаження даних з "Управління торгівлею для України, редакція 2.3"</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть помощник перехода с управление торговлей 2.3</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити помічник переходу з управління торгівлею 2.3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПомощникПереходаСУправлениеТорговлей23</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

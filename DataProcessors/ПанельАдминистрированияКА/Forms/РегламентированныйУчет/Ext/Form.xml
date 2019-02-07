@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="1">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="2"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="3">
+					<Width>78</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление параметрами ведения регламентированного учета.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Управління параметрами ведення регламентованого обліку.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ОписаниеРазделаExtendedTooltip" id="5"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияЗаголовка" id="6">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ДекорацияЗаголовкаКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ДекорацияЗаголовкаExtendedTooltip" id="8"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="9">
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="10"/>
+					<ChildItems>
+						<Button name="Справка" id="11">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="12"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРегламентированныйУчет" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентированный учет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Регламентований облік</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентированный учет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Регламентований облік</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРегламентированныйУчетРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРегистрыУчета" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регистры учета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група регістри обліку</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регистры учета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група регістри обліку</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРегистрыУчетаРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаФорматСохраненияРегистровУчета" id="26">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формат сохранения регистров учета</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група формат збереження регістрів обліку</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формат сохранения регистров учета</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група формат збереження регістрів обліку</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>86</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФорматСохраненияРегистровУчетаРасширеннаяПодсказка" id="27"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияФорматСохраненияРегистровУчета" id="28">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формат сохранения регистров бухгалтерского учета:</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Формат збереження регістрів бухгалтерського обліку:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияФорматСохраненияРегистровУчетаКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ДекорацияФорматСохраненияРегистровУчетаРасширеннаяПодсказка" id="30"/>
+								</LabelDecoration>
+								<InputField name="ФорматСохраненияРегистровУчета" id="31">
+									<DataPath>НаборКонстант.ФорматСохраненияРегистровУчета</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранение регистров бухгалтерского учета</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Збереження регістрів бухгалтерського обліку</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ФорматСохраненияРегистровУчетаКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ФорматСохраненияРегистровУчетаРасширеннаяПодсказка" id="33"/>
+									<Events>
+										<Event name="OnChange">ФорматСохраненияРегистровУчетаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ПояснениеФорматСохраненияРегистровУчета" id="34">
+							<Width>86</Width>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регистры бухгалтерского учета могут быть подписаны электронной подписью и сохранены в архиве в выбранном формате.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Регістри бухгалтерського обліку можуть бути підписані електронним підписом і збережені в архіві в обраному форматі.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ПояснениеФорматСохраненияРегистровУчетаКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ПояснениеФорматСохраненияРегистровУчетаРасширеннаяПодсказка" id="36"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКолонтитулы" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа колонтитулы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група колонтитули</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа колонтитулы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група колонтитули</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>60</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКолонтитулыРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Button name="НастройкаКолонтитулов" id="64">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастройкаКолонтитулов</CommandName>
+							<ExtendedTooltip name="НастройкаКолонтитуловРасширеннаяПодсказка" id="65"/>
+						</Button>
+						<LabelDecoration name="ПояснениеНастройкаКолонтитулов" id="66">
+							<Height>2</Height>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управляет выводом номеров страниц, текущих даты и времени, имени пользователя в колонтитулах стандартных отчетов по регламентированному учету.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Управляє виведенням номерів сторінок, поточних дати і часу, імені користувача в колонтитулах стандартних звітів по регламентованому обліку.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="ПояснениеНастройкаКолонтитуловКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ПояснениеНастройкаКолонтитуловРасширеннаяПодсказка" id="68"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИспользоватьЛизинг" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лизинг</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Лізинг</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа использовать лизинг</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група використовувати лізинг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>43</Width>
+			<Group>Vertical</Group>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИспользоватьЛизингРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьЛизинг" id="15">
+					<DataPath>НаборКонстант.ИспользоватьЛизинг</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лизинг</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Лізинг</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьЛизингКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ИспользоватьЛизингРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьЛизингПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="ПояснениеИспользоватьЛизинг" id="18">
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используется получение имущества в лизинг.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Використовується отримання майна в лізинг.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ПояснениеИспользоватьЛизингКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ПояснениеИспользоватьЛизингРасширеннаяПодсказка" id="20"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтраженияДокументовВРегламентированномУчете" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отражение документов в регламентированном учете</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відображення документів в регламентованому обліку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отражения документов в регламентированном учете</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відображення документів в регламентованому обліку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаОтраженияДокументовВРегламентированномУчетеРасширеннаяПодсказка" id="80"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьРучнуюКорректировкуПроводокПоРеглУчету" id="81">
+					<DataPath>НаборКонстант.ИспользоватьРучнуюКорректировкуПроводокПоРеглУчету</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ручное изменение проводок документов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ручна зміна проводок документів</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьРучнуюКорректировкуПроводокПоРеглУчетуКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ИспользоватьРучнуюКорректировкуПроводокПоРеглУчетуРасширеннаяПодсказка" id="83"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьРучнуюКорректировкуПроводокПоРеглУчетуПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="ПояснениеИспользоватьРучнуюКорректировкуПроводокПоРеглУчету" id="84">
+					<Width>61</Width>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование данного режима требует повышенного внимания пользователей, так как изменения исходных документов не будут влиять на внесенные вручную изменения проводок.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Використання даного режиму потребує підвищеної уваги користувачів, тому що зміни вихідних документів не будуть впливати на внесені вручну зміни проводок.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеИспользоватьРучнуюКорректировкуПроводокПоРеглУчетуКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ПояснениеИспользоватьРучнуюКорректировкуПроводокПоРеглУчетуРасширеннаяПодсказка" id="86"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаБлокировкиДокументовПоРеглУчету" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа блокировки документов по регл учету</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група блокування документів по обліку регл</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа блокировки документов по регл учету</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група блокування документів по обліку регл</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаБлокировкиДокументовПоРеглУчетуРасширеннаяПодсказка" id="88"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьПроверкуДокументовПоРегламентированномуУчету" id="89">
+							<DataPath>НаборКонстант.ИспользоватьПроверкуДокументовПоРегламентированномуУчету</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверка документов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Перевірка документів</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьПроверкуДокументовПоРегламентированномуУчетуКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="ИспользоватьПроверкуДокументовПоРегламентированномуУчетуРасширеннаяПодсказка" id="91"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьПроверкуДокументовПоРегламентированномуУчетуПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаВариантовПроверкиДокумента" id="92">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вариантов проверки документа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група варіантів перевірки документа</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вариантов проверки документа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група варіантів перевірки документа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>41</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВариантовПроверкиДокументаРасширеннаяПодсказка" id="93"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияОтступВариантПроверкиДокументов" id="94">
+									<ContextMenu name="ДекорацияОтступВариантПроверкиДокументовКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ДекорацияОтступВариантПроверкиДокументовРасширеннаяПодсказка" id="96"/>
+								</LabelDecoration>
+								<RadioButtonField name="ВариантПроверкиДокументов" id="97">
+									<DataPath>ВариантПроверкиДокументов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запрет редактирования проверенных</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Заборона редагування перевірених</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content> с запретом редактирования</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content> з забороною редагування</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content> только уведомительная, без запрета редактирования</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content> тільки повідомна, без заборони редагування</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВариантПроверкиДокументовКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ВариантПроверкиДокументовРасширеннаяПодсказка" id="99"/>
+									<Events>
+										<Event name="OnChange">ВариантПроверкиДокументовПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<CheckBoxField name="РазрешатьИзменятьПроверенныеДокументыПоРеглУчету" id="100">
+									<DataPath>НаборКонстант.РазрешатьИзменятьПроверенныеДокументыПоРеглУчету</DataPath>
+									<Visible>false</Visible>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РазрешатьИзменятьПроверенныеДокументыПоРеглУчетуКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="РазрешатьИзменятьПроверенныеДокументыПоРеглУчетуРасширеннаяПодсказка" id="102"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ПояснениеИспользоватьПроверкуДокументовПоРегламентированномуУчету" id="103">
+							<Width>61</Width>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Документы оперативного контура могут быть проверены ответственным пользователем. Возможность изменений проверенных документов определяется настройкой.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Документи оперативного контуру можуть бути перевірені відповідальним користувачем. Можливість змін перевірених документів визначається настройкою.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеИспользоватьПроверкуДокументовПоРегламентированномуУчетуКонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="ПояснениеИспользоватьПроверкуДокументовПоРегламентированномуУчетуРасширеннаяПодсказка" id="105"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНалоговыеДокументы" id="114">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налоговые документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Податкові документи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отражения документов в регламентированном учете</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відображення документів в регламентованому обліку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаНалоговыеДокументыРасширеннаяПодсказка" id="115"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкаНумерацииНалоговыхДокументов" id="141">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка нумерации налоговых документов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група налаштування нумерації податкових документів</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка нумерации налоговых документов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група налаштування нумерації податкових документів</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкаНумерацииНалоговыхДокументовРасширеннаяПодсказка" id="142"/>
+					<ChildItems>
+						<Button name="НастройкаНумерацииНалоговыхДокументов" id="143">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастройкаНумерацииНалоговыхДокументов</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка нумерации налоговых документов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Настройка нумерації податкових документів</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="НастройкаНумерацииНалоговыхДокументовРасширеннаяПодсказка" id="144"/>
+						</Button>
+						<LabelDecoration name="ПоясненияНастройкаНумерацииНалоговыхДокументов" id="145">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка способа нумерации налоговых документов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Настройка способу нумерації податкових документів</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПоясненияНастройкаНумерацииНалоговыхДокументовКонтекстноеМеню" id="146"/>
+							<ExtendedTooltip name="ПоясненияНастройкаНумерацииНалоговыхДокументовРасширеннаяПодсказка" id="147"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Набір констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ИспользоватьЛизинг</Field>
+				<Field>НаборКонстант.ФорматСохраненияРегистровУчета</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Режим роботи</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВариантПроверкиДокументов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант проверки документов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Варіант перевірки документів</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастройкаКолонтитулов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка колонтитулов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройка колонтитулів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка колонтитулов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройка колонтитулів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаКолонтитулов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастройкаНумерацииНалоговыхДокументов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка нумерации налоговых документов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройка нумерації податкових документів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка нумерации налоговых документов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройка нумерації податкових документів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаНумерацииНалоговыхДокументов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

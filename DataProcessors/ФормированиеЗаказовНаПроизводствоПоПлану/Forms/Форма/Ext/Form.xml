@@ -1,0 +1,955 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиExtendedTooltip" id="167"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкаПериода" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка периода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Настройка періоду</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка периода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група настройка періоду</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкаПериодаExtendedTooltip" id="168"/>
+					<ChildItems>
+						<InputField name="Сценарий" id="94">
+							<DataPath>Объект.Сценарий</DataPath>
+							<Width>29</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="СценарийКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="СценарийExtendedTooltip" id="171"/>
+							<Events>
+								<Event name="OnChange">СценарийПриИзменении</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаПериод" id="108">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Період</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа период</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група період</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПериодExtendedTooltip" id="170"/>
+							<ChildItems>
+								<InputField name="НачалоПериода" id="96">
+									<DataPath>Объект.НачалоПериода</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Период с</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Період з</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="НачалоПериодаExtendedTooltip" id="172"/>
+									<Events>
+										<Event name="OnChange">НачалоПериодаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ОкончаниеПериода" id="98">
+									<DataPath>Объект.ОкончаниеПериода</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>по</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>по</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="ОкончаниеПериодаКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ОкончаниеПериодаExtendedTooltip" id="173"/>
+									<Events>
+										<Event name="OnChange">ОкончаниеПериодаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="УстановитьИнтервал" id="193">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьИнтервал</CommandName>
+									<ExtendedTooltip name="УстановитьИнтервалExtendedTooltip" id="194"/>
+								</Button>
+								<Button name="ОтобратьНоменклатуру" id="165">
+									<Type>Hyperlink</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ОтобратьНоменклатуру</CommandName>
+									<ExtendedTooltip name="ОтобратьНоменклатуруExtendedTooltip" id="178"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтборПодразделение" id="207">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отбор подразделение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група відбір підрозділ</v8:content>
+						</v8:item>
+					</Title>
+					<Width>37</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтборПодразделениеРасширеннаяПодсказка" id="208"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЛево" id="212">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа лево</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група лево</v8:content>
+								</v8:item>
+							</Title>
+							<Width>15</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="213"/>
+							<ChildItems>
+								<RadioButtonField name="ОтборПодразделения" id="209">
+									<DataPath>ОтборПодразделения</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Без детализации</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content> Без деталізації</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По подразделению</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>По підрозділу</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ОтборПодразделенияКонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="ОтборПодразделенияРасширеннаяПодсказка" id="211"/>
+									<Events>
+										<Event name="OnChange">ОтборПодразделенияПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПраво" id="214">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа право</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група право</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="215"/>
+							<ChildItems>
+								<LabelDecoration name="ОтборПодразделенияНадпись" id="216">
+									<Height>1</Height>
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>общие планы по предприятию.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>загальні плани по підприємству.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОтборПодразделенияНадписьКонтекстноеМеню" id="217"/>
+									<ExtendedTooltip name="ОтборПодразделенияНадписьРасширеннаяПодсказка" id="218"/>
+								</LabelDecoration>
+								<InputField name="Подразделение" id="104">
+									<DataPath>Объект.Подразделение</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>19</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<OpenButton>false</OpenButton>
+									<AutoChoiceIncomplete>true</AutoChoiceIncomplete>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="ПодразделениеКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ПодразделениеExtendedTooltip" id="169"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ФормированиеЗаказов" id="116">
+			<CommandBarLocation>Top</CommandBarLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ФормированиеЗаказов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ФормированиеЗаказовКонтекстноеМеню" id="117"/>
+			<AutoCommandBar name="ФормированиеЗаказовКоманднаяПанель" id="118">
+				<ChildItems>
+					<Button name="УстановитьФлажки" id="164">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УстановитьФлажки</CommandName>
+						<ExtendedTooltip name="УстановитьФлажкиExtendedTooltip" id="175"/>
+					</Button>
+					<Button name="СнятьФлажки" id="163">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СнятьФлажки</CommandName>
+						<ExtendedTooltip name="СнятьФлажкиExtendedTooltip" id="176"/>
+					</Button>
+					<ButtonGroup name="ФормированиеЗаказовГруппа1" id="197">
+						<ExtendedTooltip name="ФормированиеЗаказовГруппа1РасширеннаяПодсказка" id="198"/>
+						<ChildItems>
+							<Button name="ФормированиеЗаказовНайти" id="199">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ФормированиеЗаказов.StandardCommand.Find</CommandName>
+								<ExtendedTooltip name="ФормированиеЗаказовНайтиРасширеннаяПодсказка" id="200"/>
+							</Button>
+							<Button name="ФормированиеЗаказовОтменитьПоиск" id="201">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ФормированиеЗаказов.StandardCommand.CancelSearch</CommandName>
+								<ExtendedTooltip name="ФормированиеЗаказовОтменитьПоискРасширеннаяПодсказка" id="202"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<Button name="Заполнить" id="152">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ЗаполнитьExtendedTooltip" id="177"/>
+					</Button>
+					<ButtonGroup name="КомандыФормы" id="166">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Команды формы</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Команди форми</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Команды формы</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Команди форми</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Form</CommandSource>
+						<ExtendedTooltip name="КомандыФормыExtendedTooltip" id="179"/>
+					</ButtonGroup>
+					<Button name="ФормированиеЗаказовСправка" id="195">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.Help</CommandName>
+						<ExtendedTooltip name="ФормированиеЗаказовСправкаРасширеннаяПодсказка" id="196"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ФормированиеЗаказовExtendedTooltip" id="180"/>
+			<SearchStringAddition name="ФормированиеЗаказовСтрокаПоиска" id="222">
+				<AdditionSource>
+					<Item>ФормированиеЗаказов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ФормированиеЗаказовСтрокаПоискаКонтекстноеМеню" id="223"/>
+				<ExtendedTooltip name="ФормированиеЗаказовСтрокаПоискаРасширеннаяПодсказка" id="224"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ФормированиеЗаказовСостояниеПросмотра" id="225">
+				<AdditionSource>
+					<Item>ФормированиеЗаказов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ФормированиеЗаказовСостояниеПросмотраКонтекстноеМеню" id="226"/>
+				<ExtendedTooltip name="ФормированиеЗаказовСостояниеПросмотраРасширеннаяПодсказка" id="227"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ФормированиеЗаказовУправлениеПоиском" id="228">
+				<AdditionSource>
+					<Item>ФормированиеЗаказов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ФормированиеЗаказовУправлениеПоискомКонтекстноеМеню" id="229"/>
+				<ExtendedTooltip name="ФормированиеЗаказовУправлениеПоискомРасширеннаяПодсказка" id="230"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ФормированиеЗаказовПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ФормированиеЗаказовПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ФормированиеЗаказовНомерСтроки" id="119">
+					<DataPath>Объект.ФормированиеЗаказов.LineNumber</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<ContextMenu name="ФормированиеЗаказовНомерСтрокиКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ФормированиеЗаказовНомерСтрокиExtendedTooltip" id="181"/>
+				</LabelField>
+				<InputField name="ФормированиеЗаказовАртикул" id="121">
+					<DataPath>Объект.ФормированиеЗаказов.Артикул</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ФормированиеЗаказовАртикулКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="ФормированиеЗаказовАртикулExtendedTooltip" id="182"/>
+				</InputField>
+				<InputField name="ФормированиеЗаказовКод" id="123">
+					<DataPath>Объект.ФормированиеЗаказов.Код</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<Width>11</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ФормированиеЗаказовКодКонтекстноеМеню" id="124"/>
+					<ExtendedTooltip name="ФормированиеЗаказовКодExtendedTooltip" id="183"/>
+				</InputField>
+				<InputField name="ФормированиеЗаказовНоменклатура" id="125">
+					<DataPath>Объект.ФормированиеЗаказов.Номенклатура</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ФормированиеЗаказовНоменклатураКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ФормированиеЗаказовНоменклатураExtendedTooltip" id="184"/>
+				</InputField>
+				<InputField name="ФормированиеЗаказовХарактеристика" id="127">
+					<DataPath>Объект.ФормированиеЗаказов.Характеристика</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ФормированиеЗаказовХарактеристикаКонтекстноеМеню" id="128"/>
+					<ExtendedTooltip name="ФормированиеЗаказовХарактеристикаExtendedTooltip" id="185"/>
+				</InputField>
+				<ColumnGroup name="ФормированиеЗаказовУпаковкаЕдиницаИзмерения" id="237">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Упаковка, единица измерения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Упаковка, одиниця вимірювання</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Упаковка, единица измерения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Упаковка, одиниця вимірювання</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ФормированиеЗаказовУпаковкаЕдиницаИзмеренияРасширеннаяПодсказка" id="238"/>
+					<ChildItems>
+						<InputField name="ФормированиеЗаказовУпаковка" id="234">
+							<DataPath>Объект.ФормированиеЗаказов.Упаковка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ФормированиеЗаказовУпаковкаКонтекстноеМеню" id="235"/>
+							<ExtendedTooltip name="ФормированиеЗаказовУпаковкаРасширеннаяПодсказка" id="236"/>
+							<Events>
+								<Event name="OnChange">ФормированиеЗаказовУпаковкаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelField name="ФормированиеЗаказовНоменклатураЕдиницаИзмерения" id="231">
+							<DataPath>Объект.ФормированиеЗаказов.Номенклатура.ЕдиницаИзмерения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ед. изм.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Од. вим.</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>3</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ФормированиеЗаказовНоменклатураЕдиницаИзмеренияКонтекстноеМеню" id="232"/>
+							<ExtendedTooltip name="ФормированиеЗаказовНоменклатураЕдиницаИзмеренияРасширеннаяПодсказка" id="233"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ФормированиеЗаказовСпецификация" id="219">
+					<DataPath>Объект.ФормированиеЗаказов.Спецификация</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<FixingInTable>Left</FixingInTable>
+					<ContextMenu name="ФормированиеЗаказовСпецификацияКонтекстноеМеню" id="220"/>
+					<ExtendedTooltip name="ФормированиеЗаказовСпецификацияРасширеннаяПодсказка" id="221"/>
+				</InputField>
+				<ColumnGroup name="ГруппаКЗаказу" id="162">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>К заказу</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>До замовлення</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа к заказу</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група до замовлення</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.Change</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<ExtendedTooltip name="ГруппаКЗаказуExtendedTooltip" id="187"/>
+					<ChildItems>
+						<CheckBoxField name="ФормированиеЗаказовОтметитьКЗаказу" id="160">
+							<DataPath>Объект.ФормированиеЗаказов.ОтметитьКЗаказу</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<ShowInFooter>false</ShowInFooter>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ФормированиеЗаказовОтметитьКЗаказуКонтекстноеМеню" id="161"/>
+							<ExtendedTooltip name="ФормированиеЗаказовОтметитьКЗаказуExtendedTooltip" id="188"/>
+						</CheckBoxField>
+						<InputField name="ФормированиеЗаказовКоличествоУпаковок" id="137">
+							<DataPath>Объект.ФормированиеЗаказов.КоличествоУпаковок</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<ShowInFooter>false</ShowInFooter>
+							<ContextMenu name="ФормированиеЗаказовКоличествоУпаковокКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="ФормированиеЗаказовКоличествоУпаковокРасширеннаяПодсказка" id="189"/>
+							<Events>
+								<Event name="OnChange">ФормированиеЗаказовКоличествоУпаковокПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ФормированиеЗаказовПериод" id="158">
+					<DataPath>Объект.ФормированиеЗаказов.Период</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>16</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ФормированиеЗаказовПериодКонтекстноеМеню" id="159"/>
+					<ExtendedTooltip name="ФормированиеЗаказовПериодExtendedTooltip" id="190"/>
+				</InputField>
+				<InputField name="ФормированиеЗаказовКоличествоВПланах" id="133">
+					<DataPath>Объект.ФормированиеЗаказов.КоличествоВПланах</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В планах</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>У планах</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.Magnifier</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<Width>8</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>false</ChoiceButton>
+					<OpenButton>true</OpenButton>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ФормированиеЗаказовКоличествоВПланахКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="ФормированиеЗаказовКоличествоВПланахExtendedTooltip" id="191"/>
+					<Events>
+						<Event name="StartChoice">ФормированиеЗаказовКоличествоВПланахНачалоВыбора</Event>
+						<Event name="Opening">ФормированиеЗаказовКоличествоВПланахОткрытие</Event>
+						<Event name="Clearing">ФормированиеЗаказовКоличествоВПланахОчистка</Event>
+					</Events>
+				</InputField>
+				<InputField name="ФормированиеЗаказовКоличествоВЗаказах" id="135">
+					<DataPath>Объект.ФормированиеЗаказов.КоличествоВЗаказах</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В заказах</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>В замовленнях</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.Magnifier</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<Width>8</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>false</ChoiceButton>
+					<OpenButton>true</OpenButton>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ФормированиеЗаказовКоличествоВЗаказахКонтекстноеМеню" id="136"/>
+					<ExtendedTooltip name="ФормированиеЗаказовКоличествоВЗаказахExtendedTooltip" id="192"/>
+					<Events>
+						<Event name="StartChoice">ФормированиеЗаказовКоличествоВЗаказахНачалоВыбора</Event>
+						<Event name="Opening">ФормированиеЗаказовКоличествоВЗаказахОткрытие</Event>
+						<Event name="Clearing">ФормированиеЗаказовКоличествоВЗаказахОчистка</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<CommandBar name="Группа1" id="203">
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="204"/>
+			<ChildItems>
+				<Button name="СоздатьЗаказ" id="83">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.СоздатьЗаказ</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.СоздатьДокументы</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СоздатьЗаказExtendedTooltip" id="174"/>
+				</Button>
+				<Button name="Закрыть" id="205">
+					<Type>CommandBarButton</Type>
+					<Representation>Text</Representation>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="206"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ФормированиеЗаказовНаПроизводствоПоПлану</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Columns>
+				<AdditionalColumns table="Объект.ФормированиеЗаказов">
+					<Column name="ОтметитьКЗаказу" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отметить к заказу</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Позначити на замовлення</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Период" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Период</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Період</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:StandardPeriod</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="КомпоновщикНастроек" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компоновщик настроек</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Компоновщик настройок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСхемыКомпоновкиДанных" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес схемы компоновки данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Адреса схеми компонування даних</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПодразделения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор подразделения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відбір підрозділу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Заполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьФлажки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить к заказу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Позначити на замовлення</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити прапорці</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьФлажки</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьФлажки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметку к заказу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зняти позначку до замовлення</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зняти прапорці</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьФлажки</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьЗаказ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать заказ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити замовлення</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать заказ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити замовлення</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьЗаказ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтобратьНоменклатуру" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Произвольный отбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Довільний відбір</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отобрать номенклатуру</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відібрати номенклатуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтобратьНоменклатуру</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьИнтервал" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить интервал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити інтервал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить интервал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити інтервал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="c4d67026-2c97-4126-b8be-49aa6f567e2d">false</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваУТ">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="ed815591-aa28-46cf-bc50-a81c93ce25ef">false</xr:Value>
+				<xr:Value name="Role.ПечатьДокументовОтгрузки">false</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьИнтервал</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ИспользуемыеЗначенияРеквизитов">
+			<Type/>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

@@ -1,0 +1,2666 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="168">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="201"/>
+			<ChildItems>
+				<InputField name="Наименование" id="9">
+					<DataPath>Объект.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение шаблона</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Призначення шаблону</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>58</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="202"/>
+				</InputField>
+				<UsualGroup name="ГруппаВнешнаяОбработка" id="52">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа внешная обработка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група зовнішня обробка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВнешнаяОбработкаExtendedTooltip" id="203"/>
+					<ChildItems>
+						<RadioButtonField name="ТипФормированияСообщения" id="129">
+							<DataPath>ТипФормированияСообщения</DataPath>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>по шаблону</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>по шаблону</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>внешней обработкой</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>зовнішньою обробкою</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ТипФормированияСообщенияКонтекстноеМеню" id="130"/>
+							<ExtendedTooltip name="ТипФормированияСообщенияExtendedTooltip" id="204"/>
+							<Events>
+								<Event name="OnChange">ТипФормированияСообщенияПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<Pages name="СтраницыВнешняяОбработкаПусто" id="163">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы внешняя обработка пусто</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Сторінки зовнішня обробка порожньо</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыВнешняяОбработкаПустоExtendedTooltip" id="205"/>
+							<ChildItems>
+								<Page name="СтраницаВнешняяОбработка" id="164">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница внешняя обработка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінка зовнішня обробка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница внешняя обработка</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінка зовнішня обробка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаВнешняяОбработкаExtendedTooltip" id="206"/>
+									<ChildItems>
+										<InputField name="ВнешняяОбработка" id="49">
+											<DataPath>Объект.ВнешняяОбработка</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>31</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ChoiceParameters>
+												<app:item name="Отбор.Вид">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ВидыДополнительныхОтчетовИОбработок.EnumValue.ШаблонСообщения</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="ВнешняяОбработкаКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="ВнешняяОбработкаExtendedTooltip" id="207"/>
+											<Events>
+												<Event name="OnChange">ВнешняяОбработкаПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаПусто" id="165">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница пусто</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінка порожньо</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница пусто</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінка порожньо</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаПустоExtendedTooltip" id="208"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияПустоВнешняяОбработка" id="166">
+											<ContextMenu name="ДекорацияПустоВнешняяОбработкаКонтекстноеМеню" id="167"/>
+											<ExtendedTooltip name="ДекорацияПустоВнешняяОбработкаExtendedTooltip" id="209"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВводНаОсновании" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ввод на основании</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група введеня на підставі</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ввод на основании</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група введеня на підставі</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВводНаОснованииExtendedTooltip" id="210"/>
+					<ChildItems>
+						<CheckBoxField name="ПредназначенДляВводаНаОсновании" id="29">
+							<DataPath>Объект.ПредназначенДляВводаНаОсновании</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вводится на основании:    </v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Вводиться на підставі: </v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПредназначенДляВводаНаОснованииКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ПредназначенДляВводаНаОснованииExtendedTooltip" id="211"/>
+							<Events>
+								<Event name="OnChange">ПредназначенДляВводаНаОснованииПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ПолноеИмяТипаПараметраВводаНаОсновании" id="98">
+							<DataPath>ТипВводаНаОсновании</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Width>40</Width>
+							<DropListButton>true</DropListButton>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ПолноеИмяТипаПараметраВводаНаОснованииКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="ПолноеИмяТипаПараметраВводаНаОснованииExtendedTooltip" id="212"/>
+							<Events>
+								<Event name="ChoiceProcessing">ПолноеИмяТипаПараметраВводаНаОснованииОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<RadioButtonField name="ПредназначениеШаблона" id="12">
+					<DataPath>ПредназначениеШаблона</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По шаблону создается</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>За шаблоном створюється</v8:content>
+						</v8:item>
+					</Title>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Email</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Email</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>SMS</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>SMS</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ПредназначениеШаблонаКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ПредназначениеШаблонаExtendedTooltip" id="213"/>
+					<Events>
+						<Event name="OnChange">ПредназначениеШаблонаПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СтраницыТекстыПараметры" id="55">
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыТекстыПараметрыExtendedTooltip" id="214"/>
+			<ChildItems>
+				<Page name="СтраницаТекстыВнешняяОбработка" id="56">
+					<Group>Horizontal</Group>
+					<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
+					<ExtendedTooltip name="СтраницаТекстыВнешняяОбработкаExtendedTooltip" id="215"/>
+					<ChildItems>
+						<Table name="ПараметрыШаблона" id="113">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<ReadOnly>true</ReadOnly>
+							<HeightInTableRows>3</HeightInTableRows>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ПараметрыШаблона</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры шаблона</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Параметри шаблону</v8:content>
+								</v8:item>
+							</Title>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПараметрыШаблонаКонтекстноеМеню" id="114"/>
+							<AutoCommandBar name="ПараметрыШаблонаКоманднаяПанель" id="115"/>
+							<ExtendedTooltip name="ПараметрыШаблонаExtendedTooltip" id="216"/>
+							<SearchStringAddition name="ПараметрыШаблонаСтрокаПоиска" id="293">
+								<AdditionSource>
+									<Item>ПараметрыШаблона</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыШаблонаСтрокаПоискаКонтекстноеМеню" id="294"/>
+								<ExtendedTooltip name="ПараметрыШаблонаСтрокаПоискаРасширеннаяПодсказка" id="295"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПараметрыШаблонаСостояниеПросмотра" id="296">
+								<AdditionSource>
+									<Item>ПараметрыШаблона</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыШаблонаСостояниеПросмотраКонтекстноеМеню" id="297"/>
+								<ExtendedTooltip name="ПараметрыШаблонаСостояниеПросмотраРасширеннаяПодсказка" id="298"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПараметрыШаблонаУправлениеПоиском" id="299">
+								<AdditionSource>
+									<Item>ПараметрыШаблона</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыШаблонаУправлениеПоискомКонтекстноеМеню" id="300"/>
+								<ExtendedTooltip name="ПараметрыШаблонаУправлениеПоискомРасширеннаяПодсказка" id="301"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПараметрыШаблонаПредставлениеПараметра" id="120">
+									<DataPath>ПараметрыШаблона.ПредставлениеПараметра</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Представление</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Представлення</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>29</Width>
+									<ContextMenu name="ПараметрыШаблонаПредставлениеПараметраКонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ПараметрыШаблонаПредставлениеПараметраExtendedTooltip" id="217"/>
+								</InputField>
+								<InputField name="ПараметрыШаблонаОписаниеТипа" id="118">
+									<DataPath>ПараметрыШаблона.ОписаниеТипа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Тип</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>20</Width>
+									<ContextMenu name="ПараметрыШаблонаОписаниеТипаКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="ПараметрыШаблонаОписаниеТипаExtendedTooltip" id="218"/>
+								</InputField>
+								<InputField name="ПараметрыШаблонаИмяПараметра" id="116">
+									<DataPath>ПараметрыШаблона.ИмяПараметра</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Ім'я</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>20</Width>
+									<ContextMenu name="ПараметрыШаблонаИмяПараметраКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ПараметрыШаблонаИмяПараметраExtendedTooltip" id="219"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Pages name="СтраницыВнешняяОбработкаШаблоны" id="110">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы внешняя обработка шаблоны</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Сторінки зовнішня обробка шаблони</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы внешняя обработка шаблоны</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Сторінки зовнішня обробка шаблони</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыВнешняяОбработкаШаблоныExtendedTooltip" id="220"/>
+							<ChildItems>
+								<Page name="СтраницаВнешняяОбработкаШаблонSMS" id="111">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница внешняя обработка шаблон SMS</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінка зовнішня обробка шаблон SMS</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница внешняя обработка шаблон SMS</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінка зовнішня обробка шаблон SMS</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаВнешняяОбработкаШаблонSMSExtendedTooltip" id="221"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаЗаголовокСообщениеSMSВнешняяОбработка" id="154">
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа заголовок сообщение SMSВнешняя обработка</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Група заголовок повідомлення ЅМЅВнешняя обробка</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЗаголовокСообщениеSMSВнешняяОбработкаExtendedTooltip" id="222"/>
+											<ChildItems>
+												<LabelDecoration name="ЗаголовокСообщениеSMSВнешняяОбработка" id="155">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Текст шаблона SMS:</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Текст шаблону SMS:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ЗаголовокСообщениеSMSВнешняяОбработкаКонтекстноеМеню" id="156"/>
+													<ExtendedTooltip name="ЗаголовокСообщениеSMSВнешняяОбработкаExtendedTooltip" id="223"/>
+												</LabelDecoration>
+												<LabelDecoration name="ДекорацияПустаяЗаголовокSMSВнешняяОбработка" id="159">
+													<HorizontalStretch>true</HorizontalStretch>
+													<ContextMenu name="ДекорацияПустаяЗаголовокSMSВнешняяОбработкаКонтекстноеМеню" id="160"/>
+													<ExtendedTooltip name="ДекорацияПустаяЗаголовокSMSВнешняяОбработкаExtendedTooltip" id="224"/>
+												</LabelDecoration>
+												<CheckBoxField name="ОтправлятьВТранслитеВнешняяОбработка" id="157">
+													<DataPath>Объект.ОтправлятьВТранслите</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОтправлятьВТранслитеВнешняяОбработкаКонтекстноеМеню" id="158"/>
+													<ExtendedTooltip name="ОтправлятьВТранслитеВнешняяОбработкаExtendedTooltip" id="225"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<TextDocumentField name="ТекстШаблонаSMSВнешняяОбработка" id="78">
+											<DataPath>Объект.ТекстШаблонаSMS</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаблон сообщения SMS</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Шаблон повідомлення SMS</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<Height>4</Height>
+											<ContextMenu name="ТекстШаблонаSMSВнешняяОбработкаКонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="ТекстШаблонаSMSВнешняяОбработкаExtendedTooltip" id="226"/>
+										</TextDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаВнешняяОбработкаШаблонаПисьма" id="112">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница внешняя обработка шаблона письма</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінка зовнішня обробка шаблону листа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница внешняя обработка шаблона письма</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сторінка зовнішня обробка шаблону листа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаВнешняяОбработкаШаблонаПисьмаExtendedTooltip" id="227"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаШаблонПисьмаВнешняяОбработка" id="59">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаблон письма</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Шаблон листа</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа шаблон письма</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Група шаблон листа</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаШаблонПисьмаВнешняяОбработкаExtendedTooltip" id="228"/>
+											<ChildItems>
+												<InputField name="ТемаПисьмаВнешняяОбработка" id="60">
+													<DataPath>Объект.ТемаПисьма</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Тема письма</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Тема листа</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Top</TitleLocation>
+													<Width>50</Width>
+													<ContextMenu name="ТемаПисьмаВнешняяОбработкаКонтекстноеМеню" id="61"/>
+													<ExtendedTooltip name="ТемаПисьмаВнешняяОбработкаExtendedTooltip" id="229"/>
+													<Events>
+														<Event name="OnChange">ТемаПисьмаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<UsualGroup name="ГруппаЗаголовокТипТекстаВнешняяОбработка" id="62">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа заголовок тип текста</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Група заголовок тип тексту</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа заголовок тип текста</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Група заголовок тип тексту</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаЗаголовокТипТекстаВнешняяОбработкаExtendedTooltip" id="230"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияЗаголовокТекстПисьмаВнешняяОбработка" id="63">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Текст письма:</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Текст листа:</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Right</HorizontalAlign>
+															<ContextMenu name="ДекорацияЗаголовокТекстПисьмаВнешняяОбработкаКонтекстноеМеню" id="64"/>
+															<ExtendedTooltip name="ДекорацияЗаголовокТекстПисьмаВнешняяОбработкаExtendedTooltip" id="231"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДекорацияПустаяВнешняяОбработка" id="65">
+															<HorizontalStretch>true</HorizontalStretch>
+															<ContextMenu name="ДекорацияПустаяВнешняяОбработкаКонтекстноеМеню" id="66"/>
+															<ExtendedTooltip name="ДекорацияПустаяВнешняяОбработкаExtendedTooltip" id="232"/>
+														</LabelDecoration>
+														<RadioButtonField name="ТипТекстаПисьмаВнешняяОбработка" id="67">
+															<DataPath>ТипТекстаПисьма</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Формат письма</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Формат листа</v8:content>
+																</v8:item>
+															</Title>
+															<RadioButtonType>Auto</RadioButtonType>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Простой текст</v8:content>
+																			</v8:item>
+																			<v8:item>
+																				<v8:lang>uk</v8:lang>
+																				<v8:content>Простий текст</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:decimal">0</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>HTML</v8:content>
+																			</v8:item>
+																			<v8:item>
+																				<v8:lang>uk</v8:lang>
+																				<v8:content>HTML</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:decimal">1</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ТипТекстаПисьмаВнешняяОбработкаКонтекстноеМеню" id="68"/>
+															<ExtendedTooltip name="ТипТекстаПисьмаВнешняяОбработкаExtendedTooltip" id="233"/>
+															<Events>
+																<Event name="OnChange">ТипТекстаПисьмаПриИзменении</Event>
+															</Events>
+														</RadioButtonField>
+													</ChildItems>
+												</UsualGroup>
+												<Pages name="СтраницыТекстПисьмаВнешняяОбработка" id="69">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страницы текст письма внешняя обработка</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінки текст листа зовнішня обробка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страницы текст письма</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінки текст листа</v8:content>
+														</v8:item>
+													</ToolTip>
+													<PagesRepresentation>None</PagesRepresentation>
+													<ExtendedTooltip name="СтраницыТекстПисьмаВнешняяОбработкаExtendedTooltip" id="234"/>
+													<ChildItems>
+														<Page name="СтраницаТекстПисьмаОбычныйВнешняяОбработка" id="70">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница текст письма обычный</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Сторінка текст листа звичайний</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страница текст письма обычный</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Сторінка текст листа звичайний</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="СтраницаТекстПисьмаОбычныйВнешняяОбработкаExtendedTooltip" id="235"/>
+															<ChildItems>
+																<TextDocumentField name="ТекстШаблонаПисьмаВнешняяОбработка" id="71">
+																	<DataPath>Объект.ТекстШаблонаПисьма</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Тело письма</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Тіло листа</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ТекстШаблонаПисьмаВнешняяОбработкаКонтекстноеМеню" id="72"/>
+																	<ExtendedTooltip name="ТекстШаблонаПисьмаВнешняяОбработкаExtendedTooltip" id="236"/>
+																</TextDocumentField>
+															</ChildItems>
+														</Page>
+														<Page name="СтраницаТекстПисьмаHTMLВнешняяОбработка" id="73">
+															<ExtendedTooltip name="СтраницаТекстПисьмаHTMLВнешняяОбработкаExtendedTooltip" id="237"/>
+															<ChildItems>
+																<FormattedDocumentField name="ТекстПисьмаФорматированныйДокументВнешняяОбработка" id="75">
+																	<DataPath>ТекстПисьмаФорматированныйДокумент</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<TitleLocation>None</TitleLocation>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<ContextMenu name="ТекстПисьмаФорматированныйДокументВнешняяОбработкаКонтекстноеМеню" id="76"/>
+																	<ExtendedTooltip name="ТекстПисьмаФорматированныйДокументВнешняяОбработкаExtendedTooltip" id="238"/>
+																</FormattedDocumentField>
+															</ChildItems>
+														</Page>
+													</ChildItems>
+												</Pages>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаТекстыПараметрыОбычныйШаблон" id="57">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница текст параметр внешняя обработка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сторінка текст параметр зовнішня обробка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СтраницаТекстыПараметрыОбычныйШаблонExtendedTooltip" id="239"/>
+					<ChildItems>
+						<UsualGroup name="ПараметрыДоступныеПоляТексты" id="14">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры доступные поля тексты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Параметри доступні поля тексти</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПараметрыДоступныеПоляТекстыExtendedTooltip" id="240"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДерево" id="135">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дерево</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група дерево</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дерево</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група дерево</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДеревоExtendedTooltip" id="241"/>
+									<ChildItems>
+										<Pages name="СтраницыПечатныеФормы" id="181">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страницы печатные формы</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінки друковані форми</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="СтраницыПечатныеФормыExtendedTooltip" id="242"/>
+											<ChildItems>
+												<Page name="СтраницаПечатныеФормыПисьмо" id="182">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница печатные формы письмо</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінка друковані форми лист</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница печатные формы письмо</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінка друковані форми лист</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ChildItemsWidth>LeftWidest</ChildItemsWidth>
+													<ExtendedTooltip name="СтраницаПечатныеФормыПисьмоExtendedTooltip" id="243"/>
+													<ChildItems>
+														<Table name="ДеревоДоступныхПолей" id="1">
+															<Representation>Tree</Representation>
+															<HeightInTableRows>12</HeightInTableRows>
+															<SelectionMode>SingleRow</SelectionMode>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<DataPath>ДеревоДоступныхПолей</DataPath>
+															<RowPictureDataPath>ДеревоДоступныхПолей.КодКартинки</RowPictureDataPath>
+															<RowsPicture>
+																<xr:Ref>CommonPicture.КоллекцияПиктограммПараметрыШаблонаСообщения</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</RowsPicture>
+															<CommandSet>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>HierarchicalList</ExcludedCommand>
+																<ExcludedCommand>List</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>OutputList</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+																<ExcludedCommand>Tree</ExcludedCommand>
+															</CommandSet>
+															<SearchStringLocation>None</SearchStringLocation>
+															<ViewStatusLocation>None</ViewStatusLocation>
+															<SearchControlLocation>None</SearchControlLocation>
+															<ContextMenu name="ДеревоДоступныхПолейКонтекстноеМеню" id="2"/>
+															<AutoCommandBar name="ДеревоДоступныхПолейКоманднаяПанель" id="3">
+																<ChildItems>
+																	<Button name="ДеревоДоступныхПолейПечатныеФормы" id="193">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.ПечатныеФормы</CommandName>
+																		<Title>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Скрыть печатные формы</v8:content>
+																			</v8:item>
+																			<v8:item>
+																				<v8:lang>uk</v8:lang>
+																				<v8:content>Сховати друковані форми</v8:content>
+																			</v8:item>
+																		</Title>
+																		<ExtendedTooltip name="ДеревоДоступныхПолейПечатныеФормыExtendedTooltip" id="244"/>
+																	</Button>
+																</ChildItems>
+															</AutoCommandBar>
+															<ExtendedTooltip name="ДеревоДоступныхПолейExtendedTooltip" id="245"/>
+															<SearchStringAddition name="ДеревоДоступныхПолейСтрокаПоиска" id="302">
+																<AdditionSource>
+																	<Item>ДеревоДоступныхПолей</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ДеревоДоступныхПолейСтрокаПоискаКонтекстноеМеню" id="303"/>
+																<ExtendedTooltip name="ДеревоДоступныхПолейСтрокаПоискаРасширеннаяПодсказка" id="304"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="ДеревоДоступныхПолейСостояниеПросмотра" id="305">
+																<AdditionSource>
+																	<Item>ДеревоДоступныхПолей</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ДеревоДоступныхПолейСостояниеПросмотраКонтекстноеМеню" id="306"/>
+																<ExtendedTooltip name="ДеревоДоступныхПолейСостояниеПросмотраРасширеннаяПодсказка" id="307"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="ДеревоДоступныхПолейУправлениеПоиском" id="308">
+																<AdditionSource>
+																	<Item>ДеревоДоступныхПолей</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="ДеревоДоступныхПолейУправлениеПоискомКонтекстноеМеню" id="309"/>
+																<ExtendedTooltip name="ДеревоДоступныхПолейУправлениеПоискомРасширеннаяПодсказка" id="310"/>
+															</SearchControlAddition>
+															<Events>
+																<Event name="Selection">ДеревоДоступныхПолейВыбор</Event>
+																<Event name="BeforeAddRow">ДеревоДоступныхПолейПередНачаломДобавления</Event>
+																<Event name="BeforeDeleteRow">ДеревоДоступныхПолейПередУдалением</Event>
+																<Event name="DragStart">ДеревоДоступныхПолейНачалоПеретаскивания</Event>
+																<Event name="BeforeRowChange">ДеревоДоступныхПолейПередНачаломИзменения</Event>
+																<Event name="AfterDeleteRow">ДеревоДоступныхПолейПослеУдаления</Event>
+															</Events>
+															<ChildItems>
+																<ColumnGroup name="ДеревоДоступныхПолейПредставлениеКодКартинки" id="195">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Дерево доступных полей представление код картинки</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Дерево доступних полів подання код картинки</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Дерево доступных полей представление код картинки</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Дерево доступних полів подання код картинки</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>InCell</Group>
+																	<ExtendedTooltip name="ДеревоДоступныхПолейПредставлениеКодКартинкиExtendedTooltip" id="246"/>
+																	<ChildItems>
+																		<PictureField name="ДеревоДоступныхПолейКодКартинки" id="196">
+																			<DataPath>ДеревоДоступныхПолей.КодКартинки</DataPath>
+																			<TitleLocation>None</TitleLocation>
+																			<EditMode>EnterOnInput</EditMode>
+																			<ContextMenu name="ДеревоДоступныхПолейКодКартинкиКонтекстноеМеню" id="197"/>
+																			<ExtendedTooltip name="ДеревоДоступныхПолейКодКартинкиExtendedTooltip" id="247"/>
+																		</PictureField>
+																		<InputField name="ДеревоДоступныхПолейПредставлениеПараметра" id="103">
+																			<DataPath>ДеревоДоступныхПолей.ПредставлениеПараметра</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Параметры</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>uk</v8:lang>
+																					<v8:content>Параметри</v8:content>
+																				</v8:item>
+																			</Title>
+																			<EditMode>EnterOnInput</EditMode>
+																			<Width>30</Width>
+																			<ContextMenu name="ДеревоДоступныхПолейПредставлениеПараметраКонтекстноеМеню" id="104"/>
+																			<ExtendedTooltip name="ДеревоДоступныхПолейПредставлениеПараметраExtendedTooltip" id="248"/>
+																		</InputField>
+																	</ChildItems>
+																</ColumnGroup>
+																<InputField name="ДеревоДоступныхПолейИмяПараметра" id="4">
+																	<DataPath>ДеревоДоступныхПолей.ИмяПараметра</DataPath>
+																	<UserVisible>
+																		<xr:Common>false</xr:Common>
+																	</UserVisible>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Имя параметра</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Ім'я параметра</v8:content>
+																		</v8:item>
+																	</Title>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>20</Width>
+																	<TextEdit>false</TextEdit>
+																	<ContextMenu name="ДеревоДоступныхПолейИмяПараметраКонтекстноеМеню" id="5"/>
+																	<ExtendedTooltip name="ДеревоДоступныхПолейИмяПараметраExtendedTooltip" id="249"/>
+																</InputField>
+																<InputField name="ДеревоДоступныхПолейОписаниеТипа" id="105">
+																	<DataPath>ДеревоДоступныхПолей.ОписаниеТипа</DataPath>
+																	<UserVisible>
+																		<xr:Common>false</xr:Common>
+																	</UserVisible>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Тип</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Тип</v8:content>
+																		</v8:item>
+																	</Title>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ДеревоДоступныхПолейОписаниеТипаКонтекстноеМеню" id="106"/>
+																	<ExtendedTooltip name="ДеревоДоступныхПолейОписаниеТипаExtendedTooltip" id="250"/>
+																</InputField>
+															</ChildItems>
+														</Table>
+														<Table name="ДеревоДоступныхПечатныхФорм" id="169">
+															<Representation>Tree</Representation>
+															<HeightInTableRows>7</HeightInTableRows>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<DataPath>ДеревоДоступныхПечатныхФорм</DataPath>
+															<CommandSet>
+																<ExcludedCommand>Add</ExcludedCommand>
+																<ExcludedCommand>Change</ExcludedCommand>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+																<ExcludedCommand>Delete</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>HierarchicalList</ExcludedCommand>
+																<ExcludedCommand>List</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>OutputList</ExcludedCommand>
+																<ExcludedCommand>SelectAll</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+																<ExcludedCommand>Tree</ExcludedCommand>
+															</CommandSet>
+															<SearchStringLocation>None</SearchStringLocation>
+															<ViewStatusLocation>None</ViewStatusLocation>
+															<SearchControlLocation>None</SearchControlLocation>
+															<ContextMenu name="ДеревоДоступныхПечатныхФормКонтекстноеМеню" id="170"/>
+															<AutoCommandBar name="ДеревоДоступныхПечатныхФормКоманднаяПанель" id="171"/>
+															<ExtendedTooltip name="ДеревоДоступныхПечатныхФормExtendedTooltip" id="251"/>
+															<SearchStringAddition name="ДеревоДоступныхПечатныхФормСтрокаПоиска" id="311">
+																<AdditionSource>
+																	<Item>ДеревоДоступныхПечатныхФорм</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ДеревоДоступныхПечатныхФормСтрокаПоискаКонтекстноеМеню" id="312"/>
+																<ExtendedTooltip name="ДеревоДоступныхПечатныхФормСтрокаПоискаРасширеннаяПодсказка" id="313"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="ДеревоДоступныхПечатныхФормСостояниеПросмотра" id="314">
+																<AdditionSource>
+																	<Item>ДеревоДоступныхПечатныхФорм</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ДеревоДоступныхПечатныхФормСостояниеПросмотраКонтекстноеМеню" id="315"/>
+																<ExtendedTooltip name="ДеревоДоступныхПечатныхФормСостояниеПросмотраРасширеннаяПодсказка" id="316"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="ДеревоДоступныхПечатныхФормУправлениеПоиском" id="317">
+																<AdditionSource>
+																	<Item>ДеревоДоступныхПечатныхФорм</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="ДеревоДоступныхПечатныхФормУправлениеПоискомКонтекстноеМеню" id="318"/>
+																<ExtendedTooltip name="ДеревоДоступныхПечатныхФормУправлениеПоискомРасширеннаяПодсказка" id="319"/>
+															</SearchControlAddition>
+															<Events>
+																<Event name="BeforeAddRow">ДеревоДоступныхПечатныхФормПередНачаломДобавления</Event>
+																<Event name="BeforeDeleteRow">ДеревоДоступныхПечатныхФормПередУдалением</Event>
+															</Events>
+															<ChildItems>
+																<ColumnGroup name="ДеревоДоступныхПечатныхФормГруппаПометкаПредставление" id="178">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Печатные формы</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Друковані форми</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Доступные печатные формы</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Доступні друковані форми</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>InCell</Group>
+																	<ExtendedTooltip name="ДеревоДоступныхПечатныхФормГруппаПометкаПредставлениеExtendedTooltip" id="252"/>
+																	<ChildItems>
+																		<CheckBoxField name="ДеревоДоступныхПечатныхФормПометка" id="179">
+																			<DataPath>ДеревоДоступныхПечатныхФорм.Пометка</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Печатные формы</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>uk</v8:lang>
+																					<v8:content>Друковані форми</v8:content>
+																				</v8:item>
+																			</Title>
+																			<EditMode>EnterOnInput</EditMode>
+																			<ThreeState>true</ThreeState>
+																			<ContextMenu name="ДеревоДоступныхПечатныхФормПометкаКонтекстноеМеню" id="180"/>
+																			<ExtendedTooltip name="ДеревоДоступныхПечатныхФормПометкаExtendedTooltip" id="253"/>
+																			<Events>
+																				<Event name="OnChange">ДеревоДоступныхПечатныхФормПометкаПриИзменении</Event>
+																			</Events>
+																		</CheckBoxField>
+																		<InputField name="ДеревоДоступныхПечатныхФормПредставлениеПараметра" id="172">
+																			<DataPath>ДеревоДоступныхПечатныхФорм.ПредставлениеПараметра</DataPath>
+																			<ReadOnly>true</ReadOnly>
+																			<TitleLocation>None</TitleLocation>
+																			<EditMode>EnterOnInput</EditMode>
+																			<TextEdit>false</TextEdit>
+																			<ContextMenu name="ДеревоДоступныхПечатныхФормПредставлениеПараметраКонтекстноеМеню" id="173"/>
+																			<ExtendedTooltip name="ДеревоДоступныхПечатныхФормПредставлениеПараметраExtendedTooltip" id="254"/>
+																		</InputField>
+																	</ChildItems>
+																</ColumnGroup>
+																<InputField name="ДеревоДоступныхПечатныхФормИмяПараметра" id="174">
+																	<DataPath>ДеревоДоступныхПечатныхФорм.ИмяПараметра</DataPath>
+																	<UserVisible>
+																		<xr:Common>false</xr:Common>
+																	</UserVisible>
+																	<ReadOnly>true</ReadOnly>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ДеревоДоступныхПечатныхФормИмяПараметраКонтекстноеМеню" id="175"/>
+																	<ExtendedTooltip name="ДеревоДоступныхПечатныхФормИмяПараметраExtendedTooltip" id="255"/>
+																</InputField>
+															</ChildItems>
+														</Table>
+														<UsualGroup name="ГруппаВложенияПисьма" id="88">
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа вложения письма</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Група вкладення листа</v8:content>
+																</v8:item>
+															</ToolTip>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Group>Horizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаВложенияПисьмаExtendedTooltip" id="256"/>
+															<ChildItems>
+																<LabelField name="ФорматВложений" id="91">
+																	<DataPath>ФорматВложений</DataPath>
+																	<Width>20</Width>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<Hiperlink>true</Hiperlink>
+																	<ContextMenu name="ФорматВложенийКонтекстноеМеню" id="92"/>
+																	<ExtendedTooltip name="ФорматВложенийExtendedTooltip" id="257"/>
+																	<Events>
+																		<Event name="Click">ФорматВложенийНажатие</Event>
+																	</Events>
+																</LabelField>
+															</ChildItems>
+														</UsualGroup>
+														<CheckBoxField name="УпаковатьВАрхив" id="96">
+															<DataPath>Объект.УпаковатьВАрхив</DataPath>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="УпаковатьВАрхивКонтекстноеМеню" id="97"/>
+															<ExtendedTooltip name="УпаковатьВАрхивExtendedTooltip" id="258"/>
+														</CheckBoxField>
+													</ChildItems>
+												</Page>
+												<Page name="СтраницаПечатныеФормыSMS" id="183">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница печатные формы SMS</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінка друковані форми SMS</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница печатные формы SMS</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінка друковані форми SMS</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="СтраницаПечатныеФормыSMSExtendedTooltip" id="259"/>
+													<ChildItems>
+														<Table name="ДеревоДоступныхПолейSMS" id="184">
+															<Representation>Tree</Representation>
+															<SelectionMode>SingleRow</SelectionMode>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<DataPath>ДеревоДоступныхПолей</DataPath>
+															<RowPictureDataPath>ДеревоДоступныхПолей.КодКартинки</RowPictureDataPath>
+															<RowsPicture>
+																<xr:Ref>CommonPicture.КоллекцияПиктограммПараметрыШаблонаСообщения</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</RowsPicture>
+															<CommandSet>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>HierarchicalList</ExcludedCommand>
+																<ExcludedCommand>List</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>OutputList</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+																<ExcludedCommand>Tree</ExcludedCommand>
+															</CommandSet>
+															<SearchStringLocation>None</SearchStringLocation>
+															<ViewStatusLocation>None</ViewStatusLocation>
+															<SearchControlLocation>None</SearchControlLocation>
+															<ContextMenu name="ДеревоДоступныхПолейSMSКонтекстноеМеню" id="185"/>
+															<AutoCommandBar name="ДеревоДоступныхПолейSMSКоманднаяПанель" id="186">
+																<ChildItems>
+																	<Button name="ДеревоДоступныхПолейSMSПечатныеФормы" id="194">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.ПечатныеФормы</CommandName>
+																		<Title>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Показать печатные формы</v8:content>
+																			</v8:item>
+																			<v8:item>
+																				<v8:lang>uk</v8:lang>
+																				<v8:content>Показати друковані форми</v8:content>
+																			</v8:item>
+																		</Title>
+																		<ExtendedTooltip name="ДеревоДоступныхПолейSMSПечатныеФормыExtendedTooltip" id="260"/>
+																	</Button>
+																</ChildItems>
+															</AutoCommandBar>
+															<ExtendedTooltip name="ДеревоДоступныхПолейSMSExtendedTooltip" id="261"/>
+															<SearchStringAddition name="ДеревоДоступныхПолейSMSСтрокаПоиска" id="320">
+																<AdditionSource>
+																	<Item>ДеревоДоступныхПолейSMS</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ДеревоДоступныхПолейSMSСтрокаПоискаКонтекстноеМеню" id="321"/>
+																<ExtendedTooltip name="ДеревоДоступныхПолейSMSСтрокаПоискаРасширеннаяПодсказка" id="322"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="ДеревоДоступныхПолейSMSСостояниеПросмотра" id="323">
+																<AdditionSource>
+																	<Item>ДеревоДоступныхПолейSMS</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ДеревоДоступныхПолейSMSСостояниеПросмотраКонтекстноеМеню" id="324"/>
+																<ExtendedTooltip name="ДеревоДоступныхПолейSMSСостояниеПросмотраРасширеннаяПодсказка" id="325"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="ДеревоДоступныхПолейSMSУправлениеПоиском" id="326">
+																<AdditionSource>
+																	<Item>ДеревоДоступныхПолейSMS</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="ДеревоДоступныхПолейSMSУправлениеПоискомКонтекстноеМеню" id="327"/>
+																<ExtendedTooltip name="ДеревоДоступныхПолейSMSУправлениеПоискомРасширеннаяПодсказка" id="328"/>
+															</SearchControlAddition>
+															<Events>
+																<Event name="Selection">ДеревоДоступныхПолейВыбор</Event>
+																<Event name="BeforeAddRow">ДеревоДоступныхПолейПередНачаломДобавления</Event>
+																<Event name="BeforeDeleteRow">ДеревоДоступныхПолейПередУдалением</Event>
+																<Event name="DragStart">ДеревоДоступныхПолейНачалоПеретаскивания</Event>
+																<Event name="BeforeRowChange">ДеревоДоступныхПолейПередНачаломИзменения</Event>
+																<Event name="AfterDeleteRow">ДеревоДоступныхПолейПослеУдаления</Event>
+															</Events>
+															<ChildItems>
+																<ColumnGroup name="ДеревоДоступныхПолейПредставлениеКодКартинкиSMS" id="198">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Дерево доступных полей представление код картинки SMS</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Дерево доступних полів представлення код картинки SMS</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Дерево доступных полей представление код картинки SMS</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Дерево доступних полів представлення код картинки SMS</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>InCell</Group>
+																	<ExtendedTooltip name="ДеревоДоступныхПолейПредставлениеКодКартинкиSMSExtendedTooltip" id="262"/>
+																	<ChildItems>
+																		<PictureField name="ДеревоДоступныхПолейSMSКодКартинки" id="199">
+																			<DataPath>ДеревоДоступныхПолей.КодКартинки</DataPath>
+																			<TitleLocation>None</TitleLocation>
+																			<EditMode>EnterOnInput</EditMode>
+																			<ContextMenu name="ДеревоДоступныхПолейSMSКодКартинкиКонтекстноеМеню" id="200"/>
+																			<ExtendedTooltip name="ДеревоДоступныхПолейSMSКодКартинкиExtendedTooltip" id="263"/>
+																		</PictureField>
+																		<InputField name="ДеревоДоступныхПолейПредставлениеПараметраSMS" id="187">
+																			<DataPath>ДеревоДоступныхПолей.ПредставлениеПараметра</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Параметры</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>uk</v8:lang>
+																					<v8:content>Параметри</v8:content>
+																				</v8:item>
+																			</Title>
+																			<EditMode>EnterOnInput</EditMode>
+																			<Width>30</Width>
+																			<ContextMenu name="ДеревоДоступныхПолейПредставлениеПараметраSMSКонтекстноеМеню" id="188"/>
+																			<ExtendedTooltip name="ДеревоДоступныхПолейПредставлениеПараметраSMSExtendedTooltip" id="264"/>
+																		</InputField>
+																	</ChildItems>
+																</ColumnGroup>
+																<InputField name="ДеревоДоступныхПолейИмяПараметраSMS" id="189">
+																	<DataPath>ДеревоДоступныхПолей.ИмяПараметра</DataPath>
+																	<UserVisible>
+																		<xr:Common>false</xr:Common>
+																	</UserVisible>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Имя параметра</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Ім'я параметра</v8:content>
+																		</v8:item>
+																	</Title>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>20</Width>
+																	<TextEdit>false</TextEdit>
+																	<ContextMenu name="ДеревоДоступныхПолейИмяПараметраSMSКонтекстноеМеню" id="190"/>
+																	<ExtendedTooltip name="ДеревоДоступныхПолейИмяПараметраSMSExtendedTooltip" id="265"/>
+																</InputField>
+																<InputField name="ДеревоДоступныхПолейОписаниеТипаSMS" id="191">
+																	<DataPath>ДеревоДоступныхПолей.ОписаниеТипа</DataPath>
+																	<UserVisible>
+																		<xr:Common>false</xr:Common>
+																	</UserVisible>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Тип</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Тип</v8:content>
+																		</v8:item>
+																	</Title>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ДеревоДоступныхПолейОписаниеТипаSMSКонтекстноеМеню" id="192"/>
+																	<ExtendedTooltip name="ДеревоДоступныхПолейОписаниеТипаSMSExtendedTooltip" id="266"/>
+																</InputField>
+															</ChildItems>
+														</Table>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаШаблоны" id="15">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаШаблоныExtendedTooltip" id="267"/>
+									<ChildItems>
+										<Pages name="СтраницыШаблоны" id="93">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страницы шаблоны</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінки шаблони</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страницы шаблоны</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Сторінки шаблони</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="СтраницыШаблоныExtendedTooltip" id="268"/>
+											<ChildItems>
+												<Page name="СтраницаШаблонПисьма" id="94">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница шаблон письма</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінка шаблон листа</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница шаблон письма</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінка шаблон листа</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="СтраницаШаблонПисьмаExtendedTooltip" id="269"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаЗаголовокШаблонПисьма" id="145">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа заголовок шаблон письма</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Група заголовок шаблон листа</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа заголовок шаблон письма</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Група заголовок шаблон листа</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаЗаголовокШаблонПисьмаExtendedTooltip" id="270"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияЗаголовокТема" id="146">
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Шаблон темы письма:</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Шаблон теми листа:</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияЗаголовокТемаКонтекстноеМеню" id="147"/>
+																	<ExtendedTooltip name="ДекорацияЗаголовокТемаExtendedTooltip" id="271"/>
+																</LabelDecoration>
+																<CommandBar name="КоманднаяПанельЗаголовокПисьма" id="148">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Командная панель заголовок письма</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Командна панель заголовок листа</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Командная панель заголовок письма</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Командна панель заголовок листа</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<HorizontalLocation>Right</HorizontalLocation>
+																	<ExtendedTooltip name="КоманднаяПанельЗаголовокПисьмаExtendedTooltip" id="272"/>
+																	<ChildItems>
+																		<Button name="ПроверитьШаблоны" id="149">
+																			<Type>CommandBarButton</Type>
+																			<CommandName>Form.Command.ПроверитьШаблоны</CommandName>
+																			<ExtendedTooltip name="ПроверитьШаблоныExtendedTooltip" id="273"/>
+																		</Button>
+																	</ChildItems>
+																</CommandBar>
+															</ChildItems>
+														</UsualGroup>
+														<FormattedDocumentField name="ТемаПисьма" id="127">
+															<DataPath>ТемаПисьмаФорматированныйДокумент</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Шаблон темы письма</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Шаблон теми листа</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<TitleHeight>1</TitleHeight>
+															<Height>2</Height>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<VerticalStretch>false</VerticalStretch>
+															<ContextMenu name="ТемаПисьмаКонтекстноеМеню" id="128"/>
+															<ExtendedTooltip name="ТемаПисьмаExtendedTooltip" id="274"/>
+															<Events>
+																<Event name="OnChange">ТемаПисьмаПриИзменении</Event>
+															</Events>
+														</FormattedDocumentField>
+														<UsualGroup name="ГруппаЗаголовокТипТекста" id="36">
+															<EnableContentChange>true</EnableContentChange>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа заголовок тип текста</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Група заголовок тип тексту</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа заголовок тип текста</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Група заголовок тип тексту</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаЗаголовокТипТекстаExtendedTooltip" id="275"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияЗаголовокТекстПисьма" id="37">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Шаблон текста письма:</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Шаблон тексту листа:</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Right</HorizontalAlign>
+																	<ContextMenu name="ДекорацияЗаголовокТекстПисьмаКонтекстноеМеню" id="38"/>
+																	<ExtendedTooltip name="ДекорацияЗаголовокТекстПисьмаExtendedTooltip" id="276"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияПустая" id="41">
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ContextMenu name="ДекорацияПустаяКонтекстноеМеню" id="42"/>
+																	<ExtendedTooltip name="ДекорацияПустаяExtendedTooltip" id="277"/>
+																</LabelDecoration>
+																<RadioButtonField name="ТипТекстаПисьма" id="39">
+																	<DataPath>ТипТекстаПисьма</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Формат письма</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Формат листа</v8:content>
+																		</v8:item>
+																	</Title>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Простой текст</v8:content>
+																					</v8:item>
+																					<v8:item>
+																						<v8:lang>uk</v8:lang>
+																						<v8:content>Простий текст</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:decimal">0</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>HTML</v8:content>
+																					</v8:item>
+																					<v8:item>
+																						<v8:lang>uk</v8:lang>
+																						<v8:content>HTML</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:decimal">1</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ТипТекстаПисьмаКонтекстноеМеню" id="40"/>
+																	<ExtendedTooltip name="ТипТекстаПисьмаExtendedTooltip" id="278"/>
+																	<Events>
+																		<Event name="OnChange">ТипТекстаПисьмаПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+															</ChildItems>
+														</UsualGroup>
+														<Pages name="СтраницыТекстПисьма" id="43">
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Страницы текст письма</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Сторінки текст листа</v8:content>
+																</v8:item>
+															</ToolTip>
+															<PagesRepresentation>None</PagesRepresentation>
+															<ExtendedTooltip name="СтраницыТекстПисьмаExtendedTooltip" id="279"/>
+															<ChildItems>
+																<Page name="СтраницаТекстПисьмаОбычный" id="44">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Страница текст письма обычный</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Сторінка текст листа звичайний</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Страница текст письма обычный</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Сторінка текст листа звичайний</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ExtendedTooltip name="СтраницаТекстПисьмаОбычныйExtendedTooltip" id="280"/>
+																	<ChildItems>
+																		<TextDocumentField name="ТекстШаблонаПисьма" id="18">
+																			<DataPath>Объект.ТекстШаблонаПисьма</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Тело письма</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>uk</v8:lang>
+																					<v8:content>Тіло листа</v8:content>
+																				</v8:item>
+																			</Title>
+																			<TitleLocation>None</TitleLocation>
+																			<EditMode>EnterOnInput</EditMode>
+																			<ContextMenu name="ТекстШаблонаПисьмаКонтекстноеМеню" id="19"/>
+																			<ExtendedTooltip name="ТекстШаблонаПисьмаExtendedTooltip" id="281"/>
+																		</TextDocumentField>
+																	</ChildItems>
+																</Page>
+																<Page name="СтраницаТекстПисьмаHTML" id="45">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Страница текст письма HTML</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Сторінка текст листа HTML</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Страница текст письма HTML</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Сторінка текст листа HTML</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ExtendedTooltip name="СтраницаТекстПисьмаHTMLExtendedTooltip" id="282"/>
+																	<ChildItems>
+																		<CommandBar name="ГруппаКоманднаяПанельФорматированногоДокумента" id="48">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Группа командная панель форматированного документа</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>uk</v8:lang>
+																					<v8:content>Група командна панель форматованого документа</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ToolTip>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Группа командная панель форматированного документа</v8:content>
+																				</v8:item>
+																				<v8:item>
+																					<v8:lang>uk</v8:lang>
+																					<v8:content>Група командна панель форматованого документа</v8:content>
+																				</v8:item>
+																			</ToolTip>
+																			<CommandSource>Item.ТекстПисьмаФорматированныйДокумент</CommandSource>
+																			<ExtendedTooltip name="ГруппаКоманднаяПанельФорматированногоДокументаExtendedTooltip" id="283"/>
+																		</CommandBar>
+																		<FormattedDocumentField name="ТекстПисьмаФорматированныйДокумент" id="46">
+																			<DataPath>ТекстПисьмаФорматированныйДокумент</DataPath>
+																			<TitleLocation>None</TitleLocation>
+																			<AutoMaxHeight>false</AutoMaxHeight>
+																			<ContextMenu name="ТекстПисьмаФорматированныйДокументКонтекстноеМеню" id="47"/>
+																			<ExtendedTooltip name="ТекстПисьмаФорматированныйДокументExtendedTooltip" id="284"/>
+																		</FormattedDocumentField>
+																	</ChildItems>
+																</Page>
+															</ChildItems>
+														</Pages>
+													</ChildItems>
+												</Page>
+												<Page name="СтраницаШаблонSMS" id="95">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница шаблон SMS</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінка шаблон SMS</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница шаблон SMS</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Сторінка шаблон SMS</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="СтраницаШаблонSMSExtendedTooltip" id="285"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаЗаголовокSMS" id="138">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа заголовок SMS</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Група заголовок SMS</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа заголовок SMS</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Група заголовок SMS</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаЗаголовокSMSExtendedTooltip" id="286"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияЗаголовокШаблонSMS" id="142">
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст шаблона SMS:</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Текст шаблону SMS:</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияЗаголовокШаблонSMSКонтекстноеМеню" id="143"/>
+																	<ExtendedTooltip name="ДекорацияЗаголовокШаблонSMSExtendedTooltip" id="287"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияЗаголовокШаблонSMSПустая" id="161">
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<ContextMenu name="ДекорацияЗаголовокШаблонSMSПустаяКонтекстноеМеню" id="162"/>
+																	<ExtendedTooltip name="ДекорацияЗаголовокШаблонSMSПустаяExtendedTooltip" id="288"/>
+																</LabelDecoration>
+																<CheckBoxField name="ОтправлятьВТранслите" id="152">
+																	<DataPath>Объект.ОтправлятьВТранслите</DataPath>
+																	<TitleLocation>Right</TitleLocation>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ОтправлятьВТранслитеКонтекстноеМеню" id="153"/>
+																	<ExtendedTooltip name="ОтправлятьВТранслитеExtendedTooltip" id="289"/>
+																</CheckBoxField>
+																<CommandBar name="ГруппаКоманднаяПанельШаблонSMS" id="139">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа командная панель шаблон SMS</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Група командна панель шаблон SMS</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа командная панель шаблон SMS</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>Група командна панель шаблон SMS</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<HorizontalLocation>Right</HorizontalLocation>
+																	<ExtendedTooltip name="ГруппаКоманднаяПанельШаблонSMSExtendedTooltip" id="290"/>
+																	<ChildItems>
+																		<Button name="ПроверитьШаблоныSMS" id="144">
+																			<Type>CommandBarButton</Type>
+																			<CommandName>Form.Command.ПроверитьШаблоны</CommandName>
+																			<ExtendedTooltip name="ПроверитьШаблоныSMSExtendedTooltip" id="291"/>
+																		</Button>
+																	</ChildItems>
+																</CommandBar>
+															</ChildItems>
+														</UsualGroup>
+														<TextDocumentField name="ТекстШаблонаSMS" id="16">
+															<DataPath>Объект.ТекстШаблонаSMS</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Текст шаблона SMS</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Текст шаблону SMS</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<Height>4</Height>
+															<ContextMenu name="ТекстШаблонаSMSКонтекстноеМеню" id="17"/>
+															<ExtendedTooltip name="ТекстШаблонаSMSExtendedTooltip" id="292"/>
+														</TextDocumentField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ШаблоныСообщений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДеревоДоступныхПолей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево доступных полей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дерево доступних полів</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="ИмяПараметра" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя параметра</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ім'я параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеПараметра" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление параметра</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представлення параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеТипа" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание типа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Опис типу</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ШиринаЭлементаФормы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ширина элемента формы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ширина елемента форми</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоПроизвольныйПараметр" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это произвольный параметр</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Це довільний параметр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоПредопределенныйПараметр" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это предопределенный параметр</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Це стандартний параметр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПолноеИмяТипа" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя типа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Повне ім'я типу</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодКартинки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код картинки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Код картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПредназначениеШаблона" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблон предназначен</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Шаблон призначений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПрочиеВзаимодействия</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ПараметрыШаблона" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры шаблона</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Параметри шаблону</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяПараметра" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя параметра</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ім'я параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеТипа" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание типа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Опис типу</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеПараметра" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление параметра</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представлення параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоПредопределенныйПараметр" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это предопределенный параметр</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Це стандартний параметр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ШиринаЭлементаФормы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ширина элемента формы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ширина елемента форми</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТипТекстаПисьма" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип текста письма</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Тип тексту листа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ОтправлятьПисьмаВФорматеHTML</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ТекстПисьмаФорматированныйДокумент" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст письма форматированный документ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Текст листа форматований документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:fd="http://v8.1c.ru/8.2/data/formatted-document">fd:FormattedDocument</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТаблицаСоответствийИменВложенийИдентификаторам" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица соответствий имен вложений идентификаторам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Таблиця відповідностей імен вкладень ідентифікаторам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяФайла" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ім'я файлу</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторФайлаДляHTML" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор файла для HTML</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ідентифікатор файла для HTML</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВыбранныеФорматыСохранения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранные форматы сохранения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обрані формати збереження</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВыбранныеФорматыСохранения</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ФорматВложений" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формат вложений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Формат вкладень</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТемаПисьмаФорматированныйДокумент" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тема письма форматированный документ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Тема листа відформатований документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:fd="http://v8.1c.ru/8.2/data/formatted-document">fd:FormattedDocument</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТипФормированияСообщения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип формирования сообщения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Тип формування повідомлення</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДеревоДоступныхПечатныхФорм" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево доступных печатных форм</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дерево доступних друкованих форм</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="ПредставлениеПараметра" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление параметра</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представлення параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПараметра" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя параметра</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ім'я параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Позначка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПоказыватьПечатныеФормы" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать печатные формы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Показувати друковані форми</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипВводаНаОсновании" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип ввода на основании</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Тип введення на підставі</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ШаблонДляОповещений" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблон для оповещений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Шаблон для оповіщень</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьПартнеровКакКонтрагентов" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать партнеров как контрагентов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Використовувати партнерів як контрагентів</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьШаблоны" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить шаблоны</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перевірити шаблони</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить шаблоны</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перевірити шаблони</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаПометка</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="5" y="1"/>
+			</Picture>
+			<Action>ПроверитьШаблоны</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПечатныеФормы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатные формы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друковані форми</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатные формы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друковані форми</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатныеФормы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

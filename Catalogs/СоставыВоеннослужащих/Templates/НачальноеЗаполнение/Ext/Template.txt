@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Items Description="Начальное заполнение составов военнослужащих" Columns="PredefinedName,Name#,Officer" ColumnNames="ИмяПредопределенного,Наименование,ОфицерскийСостав">
+	<Item PredefinedName="Рядовой" Name="Рядовой" NameUkr="Рядовий"/>
+	<Item PredefinedName="СержантскийИСтаршинский" Name="Сержантский и старшинский" NameUkr="Сержантський і старшинський"/>
+	<Item PredefinedName="МладшиеОфицеры" Name="Младший офицерский" NameUkr="Молодший офіцерський" Officer="Истина"/>
+	<Item PredefinedName="СтаршиеОфицеры" Name="Старший офицерский" NameUkr="Старший офіцерський" Officer="Истина"/>
+	<Item PredefinedName="ВысшиеОфицеры" Name="Высший офицерский" NameUkr="Вищий офіцерський" Officer="Истина"/>
+</Items>
